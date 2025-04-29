@@ -1,5 +1,9 @@
+
+//Sirve para probar la lógica sin abrir los formularios. Acá te dejo el código comentado:
+
 using Persistencia;
-using Entidades;
+using LibreriaUniversitaria.Entidades;
+using LogicaNegocio;
 
 namespace Consola
 {
@@ -7,13 +11,14 @@ namespace Consola
     {
         static void Main(string[] args)
         {
-            // Crear los repositorios
+            // Instanciamos los repositorios simulados
             var libroRepo = new LibroRepository();
             var clienteRepo = new ClienteRepository();
-            var ventaRepo = new VentaRepository(clienteRepo, libroRepo);
+            var ventaRepo = new VentaRepository();
 
             bool salir = false;
 
+            // Menú simple para probar la lógica del sistema por consola
             while (!salir)
             {
                 Console.WriteLine("\n--- MENÚ PRINCIPAL ---");
@@ -70,7 +75,7 @@ namespace Consola
             Console.WriteLine("\n--- Lista de Ventas ---");
             foreach (var venta in repo.ObtenerTodas())
             {
-                Console.WriteLine($"Id Venta: {venta.Id} | Cliente: {venta.Cliente.Nombre} | Libro: {venta.Libro.Titulo} | Fecha: {venta.FechaVenta}");
+                Console.WriteLine($"Id Venta: {venta.Id} | Cliente: {venta.Cliente.Nombre} | Total: ${venta.Total} | Fecha: {venta.FechaVenta}");
             }
         }
     }

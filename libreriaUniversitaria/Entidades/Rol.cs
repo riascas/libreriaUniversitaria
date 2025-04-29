@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 
 namespace LibreriaUniversitaria.Entidades
 {
+    // Enumeración para representar perfiles de usuario en el sistema
     public enum Rol
     {
         Administrador,

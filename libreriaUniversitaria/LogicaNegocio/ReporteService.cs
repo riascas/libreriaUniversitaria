@@ -3,16 +3,19 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using LibreriaUniversitaria.Entidades;
+using Persistencia;
 
 namespace LogicaNegocio
 {
-    using Entidades;
+    using LibreriaUniversitaria.Entidades;
 
     public class ReporteService
     {
-        public int CalcularCantidadVendida(List<DetalleVenta> ventas)
+        // Devuelve la cantidad total de ejemplares vendidos sumando todos los detalles
+        public int CalcularCantidadVendida(List<DetalleVenta> detalles)
         {
-            return ventas.Sum(d => d.Cantidad);
+            return detalles.Sum(d => d.Cantidad);
         }
     }
 }

@@ -9,7 +9,6 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Entidades\Entidades.csproj" />
     <ProjectReference Include="..\LogicaNegocio\LogicaNegocio.csproj" />
   </ItemGroup>
 

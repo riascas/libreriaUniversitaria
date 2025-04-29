@@ -4,18 +4,21 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace LibreriaUniversitaria.Entidades
 
+namespace LibreriaUniversitaria.Entidades
 {
     public class Libro
     {
-        public int Id { get; set; } // Identificador
-        public string Titulo { get; set; } // Título del libro
-        public string Autor { get; set; } // Autor
-        public decimal Precio { get; set; } // Precio
-        public int Stock { get; set; } // Stock disponible
+        public int Id { get; set; }             // Identificador del libro
+        public string Titulo { get; set; }      // Título del libro
+        public string Autor { get; set; }       // Autor
+        public decimal Precio { get; set; }     // Precio de venta
+        public int Stock { get; set; }          // Cantidad disponible en stock
 
-        // Constructor vacío
+        public int IdEditorial { get; set; }                 // Clave foránea
+        public Editorial Editorial { get; set; }             // Navegación EF
+
+        // Constructor vacío útil para evitar nulls
         public Libro()
         {
             Titulo = string.Empty;
@@ -23,5 +26,6 @@ namespace LibreriaUniversitaria.Entidades
         }
     }
 }
+
 
 
