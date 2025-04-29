@@ -1,29 +1,31 @@
-﻿using Entidades;
-using Persistencia;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-
+using LibreriaUniversitaria.Entidades;
+using Persistencia;
 
 namespace LogicaNegocio
 {
-    using Entidades;
     using LibreriaUniversitaria.Entidades;
 
     public class VentaService
     {
+        // Crea una venta con detalles y calcula el total
         public Venta CrearVenta(Cliente cliente, List<DetalleVenta> detalles)
         {
-            decimal total = detalles.Sum(d => d.Subtotal);
+            decimal total = detalles.Sum(d => d.Cantidad * d.PrecioUnitario);
+
             return new Venta
             {
+                ClienteId = cliente.Id,
                 Cliente = cliente,
                 Detalles = detalles,
-                Fecha = DateTime.Now,
+                FechaVenta = DateTime.Now,
                 Total = total
             };
         }
     }
 }
+
