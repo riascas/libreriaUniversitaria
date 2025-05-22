@@ -4,25 +4,25 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace LibreriaUniversitaria.Entidades
+namespace Entidades
 {
-    public class Editorial
+    public class Proveedor
     {
-        private int idEditorial;
-        private string nombreEditorial;
+        private int idProveedor;
+        private string nombreProveedor;
         private long cuit;
         private string telefono;
 
-        public int IdEditorial
+        public int IdProveedor
         {
-            get { return idEditorial; }
-            set { idEditorial = value; }
+            get { return idProveedor; }
+            set { idProveedor = value; }
         }
 
-        public string NombreEditorial
+        public string NombreProveedor
         {
-            get { return nombreEditorial; }
-            set { nombreEditorial = value; }
+            get { return nombreProveedor; }
+            set { nombreProveedor = value; }
         }
 
         public long Cuit
@@ -37,7 +37,7 @@ namespace LibreriaUniversitaria.Entidades
             set { telefono = value; }
         }
 
-        public void CargarEditorial()
+        public void CargarProveedor()
         {
 
         }

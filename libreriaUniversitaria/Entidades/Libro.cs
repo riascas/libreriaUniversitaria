@@ -9,21 +9,57 @@ namespace LibreriaUniversitaria.Entidades
 {
     public class Libro
     {
-        public int Id { get; set; }             // Identificador del libro
-        public string Titulo { get; set; }      // Título del libro
-        public string Autor { get; set; }       // Autor
-        public decimal Precio { get; set; }     // Precio de venta
-        public int Stock { get; set; }          // Cantidad disponible en stock
+        private int idLibro;
+        private string titulo;
+        private int stock;
+        private decimal precio;
+        private string autor;
 
-        public int IdEditorial { get; set; }                 // Clave foránea
-        public Editorial Editorial { get; set; }             // Navegación EF
-
-        // Constructor vacío útil para evitar nulls
-        public Libro()
+        public int IdLibro
         {
-            Titulo = string.Empty;
-            Autor = string.Empty;
+            get { return idLibro; }
+            set { idLibro = value; }
         }
+
+        public string Titulo
+        {
+            get { return titulo; }
+            set { titulo = value; }
+        }
+
+        public int Stock
+        {
+            get { return stock; }
+            set { stock = value; }
+        }
+
+        public decimal Precio
+        {
+            get { return precio; }
+            set { precio = value; }
+        }
+
+        public string Autor
+        {
+            get { return autor; }
+            set { autor = value; }
+        }
+
+        public void CargarLibro()
+        {
+
+        }
+
+        public void Reservar()
+        {
+
+        }
+
+        public void ModificarStock()
+        {
+
+        }         // Navegación EF
+
     }
 }
 

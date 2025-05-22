@@ -4,14 +4,28 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace LibreriaUniversitaria.Entidades
+namespace Entidades
 {
-    // Enumeración para representar perfiles de usuario en el sistema
-    public enum Rol
+    public class Rol
     {
-        Administrador,
-        Bibliotecario,
-        Vendedor,
-        Gerente
+        private int idRol;
+        private string descripcionRol;
+
+        public int IdRol
+        {
+            get { return idRol; }
+            set { idRol = value; }
+        }
+
+        public string DescripcionRol
+        {
+            get { return descripcionRol; }
+            set { descripcionRol = value; }
+        }
+
+        public void AsignarRol()
+        {
+
+        }
     }
 }

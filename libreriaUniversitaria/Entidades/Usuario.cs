@@ -8,26 +8,49 @@ namespace LibreriaUniversitaria.Entidades
 {
     public class Usuario
     {
-        public int Id { get; set; }             // Identificador del usuario
-        public string NombreUsuario { get; set; }  // Nombre de usuario para login
-        public string Clave { get; set; }          // Contraseña (ideal: encriptada)
-        public Rol Rol { get; set; }               // Perfil del usuario (enum)
+        private int idUsuario;
+        private string nombre;
+        private string apellido;
+        private int dni;
+        private string email;
+        private string telefono;
 
-        // Constructor con parámetros para facilitar creación
-        public Usuario(int id, string nombre, string clave, Rol rol)
+        public int IdUsuario
         {
-            Id = id;
-            NombreUsuario = nombre;
-            Clave = clave;
-            Rol = rol;
+            get { return idUsuario; }
+            set { idUsuario = value; }
         }
 
-        // Constructor vacío para ORM o uso básico
-        public Usuario()
+        public string Nombre
         {
-            NombreUsuario = string.Empty;
-            Clave = string.Empty;
+            get { return nombre; }
+            set { nombre = value; }
         }
+
+        public string Apellido
+        {
+            get { return apellido; }
+            set { apellido = value; }
+        }
+
+        public int Dni
+        {
+            get { return dni; }
+            set { dni = value; }
+        }
+
+        public string Email
+        {
+            get { return email; }
+            set { email = value; }
+        }
+
+        public string Telefono
+        {
+            get { return telefono; }
+            set { telefono = value; }
+        }
+
     }
 }
 

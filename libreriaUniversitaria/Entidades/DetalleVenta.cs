@@ -9,15 +9,42 @@ namespace LibreriaUniversitaria.Entidades
 {
     public class DetalleVenta
     {
-        public int Id { get; set; }                          // ID del detalle
-        public int VentaId { get; set; }                     // Clave foránea a Venta
-        public Venta Venta { get; set; }                     // Navegación EF
+        private decimal precioProducto;
+        private int idDetallevta;
+        private int cantidad;
 
-        public int LibroId { get; set; }                     // Clave foránea a Libro
-        public Libro Libro { get; set; }                     // Navegación EF
+        public decimal PrecioProducto
+        {
+            get { return precioProducto; }
+            set { precioProducto = value; }
+        }
 
-        public int Cantidad { get; set; }                    // Cantidad de ejemplares
-        public decimal PrecioUnitario { get; set; }          // Precio en el momento de la venta
+        public int IdDetallevta
+        {
+            get { return idDetallevta; }
+            set { idDetallevta = value; }
+        }
+
+        public int Cantidad
+        {
+            get { return cantidad; }
+            set { cantidad = value; }
+        }
+
+        public decimal CalcularSubtotal()
+        {
+            return 0;
+        }
+
+        public void ImprimirFC()
+        {
+
+        }
+
+        public void AlertaStock()
+        {
+
+        }       
     }
 }
 

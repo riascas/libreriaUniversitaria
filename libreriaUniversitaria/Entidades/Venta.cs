@@ -8,19 +8,56 @@ namespace LibreriaUniversitaria.Entidades
 {
     public class Venta
     {
-        public int Id { get; set; }                     // ID de la venta
-        public int ClienteId { get; set; }              // FK al cliente que compra
-        public Cliente Cliente { get; set; }                 // Navegación EF
+        private int idVenta;
+        private DateTime fechaVenta;
+        private int cantidad;
+        private decimal total;
 
-        public List<DetalleVenta> Detalles { get; set; }     // Relación uno a muchos
-        public decimal Total { get; set; }                   // Total (puede calcularse)
-        public DateTime FechaVenta { get; set; }        // Fecha de la venta
-
-        // Constructor vacío inicializa lista para evitar nulls
-        public Venta()
+        public int IdVenta
         {
-            Detalles = new List<DetalleVenta>();
+            get { return idVenta; }
+            set { idVenta = value; }
         }
+
+        public DateTime FechaVenta
+        {
+            get { return fechaVenta; }
+            set { fechaVenta = value; }
+        }
+
+        public int Cantidad
+        {
+            get { return cantidad; }
+            set { cantidad = value; }
+        }
+
+        public decimal Total
+        {
+            get { return total; }
+            set { total = value; }
+        }
+
+        public void RealizarVenta()
+        {
+
+        }
+
+        public void CalcularAplicarDescuento()
+        {
+
+        }
+
+        public decimal CalcularTotal()
+        {
+            return 0;
+        }
+
+        public void FinalizarVenta()
+        {
+
+        }
+
+
     }
 }
 
