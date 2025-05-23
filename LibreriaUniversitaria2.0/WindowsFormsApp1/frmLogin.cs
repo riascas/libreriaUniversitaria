@@ -47,7 +47,7 @@ namespace WindowsFormsApp1
                 {
                     if (usuario == "esmilce" && password == "123")
                     {
-                        MessageBox.Show("Bienvenido" + textBox1.Text + "Usuario registrado");
+                        MessageBox.Show("Bienvenido\n\n" + textBox1.Text + "\n\n Usuario registrado");
                     }
                     else
                     {
@@ -61,6 +61,11 @@ namespace WindowsFormsApp1
         private void frm_closing(object sender, FormClosingEventArgs e)
         {
             this.Show();
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

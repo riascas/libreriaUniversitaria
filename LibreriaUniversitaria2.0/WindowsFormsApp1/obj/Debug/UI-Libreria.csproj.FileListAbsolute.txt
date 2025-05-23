@@ -31,3 +31,14 @@ C:\Users\documentos\Downloads\LibreriaUniversitaria2.0\LibreriaUniversitaria2.0\
 C:\Users\documentos\Downloads\LibreriaUniversitaria2.0\LibreriaUniversitaria2.0\WindowsFormsApp1\obj\Debug\UI-Libreria.csproj.CoreCompileInputs.cache
 C:\Users\documentos\Downloads\LibreriaUniversitaria2.0\LibreriaUniversitaria2.0\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.exe
 C:\Users\documentos\Downloads\LibreriaUniversitaria2.0\LibreriaUniversitaria2.0\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.pdb
+C:\xampp2\htdocs\libreriaUniversitaria\LibreriaUniversitaria2.0\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.exe.config
+C:\xampp2\htdocs\libreriaUniversitaria\LibreriaUniversitaria2.0\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.exe
+C:\xampp2\htdocs\libreriaUniversitaria\LibreriaUniversitaria2.0\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.pdb
+C:\xampp2\htdocs\libreriaUniversitaria\LibreriaUniversitaria2.0\WindowsFormsApp1\obj\Debug\UI-Libreria.csproj.AssemblyReference.cache
+C:\xampp2\htdocs\libreriaUniversitaria\LibreriaUniversitaria2.0\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.frmLogin.resources
+C:\xampp2\htdocs\libreriaUniversitaria\LibreriaUniversitaria2.0\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.frmMenu.resources
+C:\xampp2\htdocs\libreriaUniversitaria\LibreriaUniversitaria2.0\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Properties.Resources.resources
+C:\xampp2\htdocs\libreriaUniversitaria\LibreriaUniversitaria2.0\WindowsFormsApp1\obj\Debug\UI-Libreria.csproj.GenerateResource.cache
+C:\xampp2\htdocs\libreriaUniversitaria\LibreriaUniversitaria2.0\WindowsFormsApp1\obj\Debug\UI-Libreria.csproj.CoreCompileInputs.cache
+C:\xampp2\htdocs\libreriaUniversitaria\LibreriaUniversitaria2.0\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.exe
+C:\xampp2\htdocs\libreriaUniversitaria\LibreriaUniversitaria2.0\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.pdb
