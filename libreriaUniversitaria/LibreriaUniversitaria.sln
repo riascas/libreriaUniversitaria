@@ -10,7 +10,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LogicaNegocio", "LogicaNego
 		{75635B3D-1599-4F33-862A-B129689B034F} = {75635B3D-1599-4F33-862A-B129689B034F}
 	EndProjectSection
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Persistencia", "Persistencia\Persistencia.csproj", "{75635B3D-1599-4F33-862A-B129689B034F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Datos", "Persistencia\Datos.csproj", "{75635B3D-1599-4F33-862A-B129689B034F}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Presentacion", "Presentacion\Presentacion.csproj", "{099C1E6D-3E72-4399-A56D-4660B349A611}"
 EndProject
