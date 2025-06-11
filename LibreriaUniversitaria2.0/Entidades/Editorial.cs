@@ -6,40 +6,40 @@ using System.Threading.Tasks;
 
 namespace LibreriaUniversitaria.Entidades
 {
+    // Clase que representa una editorial de libros
     public class Editorial
     {
-        private int idEditorial;
-        private string nombreEditorial;
-        private long cuit;
-        private string telefono;
+        // Atributos privados
+        private int _idEditorial;
+        private string _nombre;
 
+        // Propiedades publicas
         public int IdEditorial
         {
-            get { return idEditorial; }
-            set { idEditorial = value; }
+            get { return _idEditorial; }
+            set { _idEditorial = value; }
         }
 
-        public string NombreEditorial
+        public string Nombre
         {
-            get { return nombreEditorial; }
-            set { nombreEditorial = value; }
+            get { return _nombre; }
+            set { _nombre = value; }
         }
 
-        public long Cuit
+        // Constructor vacio
+        public Editorial() { }
+
+        // Constructor con parametros
+        public Editorial(int idEditorial, string nombre)
         {
-            get { return cuit; }
-            set { cuit = value; }
+            _idEditorial = idEditorial;
+            _nombre = nombre;
         }
 
-        public string Telefono
+        // Metodo ToString para mostrar el nombre de la editorial en comboBox o listas
+        public override string ToString()
         {
-            get { return telefono; }
-            set { telefono = value; }
-        }
-
-        public void CargarEditorial()
-        {
-
+            return Nombre;
         }
     }
 }

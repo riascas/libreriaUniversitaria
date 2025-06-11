@@ -6,21 +6,22 @@ using System.Threading.Tasks;
 
 namespace LibreriaUniversitaria.Entidades
 {
-    // Clase que representa una venta realizada a un cliente
-    public class Venta
+    // Clase que representa una reserva de libros realizada por un cliente
+    public class Reserva
     {
         // Atributos privados
-        private int _idVenta;
+        private int _idReserva;
         private DateTime _fecha;
         private Cliente _cliente;
         private Empleado _empleado;
-        private List<DetalleVenta> _detalles;
+        private EstadoReserva _estado;
+        private List<DetalleReserva> _detalles;
 
         // Propiedades publicas
-        public int IdVenta
+        public int IdReserva
         {
-            get { return _idVenta; }
-            set { _idVenta = value; }
+            get { return _idReserva; }
+            set { _idReserva = value; }
         }
 
         public DateTime Fecha
@@ -41,29 +42,36 @@ namespace LibreriaUniversitaria.Entidades
             set { _empleado = value; }
         }
 
-        public List<DetalleVenta> Detalles
+        public EstadoReserva Estado
+        {
+            get { return _estado; }
+            set { _estado = value; }
+        }
+
+        public List<DetalleReserva> Detalles
         {
             get { return _detalles; }
             set { _detalles = value; }
         }
 
         // Constructor vacio
-        public Venta()
+        public Reserva()
         {
-            _detalles = new List<DetalleVenta>();
+            _detalles = new List<DetalleReserva>();
         }
 
         // Constructor con parametros
-        public Venta(int idVenta, DateTime fecha, Cliente cliente, Empleado empleado, List<DetalleVenta> detalles)
+        public Reserva(int idReserva, DateTime fecha, Cliente cliente, Empleado empleado, EstadoReserva estado, List<DetalleReserva> detalles)
         {
-            _idVenta = idVenta;
+            _idReserva = idReserva;
             _fecha = fecha;
             _cliente = cliente;
             _empleado = empleado;
-            _detalles = detalles ?? new List<DetalleVenta>();
+            _estado = estado;
+            _detalles = detalles ?? new List<DetalleReserva>();
         }
 
-        // Metodo para calcular el total de la venta
+        // Metodo para calcular el total de la reserva
         public decimal CalcularTotal()
         {
             decimal total = 0;
@@ -75,4 +83,3 @@ namespace LibreriaUniversitaria.Entidades
         }
     }
 }
-

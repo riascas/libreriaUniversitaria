@@ -1,5 +1,4 @@
-﻿using LibreriaUniversitaria.Entidades;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -7,24 +6,24 @@ using System.Threading.Tasks;
 
 namespace LibreriaUniversitaria.Entidades
 {
-    // Clase que representa un item (libro) dentro de una venta
-    public class DetalleVenta : ADetalle
+    // Clase que representa un item (libro) dentro de una reserva
+    public class DetalleReserva : ADetalle
     {
-        private int _idDetalleVenta;
+        private int _idDetalleReserva;
 
-        public int IdDetalleVenta
+        public int IdDetalleReserva
         {
-            get { return _idDetalleVenta; }
-            set { _idDetalleVenta = value; }
+            get { return _idDetalleReserva; }
+            set { _idDetalleReserva = value; }
         }
 
         // Constructor vacio
-        public DetalleVenta() { }
+        public DetalleReserva() { }
 
         // Constructor con parametros
-        public DetalleVenta(int idDetalleVenta, Libro libro, int cantidad)
+        public DetalleReserva(int idDetalleReserva, Libro libro, int cantidad)
         {
-            _idDetalleVenta = idDetalleVenta;
+            _idDetalleReserva = idDetalleReserva;
             _libro = libro;
             _cantidad = cantidad;
         }

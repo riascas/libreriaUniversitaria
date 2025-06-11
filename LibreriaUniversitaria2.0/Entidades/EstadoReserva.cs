@@ -5,19 +5,20 @@ using System.Text;
 using System.Threading.Tasks;
 
 namespace LibreriaUniversitaria.Entidades
+
 {
-    // Clase que representa un rol de usuario en el sistema (Administrador, Vendedor, etc.)
-    public class Rol
+    // Clase que representa el estado de una reserva (Pendiente, Vendida, Vencida, Cancelada)
+    public class EstadoReserva
     {
         // Atributos privados
-        private int _idRol;
+        private int _idEstado;
         private string _nombre;
 
         // Propiedades publicas
-        public int IdRol
+        public int IdEstado
         {
-            get { return _idRol; }
-            set { _idRol = value; }
+            get { return _idEstado; }
+            set { _idEstado = value; }
         }
 
         public string Nombre
@@ -26,17 +27,17 @@ namespace LibreriaUniversitaria.Entidades
             set { _nombre = value; }
         }
 
-        // Constructor vacio (requerido por frameworks y formularios)
-        public Rol() { }
+        // Constructor vacio
+        public EstadoReserva() { }
 
         // Constructor con parametros
-        public Rol(int idRol, string nombre)
+        public EstadoReserva(int idEstado, string nombre)
         {
-            _idRol = idRol;
+            _idEstado = idEstado;
             _nombre = nombre;
         }
 
-        // Metodo ToString para mostrar el nombre del rol en comboBox o grillas
+        // Metodo ToString para mostrar el nombre del estado
         public override string ToString()
         {
             return Nombre;
