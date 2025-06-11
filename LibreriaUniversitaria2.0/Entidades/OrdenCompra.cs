@@ -4,63 +4,74 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Entidades
+namespace LibreriaUniversitaria.Entidades
 {
+    // Clase que representa una orden de compra realizada a una editorial
     public class OrdenCompra
     {
-        private int idCompra;
-        private DateTime fechaCompra;
-        private int cantidad;
-        private decimal total;
-        private string detalle;
-        private string editorial;
-        private string estado;
+        // Atributos privados
+        private int _idCompra;
+        private DateTime _fecha;
+        private Editorial _editorial;
+        private Empleado _empleado;
+        private List<DetalleCompra> _detalles;
 
+        // Propiedades publicas
         public int IdCompra
         {
-            get { return idCompra; }
-            set { idCompra = value; }
+            get { return _idCompra; }
+            set { _idCompra = value; }
         }
 
-        public DateTime FechaCompra
+        public DateTime Fecha
         {
-            get { return fechaCompra; }
-            set { fechaCompra = value; }
+            get { return _fecha; }
+            set { _fecha = value; }
         }
 
-        public int Cantidad
+        public Editorial Editorial
         {
-            get { return cantidad; }
-            set { cantidad = value; }
+            get { return _editorial; }
+            set { _editorial = value; }
         }
 
-        public decimal Total
+        public Empleado Empleado
         {
-            get { return total; }
-            set { total = value; }
+            get { return _empleado; }
+            set { _empleado = value; }
         }
 
-        public string Detalle
+        public List<DetalleCompra> Detalles
         {
-            get { return detalle; }
-            set { detalle = value; }
+            get { return _detalles; }
+            set { _detalles = value; }
         }
 
-        public string Editorial
+        // Constructor vacio
+        public OrdenCompra()
         {
-            get { return editorial; }
-            set { editorial = value; }
+            _detalles = new List<DetalleCompra>();
         }
 
-        public string Estado
+        // Constructor con parametros
+        public OrdenCompra(int idCompra, DateTime fecha, Editorial editorial, Empleado empleado, List<DetalleCompra> detalles)
         {
-            get { return estado; }
-            set { estado = value; }
+            _idCompra = idCompra;
+            _fecha = fecha;
+            _editorial = editorial;
+            _empleado = empleado;
+            _detalles = detalles ?? new List<DetalleCompra>();
         }
 
-        public void RealizarCompra()
+        // Metodo para calcular el total de la orden
+        public decimal CalcularTotal()
         {
-
+            decimal total = 0;
+            foreach (var detalle in _detalles)
+            {
+                total += detalle.Subtotal();
+            }
+            return total;
         }
     }
 }

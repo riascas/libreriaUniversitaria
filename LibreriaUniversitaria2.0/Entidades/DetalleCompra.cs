@@ -1,30 +1,30 @@
-﻿using LibreriaUniversitaria.Entidades;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System;
 
 namespace LibreriaUniversitaria.Entidades
 {
-    // Clase que representa un item (libro) dentro de una venta
-    public class DetalleVenta : ADetalle
+    // Clase que representa un item dentro de una orden de compra (libro y cantidad)
+    public class DetalleCompra : ADetalle
     {
-        private int _idDetalleVenta;
+        private int _idDetalleCompra;
 
-        public int IdDetalleVenta
+        public int IdDetalleCompra
         {
-            get { return _idDetalleVenta; }
-            set { _idDetalleVenta = value; }
+            get { return _idDetalleCompra; }
+            set { _idDetalleCompra = value; }
         }
 
         // Constructor vacio
-        public DetalleVenta() { }
+        public DetalleCompra() { }
 
         // Constructor con parametros
-        public DetalleVenta(int idDetalleVenta, Libro libro, int cantidad)
+        public DetalleCompra(int idDetalleCompra, Libro libro, int cantidad)
         {
-            _idDetalleVenta = idDetalleVenta;
+            _idDetalleCompra = idDetalleCompra;
             _libro = libro;
             _cantidad = cantidad;
         }
@@ -35,6 +35,7 @@ namespace LibreriaUniversitaria.Entidades
             return _libro.Precio * _cantidad;
         }
 
+        // Metodo ToString para mostrar la descripcion del item
         public override string ToString()
         {
             return $"{Libro.Titulo} x{Cantidad} - ${Subtotal():0.00}";

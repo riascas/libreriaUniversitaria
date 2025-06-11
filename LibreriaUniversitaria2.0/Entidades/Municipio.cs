@@ -6,18 +6,18 @@ using System.Threading.Tasks;
 
 namespace LibreriaUniversitaria.Entidades
 {
-    // Clase que representa un rol de usuario en el sistema (Administrador, Vendedor, etc.)
-    public class Rol
+    // Clase que representa un municipio (region o departamento)
+    public class Municipio
     {
         // Atributos privados
-        private int _idRol;
+        private int _idMunicipio;
         private string _nombre;
 
         // Propiedades publicas
-        public int IdRol
+        public int IdMunicipio
         {
-            get { return _idRol; }
-            set { _idRol = value; }
+            get { return _idMunicipio; }
+            set { _idMunicipio = value; }
         }
 
         public string Nombre
@@ -26,17 +26,17 @@ namespace LibreriaUniversitaria.Entidades
             set { _nombre = value; }
         }
 
-        // Constructor vacio (requerido por frameworks y formularios)
-        public Rol() { }
+        // Constructor vacio
+        public Municipio() { }
 
         // Constructor con parametros
-        public Rol(int idRol, string nombre)
+        public Municipio(int idMunicipio, string nombre)
         {
-            _idRol = idRol;
+            _idMunicipio = idMunicipio;
             _nombre = nombre;
         }
 
-        // Metodo ToString para mostrar el nombre del rol en comboBox o grillas
+        // Metodo ToString para mostrar el nombre del municipio
         public override string ToString()
         {
             return Nombre;

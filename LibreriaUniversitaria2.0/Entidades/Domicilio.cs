@@ -4,64 +4,58 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Entidades
+namespace LibreriaUniversitaria.Entidades
 {
+    // Clase que representa un domicilio (direccion) de un cliente
     public class Domicilio
     {
-        private int idDomicilio;
-        private string calle;
-        private string localidad;
-        private string partido;
-        private int altura;
-        private string provincia;
-        private string pais;
+        // Atributos privados
+        private int _idDomicilio;
+        private string _calle;
+        private string _numero;
+        private string _codigoPostal;
 
+        // Propiedades publicas
         public int IdDomicilio
         {
-            get { return idDomicilio; }
-            set { idDomicilio = value; }
+            get { return _idDomicilio; }
+            set { _idDomicilio = value; }
         }
 
         public string Calle
         {
-            get { return calle; }
-            set { calle = value; }
+            get { return _calle; }
+            set { _calle = value; }
         }
 
-        public string Localidad
+        public string Numero
         {
-            get { return localidad; }
-            set { localidad = value; }
+            get { return _numero; }
+            set { _numero = value; }
         }
 
-        public string Partido
+        public string CodigoPostal
         {
-            get { return partido; }
-            set { partido = value; }
+            get { return _codigoPostal; }
+            set { _codigoPostal = value; }
         }
 
-        public int Altura
+        // Constructor vacio
+        public Domicilio() { }
+
+        // Constructor con parametros
+        public Domicilio(int idDomicilio, string calle, string numero, string codigoPostal)
         {
-            get { return altura; }
-            set { altura = value; }
+            _idDomicilio = idDomicilio;
+            _calle = calle;
+            _numero = numero;
+            _codigoPostal = codigoPostal;
         }
 
-        public string Provincia
+        // Metodo ToString para mostrar la direccion formateada
+        public override string ToString()
         {
-            get { return provincia; }
-            set { provincia = value; }
+            return $"{Calle} {Numero} (CP: {CodigoPostal})";
         }
-
-        public string Pais
-        {
-            get { return pais; }
-            set { pais = value; }
-        }
-
-        public void CargarDomicilio()
-        {
-
-        }
-
     }
 }
