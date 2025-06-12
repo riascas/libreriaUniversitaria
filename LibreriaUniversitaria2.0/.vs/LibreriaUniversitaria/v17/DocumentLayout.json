@@ -3,6 +3,14 @@
   "WorkspaceRootPath": "C:\\Users\\94603850\\source\\repos\\libreriaUniversitaria\\LibreriaUniversitaria2.0\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{CAC7312C-C744-418B-8776-A1568295B2F8}|Datos\\Datos.csproj|c:\\users\\94603850\\source\\repos\\libreriauniversitaria\\libreriauniversitaria2.0\\datos\\librorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CAC7312C-C744-418B-8776-A1568295B2F8}|Datos\\Datos.csproj|solutionrelative:datos\\librorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CAC7312C-C744-418B-8776-A1568295B2F8}|Datos\\Datos.csproj|c:\\users\\94603850\\source\\repos\\libreriauniversitaria\\libreriauniversitaria2.0\\datos\\clienterepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CAC7312C-C744-418B-8776-A1568295B2F8}|Datos\\Datos.csproj|solutionrelative:datos\\clienterepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{CAC7312C-C744-418B-8776-A1568295B2F8}|Datos\\Datos.csproj|c:\\users\\94603850\\source\\repos\\libreriauniversitaria\\libreriauniversitaria2.0\\datos\\dbhelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{CAC7312C-C744-418B-8776-A1568295B2F8}|Datos\\Datos.csproj|solutionrelative:datos\\dbhelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -70,19 +78,45 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "LibroRepository.cs",
+              "DocumentMoniker": "C:\\Users\\94603850\\source\\repos\\libreriaUniversitaria\\LibreriaUniversitaria2.0\\Datos\\LibroRepository.cs",
+              "RelativeDocumentMoniker": "Datos\\LibroRepository.cs",
+              "ToolTip": "C:\\Users\\94603850\\source\\repos\\libreriaUniversitaria\\LibreriaUniversitaria2.0\\Datos\\LibroRepository.cs",
+              "RelativeToolTip": "Datos\\LibroRepository.cs",
+              "ViewState": "AQIAAJIAAAAAAAAAAAAAAAYAAAAGAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-12T12:18:17.508Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ClienteRepository.cs",
+              "DocumentMoniker": "C:\\Users\\94603850\\source\\repos\\libreriaUniversitaria\\LibreriaUniversitaria2.0\\Datos\\ClienteRepository.cs",
+              "RelativeDocumentMoniker": "Datos\\ClienteRepository.cs",
+              "ToolTip": "C:\\Users\\94603850\\source\\repos\\libreriaUniversitaria\\LibreriaUniversitaria2.0\\Datos\\ClienteRepository.cs",
+              "RelativeToolTip": "Datos\\ClienteRepository.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-12T12:13:03.913Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "DbHelper.cs",
               "DocumentMoniker": "C:\\Users\\94603850\\source\\repos\\libreriaUniversitaria\\LibreriaUniversitaria2.0\\Datos\\DbHelper.cs",
               "RelativeDocumentMoniker": "Datos\\DbHelper.cs",
               "ToolTip": "C:\\Users\\94603850\\source\\repos\\libreriaUniversitaria\\LibreriaUniversitaria2.0\\Datos\\DbHelper.cs",
               "RelativeToolTip": "Datos\\DbHelper.cs",
-              "ViewState": "AQIAAA8AAAAAAAAAAAAAAAUAAAAAAAAA",
+              "ViewState": "AQIAAA8AAAAAAAAAAAAAABcAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-06-12T12:05:55.887Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "App.config",
               "DocumentMoniker": "C:\\Users\\94603850\\source\\repos\\libreriaUniversitaria\\LibreriaUniversitaria2.0\\WindowsFormsApp1\\App.config",
               "RelativeDocumentMoniker": "WindowsFormsApp1\\App.config",
@@ -95,7 +129,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 4,
               "Title": ".gitignore",
               "DocumentMoniker": "C:\\Users\\94603850\\source\\repos\\libreriaUniversitaria\\LibreriaUniversitaria2.0\\.gitignore",
               "RelativeDocumentMoniker": ".gitignore",
@@ -108,7 +142,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 7,
               "Title": "APersona.cs",
               "DocumentMoniker": "C:\\Users\\94603850\\Downloads\\Entidades\\APersona.cs",
               "RelativeDocumentMoniker": "..\\..\\..\\..\\Downloads\\Entidades\\APersona.cs",
@@ -120,7 +154,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 8,
               "Title": "DetalleCompra.cs",
               "DocumentMoniker": "C:\\Users\\94603850\\source\\repos\\libreriaUniversitaria\\LibreriaUniversitaria2.0\\Entidades\\DetalleCompra.cs",
               "RelativeDocumentMoniker": "Entidades\\DetalleCompra.cs",
@@ -132,7 +166,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 9,
               "Title": "DetalleReserva.cs",
               "DocumentMoniker": "C:\\Users\\94603850\\source\\repos\\libreriaUniversitaria\\LibreriaUniversitaria2.0\\Entidades\\DetalleReserva.cs",
               "RelativeDocumentMoniker": "Entidades\\DetalleReserva.cs",
@@ -144,7 +178,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 10,
               "Title": "DetalleVenta.cs",
               "DocumentMoniker": "C:\\Users\\94603850\\source\\repos\\libreriaUniversitaria\\LibreriaUniversitaria2.0\\Entidades\\DetalleVenta.cs",
               "RelativeDocumentMoniker": "Entidades\\DetalleVenta.cs",
@@ -156,7 +190,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 11,
               "Title": "ADetalle.cs",
               "DocumentMoniker": "C:\\Users\\94603850\\source\\repos\\libreriaUniversitaria\\LibreriaUniversitaria2.0\\Entidades\\ADetalle.cs",
               "RelativeDocumentMoniker": "Entidades\\ADetalle.cs",
@@ -168,7 +202,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 6,
               "Title": "Empleado.cs",
               "DocumentMoniker": "C:\\Users\\94603850\\source\\repos\\libreriaUniversitaria\\LibreriaUniversitaria2.0\\Entidades\\Empleado.cs",
               "RelativeDocumentMoniker": "Entidades\\Empleado.cs",
@@ -180,7 +214,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 5,
               "Title": "Cliente.cs",
               "DocumentMoniker": "C:\\Users\\94603850\\source\\repos\\libreriaUniversitaria\\LibreriaUniversitaria2.0\\Entidades\\Cliente.cs",
               "RelativeDocumentMoniker": "Entidades\\Cliente.cs",
@@ -192,7 +226,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 12,
               "Title": "APersona.cs",
               "DocumentMoniker": "C:\\Users\\94603850\\source\\repos\\libreriaUniversitaria\\LibreriaUniversitaria2.0\\Entidades\\APersona.cs",
               "RelativeDocumentMoniker": "Entidades\\APersona.cs",
