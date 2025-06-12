@@ -1,15 +1,15 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\94603850\\Source\\Repos\\libreriaUniversitaria\\LibreriaUniversitaria2.0\\Entidades\\Entidades.csproj": {}
+    "C:\\Users\\94603850\\source\\repos\\libreriaUniversitaria\\LibreriaUniversitaria2.0\\Entidades\\Entidades.csproj": {}
   },
   "projects": {
-    "C:\\Users\\94603850\\Source\\Repos\\libreriaUniversitaria\\LibreriaUniversitaria2.0\\Entidades\\Entidades.csproj": {
+    "C:\\Users\\94603850\\source\\repos\\libreriaUniversitaria\\LibreriaUniversitaria2.0\\Entidades\\Entidades.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\94603850\\Source\\Repos\\libreriaUniversitaria\\LibreriaUniversitaria2.0\\Entidades\\Entidades.csproj",
+        "projectUniqueName": "C:\\Users\\94603850\\source\\repos\\libreriaUniversitaria\\LibreriaUniversitaria2.0\\Entidades\\Entidades.csproj",
         "projectName": "Entidades",
-        "projectPath": "C:\\Users\\94603850\\Source\\Repos\\libreriaUniversitaria\\LibreriaUniversitaria2.0\\Entidades\\Entidades.csproj",
+        "projectPath": "C:\\Users\\94603850\\source\\repos\\libreriaUniversitaria\\LibreriaUniversitaria2.0\\Entidades\\Entidades.csproj",
         "packagesPath": "C:\\Users\\94603850\\.nuget\\packages\\",
         "outputPath": "C:\\Users\\94603850\\Source\\Repos\\libreriaUniversitaria\\LibreriaUniversitaria2.0\\Entidades\\obj\\",
         "projectStyle": "PackageReference",
