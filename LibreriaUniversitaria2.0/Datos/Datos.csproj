@@ -44,7 +44,9 @@
   <ItemGroup>
     <Compile Include="ClienteRepository.cs" />
     <Compile Include="DbHelper.cs" />
+    <Compile Include="DetalleReservaRepository.cs" />
     <Compile Include="EditorialRepository.cs" />
+    <Compile Include="EstadoReservaRepository.cs" />
     <Compile Include="LibroRepository.cs" />
     <Compile Include="OrdenCompraRepository.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

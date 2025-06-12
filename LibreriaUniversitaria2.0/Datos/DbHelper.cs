@@ -1,23 +1,27 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Configuration;
+﻿using System.Data.SqlClient;
 
-namespace Libreria.DAL
+namespace LibreriaUniversitaria.Datos
 {
     /// <summary>
-    /// Clase auxiliar para acceder a la cadena de conexión definida en App.config
+    /// Clase helper para acceder a la base de datos.
+    /// Contiene la cadena de conexión y métodos reutilizables.
     /// </summary>
     public static class DbHelper
     {
-        public static string CadenaConexion
+        // Cadena de conexión fija. 
+        private static string cadenaConexion = "Data Source=.;Initial Catalog=LibreriaUniversitaria;Integrated Security=True";
+
+        /// <summary>
+        /// Permite acceder a la cadena de conexión desde otros repositorios.
+        /// </summary>
+        public static string CadenaConexion => cadenaConexion;
+
+        /// <summary>
+        /// Devuelve una nueva conexión SQL ya configurada.
+        /// </summary>
+        public static SqlConnection ObtenerConexion()
         {
-            get
-            {
-                return ConfigurationManager.ConnectionStrings["ConexionBD"].ConnectionString;
-            }
+            return new SqlConnection(cadenaConexion);
         }
     }
 }

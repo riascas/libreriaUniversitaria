@@ -6,78 +6,71 @@ using System.Threading.Tasks;
 
 namespace LibreriaUniversitaria.Entidades
 {
-    // Clase que representa una reserva de libros realizada por un cliente
+    /// <summary>
+    /// Clase que representa una reserva de libros realizada por un cliente.
+    /// </summary>
     public class Reserva
     {
-        // Atributos privados
-        private int _idReserva;
-        private DateTime _fecha;
-        private Cliente _cliente;
-        private Empleado _empleado;
-        private EstadoReserva _estado;
-        private List<DetalleReserva> _detalles;
+        /// <summary>
+        /// Identificador único de la reserva.
+        /// </summary>
+        public int IdReserva { get; set; }
 
-        // Propiedades publicas
-        public int IdReserva
-        {
-            get { return _idReserva; }
-            set { _idReserva = value; }
-        }
+        /// <summary>
+        /// Fecha en la que se realizó la reserva.
+        /// </summary>
+        public DateTime FechaReserva { get; set; }
 
-        public DateTime Fecha
-        {
-            get { return _fecha; }
-            set { _fecha = value; }
-        }
+        /// <summary>
+        /// Cliente que realizó la reserva.
+        /// </summary>
+        public Cliente Cliente { get; set; }
 
-        public Cliente Cliente
-        {
-            get { return _cliente; }
-            set { _cliente = value; }
-        }
+        /// <summary>
+        /// Lista de ítems reservados (DetalleReserva).
+        /// </summary>
+        public List<DetalleReserva> Items { get; set; }
 
-        public Empleado Empleado
-        {
-            get { return _empleado; }
-            set { _empleado = value; }
-        }
+        /// <summary>
+        /// Estado actual de la reserva (ej: Pendiente, Confirmada, Vencida).
+        /// </summary>
+        public EstadoReserva Estado { get; set; }
 
-        public EstadoReserva Estado
-        {
-            get { return _estado; }
-            set { _estado = value; }
-        }
-
-        public List<DetalleReserva> Detalles
-        {
-            get { return _detalles; }
-            set { _detalles = value; }
-        }
-
-        // Constructor vacio
+        /// <summary>
+        /// Constructor por defecto que inicializa la lista de ítems y la fecha actual.
+        /// </summary>
         public Reserva()
         {
-            _detalles = new List<DetalleReserva>();
+            Items = new List<DetalleReserva>();
+            FechaReserva = DateTime.Now;
         }
 
-        // Constructor con parametros
-        public Reserva(int idReserva, DateTime fecha, Cliente cliente, Empleado empleado, EstadoReserva estado, List<DetalleReserva> detalles)
+        /// <summary>
+        /// Constructor con parámetros para inicializar una reserva.
+        /// </summary>
+        /// <param name="idReserva">ID de la reserva</param>
+        /// <param name="fecha">Fecha de la reserva</param>
+        /// <param name="cliente">Cliente que realizó la reserva</param>
+        /// <param name="estado">Estado actual de la reserva</param>
+        public Reserva(int idReserva, DateTime fecha, Cliente cliente, EstadoReserva estado)
         {
-            _idReserva = idReserva;
-            _fecha = fecha;
-            _cliente = cliente;
-            _empleado = empleado;
-            _estado = estado;
-            _detalles = detalles ?? new List<DetalleReserva>();
+            IdReserva = idReserva;
+            FechaReserva = fecha;
+            Cliente = cliente;
+            Estado = estado;
+            Items = new List<DetalleReserva>();
         }
 
-        // Metodo para calcular el total de la reserva
-        public decimal CalcularTotal()
+        /// <summary>
+        /// Calcula el total de la reserva sumando los subtotales de cada ítem.
+        /// </summary>
+        /// <returns>Total en pesos</returns>
+        public decimal Total()
         {
             decimal total = 0;
-            foreach (var detalle in _detalles)
+            foreach (var item in Items)
             {
-                total += detalle.Subtotal();
+                total += item.Subtotal();
             }
             return total;
         }

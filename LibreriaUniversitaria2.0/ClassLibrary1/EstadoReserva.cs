@@ -5,39 +5,56 @@ using System.Text;
 using System.Threading.Tasks;
 
 namespace LibreriaUniversitaria.Entidades
-
 {
-    // Clase que representa el estado de una reserva (Pendiente, Vendida, Vencida, Cancelada)
+    /// <summary>
+    /// Clase que representa el estado actual de una reserva (Pendiente, Vendida, Vencida, Cancelada).
+    /// </summary>
     public class EstadoReserva
     {
-        // Atributos privados
-        private int _idEstado;
+        // Campo privado para el ID del estado
+        private int _idEstadoReserva;
+
+        // Campo privado para el nombre del estado
         private string _nombre;
 
-        // Propiedades publicas
-        public int IdEstado
+        /// <summary>
+        /// Identificador único del estado.
+        /// </summary>
+        public int IdEstadoReserva
         {
-            get { return _idEstado; }
-            set { _idEstado = value; }
+            get { return _idEstadoReserva; }
+            set { _idEstadoReserva = value; }
         }
 
+        /// <summary>
+        /// Nombre descriptivo del estado (por ejemplo: Pendiente, Confirmada).
+        /// </summary>
         public string Nombre
         {
             get { return _nombre; }
             set { _nombre = value; }
         }
 
-        // Constructor vacio
+        /// <summary>
+        /// Constructor vacío requerido por buenas prácticas y herramientas de serialización.
+        /// </summary>
         public EstadoReserva() { }
 
-        // Constructor con parametros
-        public EstadoReserva(int idEstado, string nombre)
+        /// <summary>
+        /// Constructor con parámetros para inicializar un estado de reserva.
+        /// </summary>
+        /// <param name="idEstadoReserva">ID del estado</param>
+        /// <param name="nombre">Nombre del estado</param>
+        public EstadoReserva(int idEstadoReserva, string nombre)
         {
-            _idEstado = idEstado;
+            _idEstadoReserva = idEstadoReserva;
             _nombre = nombre;
         }
 
-        // Metodo ToString para mostrar el nombre del estado
+        /// <summary>
+        /// Representación textual del objeto, útil para listas desplegables.
+        /// </summary>
+        /// <returns>Nombre del estado</returns>
         public override string ToString()
         {
             return Nombre;

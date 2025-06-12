@@ -5,6 +5,8 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Data.SqlClient;
 using LibreriaUniversitaria.Entidades;
+using LibreriaUniversitaria.Datos;
+
 
 namespace Libreria.DAL
 {
