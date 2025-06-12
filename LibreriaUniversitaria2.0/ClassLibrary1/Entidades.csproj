@@ -4,11 +4,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{87D18F19-1DBC-4214-9418-91F6EB32CE05}</ProjectGuid>
+    <ProjectGuid>{2071F030-A7DD-4595-A4C9-845E46954CE9}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>LogicaNegocio</RootNamespace>
-    <AssemblyName>LogicaNegocio</AssemblyName>
+    <RootNamespace>ClassLibrary1</RootNamespace>
+    <AssemblyName>ClassLibrary1</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <Deterministic>true</Deterministic>
@@ -41,24 +41,25 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="ClienteService.cs" />
-    <Compile Include="EditorialService.cs" />
-    <Compile Include="LibroService.cs" />
-    <Compile Include="OrdenCompraService.cs" />
+    <Compile Include="ADetalle.cs" />
+    <Compile Include="APersona.cs" />
+    <Compile Include="Cliente.cs" />
+    <Compile Include="DetalleCompra.cs" />
+    <Compile Include="DetalleReserva.cs" />
+    <Compile Include="DetalleVenta.cs" />
+    <Compile Include="Domicilio.cs" />
+    <Compile Include="Editorial.cs" />
+    <Compile Include="Empleado.cs" />
+    <Compile Include="EstadoReserva.cs" />
+    <Compile Include="Libro.cs" />
+    <Compile Include="Localidad.cs" />
+    <Compile Include="MovimientoStock.cs" />
+    <Compile Include="Municipio.cs" />
+    <Compile Include="OrdenCompra.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="ReservaService.cs" />
-    <Compile Include="UsuarioService.cs" />
-    <Compile Include="VentaService.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\ClassLibrary1\Entidades.csproj">
-      <Project>{2071f030-a7dd-4595-a4c9-845e46954ce9}</Project>
-      <Name>Entidades</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\Datos\Datos.csproj">
-      <Project>{cac7312c-c744-418b-8776-a1568295b2f8}</Project>
-      <Name>Datos</Name>
-    </ProjectReference>
+    <Compile Include="Reserva.cs" />
+    <Compile Include="Rol.cs" />
+    <Compile Include="Venta.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

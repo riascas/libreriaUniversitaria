@@ -10,3 +10,11 @@ C:\Users\Alex\Desktop\Libreria\libreriaUniversitaria\libreriaUniversitaria\Entid
 C:\Users\Alex\Desktop\Libreria\libreriaUniversitaria\libreriaUniversitaria\Entidades\obj\Debug\net8.0\refint\Entidades.dll
 C:\Users\Alex\Desktop\Libreria\libreriaUniversitaria\libreriaUniversitaria\Entidades\obj\Debug\net8.0\Entidades.pdb
 C:\Users\Alex\Desktop\Libreria\libreriaUniversitaria\libreriaUniversitaria\Entidades\obj\Debug\net8.0\ref\Entidades.dll
+C:\Users\94603850\source\repos\libreriaUniversitaria\LibreriaUniversitaria2.0\Entidades\obj\Debug\net8.0\Entidades.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\94603850\source\repos\libreriaUniversitaria\LibreriaUniversitaria2.0\Entidades\obj\Debug\net8.0\Entidades.AssemblyInfoInputs.cache
+C:\Users\94603850\source\repos\libreriaUniversitaria\LibreriaUniversitaria2.0\Entidades\obj\Debug\net8.0\Entidades.AssemblyInfo.cs
+C:\Users\94603850\source\repos\libreriaUniversitaria\LibreriaUniversitaria2.0\Entidades\obj\Debug\net8.0\Entidades.csproj.CoreCompileInputs.cache
+C:\Users\94603850\source\repos\libreriaUniversitaria\LibreriaUniversitaria2.0\Entidades\obj\Debug\net8.0\Entidades.sourcelink.json
+C:\Users\94603850\source\repos\libreriaUniversitaria\LibreriaUniversitaria2.0\Entidades\obj\Debug\net8.0\Entidades.dll
+C:\Users\94603850\source\repos\libreriaUniversitaria\LibreriaUniversitaria2.0\Entidades\obj\Debug\net8.0\refint\Entidades.dll
+C:\Users\94603850\source\repos\libreriaUniversitaria\LibreriaUniversitaria2.0\Entidades\obj\Debug\net8.0\Entidades.pdb

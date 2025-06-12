@@ -5,45 +5,46 @@ using System.Text;
 using System.Threading.Tasks;
 using LibreriaUniversitaria.Entidades;
 using System.Data.SqlClient;
+using Libreria.DAL;
 
 
-namespace Libreria.DAL
+namespace LibreriaUniversitaria.Datos
 {
     /// <summary>
-    /// Clase que maneja el acceso a la tabla Libro en la base de datos.
+    /// Clase que maneja el acceso a la tabla Cliente en la base de datos.
     /// </summary>
-    public static class LibroRepository
+    public static class ClienteRepository
     {
-        // Cadena de conexión obtenida desde App.config
+        // Cadena de conexión centralizada
         private static string connectionString = DbHelper.CadenaConexion;
 
         /// <summary>
-        /// Devuelve todos los libros existentes en la base de datos.
+        /// Devuelve todos los clientes existentes en la base de datos.
         /// </summary>
-        public static List<Libro> ObtenerTodos()
+        public static List<Cliente> ObtenerTodos()
         {
-            List<Libro> lista = new List<Libro>();
+            List<Cliente> lista = new List<Cliente>();
 
             using (SqlConnection conn = new SqlConnection(connectionString))
             {
-                string query = "SELECT * FROM Libro";
+                string query = "SELECT * FROM Cliente";
                 SqlCommand cmd = new SqlCommand(query, conn);
                 conn.Open();
                 SqlDataReader reader = cmd.ExecuteReader();
 
                 while (reader.Read())
                 {
-                    Libro libro = new Libro
+                    Cliente cliente = new Cliente
                     {
-                        IdLibro = Convert.ToInt32(reader["IdLibro"]),
-                        Titulo = reader["Titulo"].ToString(),
-                        Autor = reader["Autor"].ToString(),
-                        Stock = Convert.ToInt32(reader["Stock"]),
-                        Precio = Convert.ToDecimal(reader["Precio"]),
-                        IdEditorial = Convert.ToInt32(reader["IdEditorial"])
+                        IdCliente = Convert.ToInt32(reader["IdCliente"]),
+                        Nombre = reader["Nombre"].ToString(),
+                        Apellido = reader["Apellido"].ToString(),
+                        TipoDocumento = reader["TipoDocumento"].ToString(),
+                        NumeroDocumento = reader["NroDocumento"].ToString(),
+                        EsEstudiante = Convert.ToBoolean(reader["EsEstudiante"])
                     };
 
-                    lista.Add(libro);
+                    lista.Add(cliente);
                 }
 
                 reader.Close();
@@ -53,15 +54,15 @@ namespace Libreria.DAL
         }
 
         /// <summary>
-        /// Busca un libro por su ID.
+        /// Busca un cliente por su ID.
         /// </summary>
-        public static Libro BuscarPorId(int id)
+        public static Cliente BuscarPorId(int id)
         {
-            Libro libro = null;
+            Cliente cliente = null;
 
             using (SqlConnection conn = new SqlConnection(connectionString))
             {
-                string query = "SELECT * FROM Libro WHERE IdLibro = @id";
+                string query = "SELECT * FROM Cliente WHERE IdCliente = @id";
                 SqlCommand cmd = new SqlCommand(query, conn);
                 cmd.Parameters.AddWithValue("@id", id);
                 conn.Open();
@@ -70,37 +71,74 @@ namespace Libreria.DAL
 
                 if (reader.Read())
                 {
-                    libro = new Libro
+                    cliente = new Cliente
                     {
-                        IdLibro = Convert.ToInt32(reader["IdLibro"]),
-                        Titulo = reader["Titulo"].ToString(),
-                        Autor = reader["Autor"].ToString(),
-                        Stock = Convert.ToInt32(reader["Stock"]),
-                        Precio = Convert.ToDecimal(reader["Precio"]),
-                        IdEditorial = Convert.ToInt32(reader["IdEditorial"])
+                        IdCliente = Convert.ToInt32(reader["IdCliente"]),
+                        Nombre = reader["Nombre"].ToString(),
+                        Apellido = reader["Apellido"].ToString(),
+                        TipoDocumento = reader["TipoDocumento"].ToString(),
+                        NumeroDocumento = reader["NroDocumento"].ToString(),
+                        EsEstudiante = Convert.ToBoolean(reader["EsEstudiante"])
                     };
                 }
 
                 reader.Close();
             }
 
-            return libro;
+            return cliente;
         }
 
         /// <summary>
-        /// Inserta un nuevo libro en la base de datos.
+        /// Busca un cliente por tipo y número de documento.
         /// </summary>
-        public static void Insertar(Libro libro)
+        public static Cliente BuscarPorDocumento(string tipoDoc, string nroDoc)
+        {
+            Cliente cliente = null;
+
+            using (SqlConnection conn = new SqlConnection(connectionString))
+            {
+                string query = "SELECT * FROM Cliente WHERE TipoDocumento = @tipo AND NroDocumento = @nro";
+                SqlCommand cmd = new SqlCommand(query, conn);
+                cmd.Parameters.AddWithValue("@tipo", tipoDoc);
+                cmd.Parameters.AddWithValue("@nro", nroDoc);
+                conn.Open();
+
+                SqlDataReader reader = cmd.ExecuteReader();
+
+                if (reader.Read())
+                {
+                    cliente = new Cliente
+                    {
+                        IdCliente = Convert.ToInt32(reader["IdCliente"]),
+                        Nombre = reader["Nombre"].ToString(),
+                        Apellido = reader["Apellido"].ToString(),
+                        TipoDocumento = reader["TipoDocumento"].ToString(),
+                        NumeroDocumento = reader["NroDocumento"].ToString(),
+                        EsEstudiante = Convert.ToBoolean(reader["EsEstudiante"])
+                    };
+                }
+
+                reader.Close();
+            }
+
+            return cliente;
+        }
+
+        /// <summary>
+        /// Inserta un nuevo cliente en la base de datos.
+        /// </summary>
+        public static void Insertar(Cliente cliente)
         {
             using (SqlConnection conn = new SqlConnection(connectionString))
             {
-                string query = "INSERT INTO Libro (Titulo, Autor, Stock, Precio, IdEditorial) VALUES (@titulo, @autor, @stock, @precio, @idEditorial)";
+                string query = @"INSERT INTO Cliente (Nombre, Apellido, TipoDocumento, NroDocumento, EsEstudiante) 
+                                 VALUES (@nombre, @apellido, @tipo, @nro, @esEstudiante)";
                 SqlCommand cmd = new SqlCommand(query, conn);
-                cmd.Parameters.AddWithValue("@titulo", libro.Titulo);
-                cmd.Parameters.AddWithValue("@autor", libro.Autor);
-                cmd.Parameters.AddWithValue("@stock", libro.Stock);
-                cmd.Parameters.AddWithValue("@precio", libro.Precio);
-                cmd.Parameters.AddWithValue("@idEditorial", libro.IdEditorial);
+                cmd.Parameters.AddWithValue("@nombre", cliente.Nombre);
+                cmd.Parameters.AddWithValue("@apellido", cliente.Apellido);
+                cmd.Parameters.AddWithValue("@tipo", cliente.TipoDocumento);
+                cmd.Parameters.AddWithValue("@nro", cliente.NumeroDocumento);
+                cmd.Parameters.AddWithValue("@esEstudiante", cliente.EsEstudiante);
 
                 conn.Open();
                 cmd.ExecuteNonQuery();
@@ -108,20 +146,22 @@ namespace Libreria.DAL
         }
 
         /// <summary>
-        /// Actualiza un libro existente.
+        /// Actualiza los datos de un cliente.
         /// </summary>
-        public static void Actualizar(Libro libro)
+        public static void Actualizar(Cliente cliente)
         {
             using (SqlConnection conn = new SqlConnection(connectionString))
             {
-                string query = "UPDATE Libro SET Titulo = @titulo, Autor = @autor, Stock = @stock, Precio = @precio, IdEditorial = @idEditorial WHERE IdLibro = @id";
+                string query = @"UPDATE Cliente SET Nombre = @nombre, Apellido = @apellido, 
+                                 TipoDocumento = @tipo, NroDocumento = @nro, EsEstudiante = @esEstudiante 
+                                 WHERE IdCliente = @id";
                 SqlCommand cmd = new SqlCommand(query, conn);
-                cmd.Parameters.AddWithValue("@titulo", libro.Titulo);
-                cmd.Parameters.AddWithValue("@autor", libro.Autor);
-                cmd.Parameters.AddWithValue("@stock", libro.Stock);
-                cmd.Parameters.AddWithValue("@precio", libro.Precio);
-                cmd.Parameters.AddWithValue("@idEditorial", libro.IdEditorial);
-                cmd.Parameters.AddWithValue("@id", libro.IdLibro);
+                cmd.Parameters.AddWithValue("@nombre", cliente.Nombre);
+                cmd.Parameters.AddWithValue("@apellido", cliente.Apellido);
+                cmd.Parameters.AddWithValue("@tipo", cliente.TipoDocumento);
+                cmd.Parameters.AddWithValue("@nro", cliente.NumeroDocumento);
+                cmd.Parameters.AddWithValue("@esEstudiante", cliente.EsEstudiante);
+                cmd.Parameters.AddWithValue("@id", cliente.IdCliente);
 
                 conn.Open();
                 cmd.ExecuteNonQuery();
@@ -129,13 +169,13 @@ namespace Libreria.DAL
         }
 
         /// <summary>
-        /// Elimina un libro por su ID.
+        /// Elimina un cliente por su ID.
         /// </summary>
         public static void Eliminar(int id)
         {
             using (SqlConnection conn = new SqlConnection(connectionString))
             {
-                string query = "DELETE FROM Libro WHERE IdLibro = @id";
+                string query = "DELETE FROM Cliente WHERE IdCliente = @id";
                 SqlCommand cmd = new SqlCommand(query, conn);
                 cmd.Parameters.AddWithValue("@id", id);
 

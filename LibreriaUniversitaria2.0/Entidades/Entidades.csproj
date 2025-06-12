@@ -5,6 +5,29 @@
 		<RootNamespace>Entidades</RootNamespace>
 		<AssemblyName>Entidades</AssemblyName>
 	</PropertyGroup>
+
+	<ItemGroup>
+		<Compile Include="ACliente.cs" />
+		<Compile Include="ADetalle.cs" />
+		<Compile Include="APersona.cs" />
+		<Compile Include="Cliente.cs" />
+		<Compile Include="DetalleCompra.cs" />
+		<Compile Include="DetalleReserva.cs" />
+		<Compile Include="DetalleVenta.cs" />
+		<Compile Include="Domicilio.cs" />
+		<Compile Include="Editorial.cs" />
+		<Compile Include="EstadoReserva.cs" />
+		<Compile Include="Libro.cs" />
+		<Compile Include="Localidad.cs" />
+		<Compile Include="MovimientoStock.cs" />
+		<Compile Include="Municipio.cs" />
+		<Compile Include="OrdenCompra.cs" />
+		<Compile Include="Reserva.cs" />
+		<Compile Include="Rol.cs" />
+		<Compile Include="Usuario.cs" />
+		<Compile Include="Venta.cs" />
+	</ItemGroup>
+
 	<ItemGroup>
 		<Reference Include="System" />
 		<Reference Include="System.Core" />

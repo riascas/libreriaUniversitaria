@@ -32,6 +32,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
+    <Reference Include="System.Configuration" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
@@ -43,15 +44,22 @@
   <ItemGroup>
     <Compile Include="ClienteRepository.cs" />
     <Compile Include="DbHelper.cs" />
+    <Compile Include="EditorialRepository.cs" />
     <Compile Include="LibroRepository.cs" />
+    <Compile Include="OrdenCompraRepository.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ReservaRepository.cs" />
+    <Compile Include="UsuarioRepository.cs" />
+    <Compile Include="VentaRepository.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Entidades\Entidades.csproj">
-      <Project>{9c3a5c53-f89a-4587-86d7-5f1718e298ce}</Project>
+    <ProjectReference Include="..\ClassLibrary1\Entidades.csproj">
+      <Project>{2071f030-a7dd-4595-a4c9-845e46954ce9}</Project>
       <Name>Entidades</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
