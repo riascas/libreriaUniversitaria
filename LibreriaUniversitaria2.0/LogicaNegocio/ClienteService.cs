@@ -6,62 +6,50 @@ using System.Threading.Tasks;
 using LibreriaUniversitaria.Entidades;
 using System.Data.SqlClient;
 using Libreria.DAL;
-using LibreriaUniversitaria.Datos; //  para acceder a ClienteRepository
+using LibreriaUniversitaria.Datos; 
+using LibreriaUniversitaria.Entidades.Excepciones;
 
 namespace LibreriaUniversitaria.LogicaNegocio
 {
     /// <summary>
-    /// Clase de servicio que encapsula la lógica de negocio relacionada con los clientes.
-    /// Se comunica con la capa de acceso a datos para obtener y manipular información.
+    /// Clase de lógica de negocio para operaciones relacionadas con clientes.
     /// </summary>
     public static class ClienteService
     {
         /// <summary>
-        /// Devuelve la lista completa de clientes registrados.
+        /// Devuelve todos los clientes registrados.
         /// </summary>
-        public static List<Cliente> ObtenerClientes()
+        public static List<Cliente> ObtenerTodos()
         {
             return ClienteRepository.ObtenerTodos();
         }
 
         /// <summary>
-        /// Busca un cliente por su identificador único.
+        /// Busca un cliente por número de documento (DNI).
         /// </summary>
-        public static Cliente BuscarClientePorId(int id)
+        public static Cliente BuscarPorDocumento(string dni)
         {
-            return ClienteRepository.BuscarPorId(id);
+            if (string.IsNullOrWhiteSpace(dni) || dni.Length != 8)
+                throw new ArgumentException("El número de documento debe tener 8 dígitos.");
+
+            return ClienteRepository.BuscarPorDocumento(dni);
         }
 
         /// <summary>
-        /// Busca un cliente por tipo y número de documento.
+        /// Registra un nuevo cliente si no existe otro con el mismo DNI.
         /// </summary>
-        public static Cliente BuscarPorDocumento(string tipoDoc, string nroDoc)
+        public static void Registrar(Cliente cliente)
         {
-            return ClienteRepository.BuscarPorDocumento(tipoDoc, nroDoc);
-        }
+            if (cliente == null)
+                throw new ArgumentNullException("El cliente no puede ser nulo.");
 
-        /// <summary>
-        /// Registra un nuevo cliente en el sistema.
-        /// </summary>
-        public static void RegistrarCliente(Cliente cliente)
-        {
-            ClienteRepository.Insertar(cliente);
-        }
+            cliente.Validar();
 
-        /// <summary>
-        /// Modifica los datos de un cliente existente.
-        /// </summary>
-        public static void ActualizarCliente(Cliente cliente)
-        {
-            ClienteRepository.Actualizar(cliente);
-        }
+            var existente = ClienteRepository.BuscarPorDocumento(cliente.NumeroDocumento);
+            if (existente != null)
+                throw new ClienteExistenteException("Ya existe un cliente con el mismo documento.");
 
-        /// <summary>
-        /// Elimina un cliente del sistema por su ID.
-        /// </summary>
-        public static void EliminarCliente(int id)
-        {
-            ClienteRepository.Eliminar(id);
+            ClienteRepository.Registrar(cliente);
         }
     }
 }

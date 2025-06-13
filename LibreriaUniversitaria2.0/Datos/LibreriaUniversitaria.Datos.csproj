@@ -57,9 +57,9 @@
     <Compile Include="VentaRepository.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\ClassLibrary1\Entidades.csproj">
+    <ProjectReference Include="..\ClassLibrary1\LibreriaUniversitaria.Entidades.csproj">
       <Project>{2071f030-a7dd-4595-a4c9-845e46954ce9}</Project>
-      <Name>Entidades</Name>
+      <Name>LibreriaUniversitaria.Entidades</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>

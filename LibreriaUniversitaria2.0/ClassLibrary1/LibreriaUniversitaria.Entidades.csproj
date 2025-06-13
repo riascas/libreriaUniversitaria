@@ -51,6 +51,7 @@
     <Compile Include="Empleado.cs" />
     <Compile Include="EstadoReserva.cs" />
     <Compile Include="Excepciones\AccesoDatosException.cs" />
+    <Compile Include="Excepciones\ClienteExistenteException.cs" />
     <Compile Include="Excepciones\EntidadInvalidaException.cs" />
     <Compile Include="Libro.cs" />
     <Compile Include="Localidad.cs" />

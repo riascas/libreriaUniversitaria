@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using LibreriaUniversitaria.Entidades;
 using LibreriaUniversitaria.Datos;
+using LibreriaUniversitaria.Entidades.Excepciones;
 
 namespace LibreriaUniversitaria.LogicaNegocio
 {
@@ -33,6 +34,22 @@ namespace LibreriaUniversitaria.LogicaNegocio
                 throw new ArgumentException("El documento y la clave son obligatorios.");
 
             return EmpleadoRepository.ObtenerPorDocumentoYClave(documento, clave);
+        }
+
+        /// <summary>
+        /// Realiza el proceso de login: valida credenciales y lanza excepción si no coinciden.
+        /// </summary>
+        /// <param name="documento">Número de documento del empleado.</param>
+        /// <param name="clave">Clave del empleado.</param>
+        /// <returns>Empleado logueado.</returns>
+        public static Empleado Login(string documento, string clave)
+        {
+            Empleado emp = BuscarPorDocumentoYClave(documento, clave);
+
+            if (emp == null)
+                throw new EntidadInvalidaException("Credenciales incorrectas. Verifique el DNI y la clave.");
+
+            return emp;
         }
 
         /// <summary>

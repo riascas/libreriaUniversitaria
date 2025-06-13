@@ -1,71 +1,62 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
-using static System.Windows.Forms.VisualStyles.VisualStyleElement;
+using LibreriaUniversitaria.LogicaNegocio;
+using LibreriaUniversitaria.Entidades.Excepciones;
+using LibreriaUniversitaria.Entidades;
+using FontAwesome.Sharp; // Requiere paquete NuGet FontAwesome.Sharp
 
-namespace WindowsFormsApp1
+namespace LibreriaUniversitaria.UI
 {
-    public partial class frmLogin : Form
+    public partial class FrmLogin : Form
     {
-        public frmLogin()
+        public FrmLogin()
         {
             InitializeComponent();
         }
 
-        private void btnCerrar_Click(object sender, EventArgs e)
+        /// <summary>
+        /// Evento que se ejecuta al presionar el botón Ingresar.
+        /// Valida credenciales y abre la ventana principal si son correctas.
+        /// </summary>
+        private void BtnIngresar_Click(object sender, EventArgs e)
         {
-            this.Close();
-        }
+            string dni = txtDocumento.Text.Trim();
+            string clave = txtClave.Text.Trim();
 
-        private void lblUsuario_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void btnIniciar_Click(object sender, EventArgs e)
-        {
-           string usuario =textBox1.Text;
-           string password = textBox2.Text;
-            if(usuario == "" || password == "")
+            if (string.IsNullOrEmpty(dni) || string.IsNullOrEmpty(clave))
             {
-                MessageBox.Show("Rellene todos los campos por favor");
+                MessageBox.Show("Debe ingresar DNI y clave.", "Atención", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
             }
-            else
-            {
-                if(usuario =="diego" && password == "123")
-                {
-                    MessageBox.Show("Bienvenido" + textBox1.Text+ "Usuario registrado");
-                }
-                else
-                {
-                    if (usuario == "esmilce" && password == "123")
-                    {
-                        MessageBox.Show("Bienvenido\n\n" + textBox1.Text + "\n\n Usuario registrado");
-                    }
-                    else
-                    {
-                        MessageBox.Show("usuario no registrado");
-                        return;
-                    }
-                }
 
+            try
+            {
+                Empleado usuario = EmpleadoService.Login(dni, clave);
+
+                if (usuario != null)
+                {
+                    // Pasamos el usuario al formulario de inicio
+                    FrmInicio frm = new FrmInicio(usuario);
+                    frm.Show();
+                    this.Hide();
+                }
+            }
+            catch (EntidadInvalidaException ex)
+            {
+                MessageBox.Show(ex.Message, "Login fallido", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error inesperado: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
-        private void frm_closing(object sender, FormClosingEventArgs e)
-        {
-            this.Show();
-        }
 
-        private void textBox1_TextChanged(object sender, EventArgs e)
+        /// <summary>
+        /// Cierra la aplicación si se presiona Cancelar.
+        /// </summary>
+        private void BtnCancelar_Click(object sender, EventArgs e)
         {
-
+            this.Close();
         }
     }
 }

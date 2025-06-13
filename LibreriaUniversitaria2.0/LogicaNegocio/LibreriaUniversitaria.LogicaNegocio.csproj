@@ -53,13 +53,13 @@
     <Compile Include="VentaService.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\ClassLibrary1\Entidades.csproj">
+    <ProjectReference Include="..\ClassLibrary1\LibreriaUniversitaria.Entidades.csproj">
       <Project>{2071f030-a7dd-4595-a4c9-845e46954ce9}</Project>
-      <Name>Entidades</Name>
+      <Name>LibreriaUniversitaria.Entidades</Name>
     </ProjectReference>
-    <ProjectReference Include="..\Datos\Datos.csproj">
+    <ProjectReference Include="..\Datos\LibreriaUniversitaria.Datos.csproj">
       <Project>{cac7312c-c744-418b-8776-a1568295b2f8}</Project>
-      <Name>Datos</Name>
+      <Name>LibreriaUniversitaria.Datos</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

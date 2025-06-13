@@ -3,18 +3,19 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.14.36109.1
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UI-Libreria", "WindowsFormsApp1\UI-Libreria.csproj", "{923FB0F3-11D8-41D6-98DA-6878D3B8D9F8}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LibreriaUniversitaria.UI", "WindowsFormsApp1\LibreriaUniversitaria.UI.csproj", "{923FB0F3-11D8-41D6-98DA-6878D3B8D9F8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Datos", "Datos\Datos.csproj", "{CAC7312C-C744-418B-8776-A1568295B2F8}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LibreriaUniversitaria.Datos", "Datos\LibreriaUniversitaria.Datos.csproj", "{CAC7312C-C744-418B-8776-A1568295B2F8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LogicaNegocio", "LogicaNegocio\LogicaNegocio.csproj", "{87D18F19-1DBC-4214-9418-91F6EB32CE05}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LibreriaUniversitaria.LogicaNegocio", "LogicaNegocio\LibreriaUniversitaria.LogicaNegocio.csproj", "{87D18F19-1DBC-4214-9418-91F6EB32CE05}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Elementos de la solución", "Elementos de la solución", "{8DEE2707-EFAB-4608-9A78-FA2A6ABD7D21}"
 	ProjectSection(SolutionItems) = preProject
 		.gitignore = .gitignore
+		..\..\..\..\Downloads\Sistema-Libreria (1).7z = ..\..\..\..\Downloads\Sistema-Libreria (1).7z
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Entidades", "ClassLibrary1\Entidades.csproj", "{2071F030-A7DD-4595-A4C9-845E46954CE9}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LibreriaUniversitaria.Entidades", "ClassLibrary1\LibreriaUniversitaria.Entidades.csproj", "{2071F030-A7DD-4595-A4C9-845E46954CE9}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ScriptsSQL", "ScriptsSQL", "{69D5C861-C3C3-4770-A8D6-12CD40275461}"
 	ProjectSection(SolutionItems) = preProject
