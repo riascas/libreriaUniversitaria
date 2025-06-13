@@ -44,12 +44,12 @@
     <Compile Include="ClienteService.cs" />
     <Compile Include="DetalleReservaService.cs" />
     <Compile Include="EditorialService.cs" />
+    <Compile Include="EmpleadoService.cs" />
     <Compile Include="EstadoReservaService.cs" />
     <Compile Include="LibroService.cs" />
     <Compile Include="OrdenCompraService.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ReservaService.cs" />
-    <Compile Include="UsuarioService.cs" />
     <Compile Include="VentaService.cs" />
   </ItemGroup>
   <ItemGroup>

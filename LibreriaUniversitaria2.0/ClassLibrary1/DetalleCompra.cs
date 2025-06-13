@@ -7,35 +7,45 @@ using System;
 
 namespace LibreriaUniversitaria.Entidades
 {
-    // Clase que representa un item dentro de una orden de compra (libro y cantidad)
+    /// <summary>
+    /// Clase que representa un ítem dentro de una orden de compra.
+    /// Incluye el libro, la cantidad y el precio unitario acordado.
+    /// </summary>
     public class DetalleCompra : ADetalle
     {
-        private int _idDetalleCompra;
+        // Identificador del detalle de compra
+        public int IdDetalleCompra { get; set; }
 
-        public int IdDetalleCompra
-        {
-            get { return _idDetalleCompra; }
-            set { _idDetalleCompra = value; }
-        }
+        // Precio acordado por unidad al momento de la compra
+        public decimal PrecioUnitario { get; set; }
 
-        // Constructor vacio
+        /// <summary>
+        /// Constructor vacío requerido por buenas prácticas.
+        /// </summary>
         public DetalleCompra() { }
 
-        // Constructor con parametros
-        public DetalleCompra(int idDetalleCompra, Libro libro, int cantidad)
+        /// <summary>
+        /// Constructor con parámetros para inicializar el detalle.
+        /// </summary>
+        public DetalleCompra(int idDetalleCompra, Libro libro, int cantidad, decimal precioUnitario)
         {
-            _idDetalleCompra = idDetalleCompra;
-            _libro = libro;
-            _cantidad = cantidad;
+            IdDetalleCompra = idDetalleCompra;
+            Libro = libro;
+            Cantidad = cantidad;
+            PrecioUnitario = precioUnitario;
         }
 
-        // Implementacion del metodo abstracto
+        /// <summary>
+        /// Calcula el subtotal del ítem (cantidad * precio unitario).
+        /// </summary>
         public override decimal Subtotal()
         {
-            return _libro.Precio * _cantidad;
+            return Cantidad * PrecioUnitario;
         }
 
-        // Metodo ToString para mostrar la descripcion del item
+        /// <summary>
+        /// Devuelve una descripción del ítem para mostrar en listas o reportes.
+        /// </summary>
         public override string ToString()
         {
             return $"{Libro.Titulo} x{Cantidad} - ${Subtotal():0.00}";

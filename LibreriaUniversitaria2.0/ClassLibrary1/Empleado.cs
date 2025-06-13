@@ -6,57 +6,66 @@ using System.Threading.Tasks;
 
 namespace LibreriaUniversitaria.Entidades
 {
-    // Clase que representa a un empleado del sistema
-    public class Empleado : APersona
+    /// <summary>
+    /// Representa a un empleado del sistema (Administrador, Vendedor, etc.).
+    /// </summary>
+    public class Empleado
     {
-        private int _idEmpleado;
-        private string _usuario;
-        private string _contrasena;
-        private Rol _rol;
+        /// <summary>
+        /// Identificador único del empleado.
+        /// </summary>
+        public int IdEmpleado { get; set; }
 
-        public int IdEmpleado
-        {
-            get { return _idEmpleado; }
-            set { _idEmpleado = value; }
-        }
+        /// <summary>
+        /// Nombre del empleado.
+        /// </summary>
+        public string Nombre { get; set; }
 
-        public string Usuario
-        {
-            get { return _usuario; }
-            set { _usuario = value; }
-        }
+        /// <summary>
+        /// Apellido del empleado.
+        /// </summary>
+        public string Apellido { get; set; }
 
-        public string Contrasena
-        {
-            get { return _contrasena; }
-            set { _contrasena = value; }
-        }
+        /// <summary>
+        /// Número de documento (DNI). Se usa como "usuario" en el login.
+        /// </summary>
+        public string Documento { get; set; }
 
-        public Rol Rol
-        {
-            get { return _rol; }
-            set { _rol = value; }
-        }
+        /// <summary>
+        /// Clave de acceso al sistema (contraseña).
+        /// </summary>
+        public string Clave { get; set; }
 
-        // Constructor vacio
+        /// <summary>
+        /// Rol del empleado (Administrador, Vendedor, etc.).
+        /// </summary>
+        public Rol Rol { get; set; }
+
+        /// <summary>
+        /// Constructor sin parámetros.
+        /// </summary>
         public Empleado() { }
 
-        // Constructor con parametros
-        public Empleado(int idEmpleado, string usuario, string contrasena, string nombre, string apellido, string email, Rol rol)
+        /// <summary>
+        /// Constructor con parámetros.
+        /// </summary>
+        public Empleado(int id, string nombre, string apellido, string documento, string clave, Rol rol)
         {
-            _idEmpleado = idEmpleado;
-            _usuario = usuario;
-            _contrasena = contrasena;
-            _nombre = nombre;
-            _apellido = apellido;
-            _email = email;
-            _rol = rol;
+            IdEmpleado = id;
+            Nombre = nombre;
+            Apellido = apellido;
+            Documento = documento;
+            Clave = clave;
+            Rol = rol;
         }
 
-        // Metodo ToString para mostrar el nombre completo
+        /// <summary>
+        /// Devuelve el nombre completo del empleado.
+        /// </summary>
         public override string ToString()
         {
-            return $"{Nombre} {Apellido}";
+            return $"{Nombre} {Apellido} - {Rol?.Nombre}";
         }
     }
 }
+

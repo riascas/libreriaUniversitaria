@@ -12,27 +12,36 @@ namespace LibreriaUniversitaria.Entidades
     {
         private int _idDetalleVenta;
 
+        /// <summary>
+        /// Identificador único del detalle de venta.
+        /// </summary>
         public int IdDetalleVenta
         {
             get { return _idDetalleVenta; }
             set { _idDetalleVenta = value; }
         }
 
-        // Constructor vacio
+        /// <summary>
+        /// Precio que tenía el libro en el momento de la venta.
+        /// </summary>
+        public decimal PrecioUnitario { get; set; }
+
+        // Constructor vacío
         public DetalleVenta() { }
 
-        // Constructor con parametros
-        public DetalleVenta(int idDetalleVenta, Libro libro, int cantidad)
+        // Constructor con todos los parámetros
+        public DetalleVenta(int idDetalleVenta, Libro libro, int cantidad, decimal precioUnitario)
         {
             _idDetalleVenta = idDetalleVenta;
             _libro = libro;
             _cantidad = cantidad;
+            PrecioUnitario = precioUnitario;
         }
 
-        // Implementacion del metodo abstracto
+        // Implementación del método Subtotal (precio * cantidad)
         public override decimal Subtotal()
         {
-            return _libro.Precio * _cantidad;
+            return PrecioUnitario * _cantidad;
         }
 
         public override string ToString()

@@ -44,14 +44,16 @@
   <ItemGroup>
     <Compile Include="ClienteRepository.cs" />
     <Compile Include="DbHelper.cs" />
+    <Compile Include="DetalleCompraRepository.cs" />
     <Compile Include="DetalleReservaRepository.cs" />
+    <Compile Include="DetalleVentaRepository.cs" />
     <Compile Include="EditorialRepository.cs" />
     <Compile Include="EstadoReservaRepository.cs" />
     <Compile Include="LibroRepository.cs" />
     <Compile Include="OrdenCompraRepository.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ReservaRepository.cs" />
-    <Compile Include="UsuarioRepository.cs" />
+    <Compile Include="EmpleadoRepository.cs" />
     <Compile Include="VentaRepository.cs" />
   </ItemGroup>
   <ItemGroup>

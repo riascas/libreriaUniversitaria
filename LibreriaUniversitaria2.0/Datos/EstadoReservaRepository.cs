@@ -9,9 +9,14 @@ using Libreria.DAL;
 
 namespace LibreriaUniversitaria.Datos
 {
+    /// <summary>
+    /// Repositorio para acceder a los estados posibles de una reserva.
+    /// </summary>
     public static class EstadoReservaRepository
     {
-        // Obtener todos los estados disponibles desde la base
+        /// <summary>
+        /// Devuelve todos los estados de reserva disponibles.
+        /// </summary>
         public static List<EstadoReserva> ObtenerTodos()
         {
             List<EstadoReserva> estados = new List<EstadoReserva>();
@@ -19,20 +24,19 @@ namespace LibreriaUniversitaria.Datos
             using (SqlConnection conn = DbHelper.ObtenerConexion())
             {
                 string query = "SELECT IdEstado, Nombre FROM EstadoReserva";
+
                 SqlCommand cmd = new SqlCommand(query, conn);
                 conn.Open();
 
-                using (SqlDataReader lector = cmd.ExecuteReader())
+                using (SqlDataReader reader = cmd.ExecuteReader())
                 {
-                    while (lector.Read())
+                    while (reader.Read())
                     {
-                        EstadoReserva estado = new EstadoReserva
+                        estados.Add(new EstadoReserva
                         {
-                            IdEstadoReserva = Convert.ToInt32(lector["IdEstado"]),
-                            Nombre = lector["Nombre"].ToString()
-                        };
-
-                        estados.Add(estado);
+                            IdEstadoReserva = reader.GetInt32(0),
+                            Nombre = reader.GetString(1)
+                        });
                     }
                 }
             }
@@ -40,26 +44,29 @@ namespace LibreriaUniversitaria.Datos
             return estados;
         }
 
-        // Buscar un estado por su ID
+        /// <summary>
+        /// Devuelve un estado de reserva según su identificador.
+        /// </summary>
         public static EstadoReserva ObtenerPorId(int id)
         {
             EstadoReserva estado = null;
 
             using (SqlConnection conn = DbHelper.ObtenerConexion())
             {
-                string query = "SELECT IdEstado, Nombre FROM EstadoReserva WHERE IdEstado = @id";
+                string query = "SELECT IdEstado, Nombre FROM EstadoReserva WHERE IdEstado = @Id";
+
                 SqlCommand cmd = new SqlCommand(query, conn);
-                cmd.Parameters.AddWithValue("@id", id);
+                cmd.Parameters.AddWithValue("@Id", id);
                 conn.Open();
 
-                using (SqlDataReader lector = cmd.ExecuteReader())
+                using (SqlDataReader reader = cmd.ExecuteReader())
                 {
-                    if (lector.Read())
+                    if (reader.Read())
                     {
                         estado = new EstadoReserva
                         {
-                            IdEstadoReserva = Convert.ToInt32(lector["IdEstado"]),
-                            Nombre = lector["Nombre"].ToString()
+                            IdEstadoReserva = reader.GetInt32(0),
+                            Nombre = reader.GetString(1)
                         };
                     }
                 }
@@ -67,7 +74,28 @@ namespace LibreriaUniversitaria.Datos
 
             return estado;
         }
+
+        /// <summary>
+        /// Devuelve el ID de un estado según su nombre.
+        /// </summary>
+        public static int ObtenerIdPorNombre(string nombreEstado)
+        {
+            int id = -1;
+
+            using (SqlConnection conn = DbHelper.ObtenerConexion())
+            {
+                string query = "SELECT IdEstado FROM EstadoReserva WHERE Nombre = @Nombre";
+
+                SqlCommand cmd = new SqlCommand(query, conn);
+                cmd.Parameters.AddWithValue("@Nombre", nombreEstado);
+                conn.Open();
+
+                object resultado = cmd.ExecuteScalar();
+                if (resultado != null)
+                    id = Convert.ToInt32(resultado);
+            }
+
+            return id;
+        }
     }
 }
-
-

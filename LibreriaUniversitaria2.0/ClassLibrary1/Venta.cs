@@ -1,4 +1,5 @@
-﻿using System;
+﻿using LibreriaUniversitaria.Entidades;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -6,73 +7,51 @@ using System.Threading.Tasks;
 
 namespace LibreriaUniversitaria.Entidades
 {
-    // Clase que representa una venta realizada a un cliente
+    /// <summary>
+    /// Clase que representa una venta realizada a partir de una reserva confirmada.
+    /// </summary>
     public class Venta
     {
-        // Atributos privados
-        private int _idVenta;
-        private DateTime _fecha;
-        private Cliente _cliente;
-        private Empleado _empleado;
-        private List<DetalleVenta> _detalles;
+        /// <summary>
+        /// Identificador unico de la venta.
+        /// </summary>
+        public int IdVenta { get; set; }
 
-        // Propiedades publicas
-        public int IdVenta
-        {
-            get { return _idVenta; }
-            set { _idVenta = value; }
-        }
+        /// <summary>
+        /// Fecha en que se realizo la venta.
+        /// </summary>
+        public DateTime Fecha { get; set; }
 
-        public DateTime Fecha
-        {
-            get { return _fecha; }
-            set { _fecha = value; }
-        }
+        /// <summary>
+        /// Empleado que realizo la venta.
+        /// </summary>
+        public Empleado Empleado { get; set; }
 
-        public Cliente Cliente
-        {
-            get { return _cliente; }
-            set { _cliente = value; }
-        }
+        /// <summary>
+        /// Reserva asociada a esta venta (reserva concretada).
+        /// </summary>
+        public Reserva Reserva { get; set; }
 
-        public Empleado Empleado
-        {
-            get { return _empleado; }
-            set { _empleado = value; }
-        }
+        /// <summary>
+        /// Total abonado por el cliente, incluyendo posibles descuentos.
+        /// </summary>
+        public decimal Total { get; set; }
 
-        public List<DetalleVenta> Detalles
-        {
-            get { return _detalles; }
-            set { _detalles = value; }
-        }
+        /// <summary>
+        /// Constructor vacio obligatorio para crear instancias vacias.
+        /// </summary>
+        public Venta() { }
 
-        // Constructor vacio
-        public Venta()
+        /// <summary>
+        /// Constructor completo de venta.
+        /// </summary>
+        public Venta(int idVenta, DateTime fecha, Empleado empleado, Reserva reserva, decimal total)
         {
-            _detalles = new List<DetalleVenta>();
-        }
-
-        // Constructor con parametros
-        public Venta(int idVenta, DateTime fecha, Cliente cliente, Empleado empleado, List<DetalleVenta> detalles)
-        {
-            _idVenta = idVenta;
-            _fecha = fecha;
-            _cliente = cliente;
-            _empleado = empleado;
-            _detalles = detalles ?? new List<DetalleVenta>();
-        }
-
-        // Metodo para calcular el total de la venta
-        public decimal CalcularTotal()
-        {
-            decimal total = 0;
-            foreach (var detalle in _detalles)
-            {
-                total += detalle.Subtotal();
-            }
-            return total;
+            IdVenta = idVenta;
+            Fecha = fecha;
+            Empleado = empleado;
+            Reserva = reserva;
+            Total = total;
         }
     }
 }
-

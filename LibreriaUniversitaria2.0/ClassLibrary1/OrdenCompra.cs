@@ -6,21 +6,23 @@ using System.Threading.Tasks;
 
 namespace LibreriaUniversitaria.Entidades
 {
-    // Clase que representa una orden de compra realizada a una editorial
+    /// <summary>
+    /// Clase que representa una orden de compra realizada a una editorial por un empleado.
+    /// </summary>
     public class OrdenCompra
     {
         // Atributos privados
-        private int _idCompra;
+        private int _idOrdenCompra; // CAMBIADO de IdCompra a IdOrdenCompra
         private DateTime _fecha;
         private Editorial _editorial;
         private Empleado _empleado;
-        private List<DetalleCompra> _detalles;
+        private List<DetalleCompra> _items; // CAMBIADO de _detalles a _items
 
-        // Propiedades publicas
-        public int IdCompra
+        // Propiedades públicas
+        public int IdOrdenCompra
         {
-            get { return _idCompra; }
-            set { _idCompra = value; }
+            get { return _idOrdenCompra; }
+            set { _idOrdenCompra = value; }
         }
 
         public DateTime Fecha
@@ -41,37 +43,38 @@ namespace LibreriaUniversitaria.Entidades
             set { _empleado = value; }
         }
 
-        public List<DetalleCompra> Detalles
+        public List<DetalleCompra> Items
         {
-            get { return _detalles; }
-            set { _detalles = value; }
+            get { return _items; }
+            set { _items = value; }
         }
 
-        // Constructor vacio
+        // Constructor vacío
         public OrdenCompra()
         {
-            _detalles = new List<DetalleCompra>();
+            _items = new List<DetalleCompra>();
         }
 
-        // Constructor con parametros
-        public OrdenCompra(int idCompra, DateTime fecha, Editorial editorial, Empleado empleado, List<DetalleCompra> detalles)
+        // Constructor con parámetros
+        public OrdenCompra(int idOrdenCompra, DateTime fecha, Editorial editorial, Empleado empleado, List<DetalleCompra> items)
         {
-            _idCompra = idCompra;
+            _idOrdenCompra = idOrdenCompra;
             _fecha = fecha;
             _editorial = editorial;
             _empleado = empleado;
-            _detalles = detalles ?? new List<DetalleCompra>();
+            _items = items ?? new List<DetalleCompra>();
         }
 
-        // Metodo para calcular el total de la orden
+        // Método para calcular el total de la orden
         public decimal CalcularTotal()
         {
             decimal total = 0;
-            foreach (var detalle in _detalles)
+            foreach (var item in _items)
             {
-                total += detalle.Subtotal();
+                total += item.Subtotal();
             }
             return total;
         }
     }
 }
+

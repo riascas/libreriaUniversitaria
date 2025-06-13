@@ -7,12 +7,12 @@ using Libreria.DAL;
 namespace LibreriaUniversitaria.Datos
 {
     /// <summary>
-    /// Clase que gestiona el acceso a la tabla Reserva en la base de datos.
+    /// Repositorio para acceder y manipular reservas en la base de datos.
     /// </summary>
     public static class ReservaRepository
     {
         /// <summary>
-        /// Devuelve todas las reservas con cliente, estado y sus ítems.
+        /// Devuelve todas las reservas registradas.
         /// </summary>
         public static List<Reserva> ObtenerTodas()
         {
@@ -30,30 +30,27 @@ namespace LibreriaUniversitaria.Datos
                 SqlCommand cmd = new SqlCommand(query, conn);
                 conn.Open();
 
-                using (SqlDataReader lector = cmd.ExecuteReader())
+                using (SqlDataReader reader = cmd.ExecuteReader())
                 {
-                    while (lector.Read())
+                    while (reader.Read())
                     {
-                        Reserva reserva = new Reserva
+                        var reserva = new Reserva
                         {
-                            IdReserva = Convert.ToInt32(lector["IdReserva"]),
-                            FechaReserva = Convert.ToDateTime(lector["FechaReserva"]),
+                            IdReserva = reader.GetInt32(0),
+                            FechaReserva = reader.GetDateTime(1),
                             Cliente = new Cliente
                             {
-                                IdCliente = Convert.ToInt32(lector["IdCliente"]),
-                                Nombre = lector["NombreCliente"].ToString(),
-                                Apellido = lector["Apellido"].ToString()
+                                IdCliente = reader.GetInt32(2),
+                                Nombre = reader.GetString(3),
+                                Apellido = reader.GetString(4)
                             },
                             Estado = new EstadoReserva
                             {
-                                IdEstadoReserva = Convert.ToInt32(lector["IdEstadoReserva"]),
-                                Nombre = lector["NombreEstado"].ToString()
-                            },
-                            Items = new List<DetalleReserva>()
+                                IdEstadoReserva = reader.GetInt32(5),
+                                Nombre = reader.GetString(6)
+                            }
                         };
 
-                        // CORREGIDO: llamamos al método correcto
-                        reserva.Items = DetalleReservaRepository.ObtenerPorReserva(reserva.IdReserva);
                         reservas.Add(reserva);
                     }
                 }
@@ -63,9 +60,29 @@ namespace LibreriaUniversitaria.Datos
         }
 
         /// <summary>
-        /// Busca una reserva por su ID.
+        /// Inserta una nueva reserva en la base de datos.
         /// </summary>
-        public static Reserva BuscarPorId(int idReserva)
+        public static void Insertar(Reserva reserva)
+        {
+            using (SqlConnection conn = DbHelper.ObtenerConexion())
+            {
+                string query = @"INSERT INTO Reserva (FechaReserva, IdCliente, IdEstado) 
+                                 VALUES (@Fecha, @IdCliente, @IdEstado)";
+
+                SqlCommand cmd = new SqlCommand(query, conn);
+                cmd.Parameters.AddWithValue("@Fecha", reserva.FechaReserva);
+                cmd.Parameters.AddWithValue("@IdCliente", reserva.Cliente.IdCliente);
+                cmd.Parameters.AddWithValue("@IdEstado", reserva.Estado.IdEstadoReserva);
+
+                conn.Open();
+                cmd.ExecuteNonQuery();
+            }
+        }
+
+        /// <summary>
+        /// Devuelve una reserva específica por su ID.
+        /// </summary>
+        public static Reserva ObtenerPorId(int idReserva)
         {
             Reserva reserva = null;
 
@@ -77,36 +94,32 @@ namespace LibreriaUniversitaria.Datos
                                  FROM Reserva r
                                  JOIN Cliente c ON r.IdCliente = c.IdCliente
                                  JOIN EstadoReserva e ON r.IdEstado = e.IdEstado
-                                 WHERE r.IdReserva = @idReserva";
+                                 WHERE r.IdReserva = @IdReserva";
 
                 SqlCommand cmd = new SqlCommand(query, conn);
-                cmd.Parameters.AddWithValue("@idReserva", idReserva);
+                cmd.Parameters.AddWithValue("@IdReserva", idReserva);
                 conn.Open();
 
-                using (SqlDataReader lector = cmd.ExecuteReader())
+                using (SqlDataReader reader = cmd.ExecuteReader())
                 {
-                    if (lector.Read())
+                    if (reader.Read())
                     {
                         reserva = new Reserva
                         {
-                            IdReserva = Convert.ToInt32(lector["IdReserva"]),
-                            FechaReserva = Convert.ToDateTime(lector["FechaReserva"]),
+                            IdReserva = reader.GetInt32(0),
+                            FechaReserva = reader.GetDateTime(1),
                             Cliente = new Cliente
                             {
-                                IdCliente = Convert.ToInt32(lector["IdCliente"]),
-                                Nombre = lector["NombreCliente"].ToString(),
-                                Apellido = lector["Apellido"].ToString()
+                                IdCliente = reader.GetInt32(2),
+                                Nombre = reader.GetString(3),
+                                Apellido = reader.GetString(4)
                             },
                             Estado = new EstadoReserva
                             {
-                                IdEstadoReserva = Convert.ToInt32(lector["IdEstadoReserva"]),
-                                Nombre = lector["NombreEstado"].ToString()
-                            },
-                            Items = new List<DetalleReserva>()
+                                IdEstadoReserva = reader.GetInt32(5),
+                                Nombre = reader.GetString(6)
+                            }
                         };
-
-                        // CORREGIDO: llamada correcta al método de detalles
-                        reserva.Items = DetalleReservaRepository.ObtenerPorReserva(reserva.IdReserva);
                     }
                 }
             }
@@ -115,85 +128,31 @@ namespace LibreriaUniversitaria.Datos
         }
 
         /// <summary>
-        /// Devuelve las reservas asociadas a un cliente específico.
+        /// Actualiza el estado de una reserva (sin transacción).
         /// </summary>
-        public static List<Reserva> ObtenerPorCliente(int idCliente)
+        public static void ActualizarEstado(int idReserva, int idNuevoEstado)
         {
-            List<Reserva> reservas = new List<Reserva>();
-
             using (SqlConnection conn = DbHelper.ObtenerConexion())
             {
-                string query = @"SELECT r.IdReserva, r.FechaReserva,
-                                        c.IdCliente, c.Nombre AS NombreCliente, c.Apellido,
-                                        e.IdEstado AS IdEstadoReserva, e.Nombre AS NombreEstado
-                                 FROM Reserva r
-                                 JOIN Cliente c ON r.IdCliente = c.IdCliente
-                                 JOIN EstadoReserva e ON r.IdEstado = e.IdEstado
-                                 WHERE r.IdCliente = @idCliente";
-
+                string query = "UPDATE Reserva SET IdEstado = @IdEstado WHERE IdReserva = @IdReserva";
                 SqlCommand cmd = new SqlCommand(query, conn);
-                cmd.Parameters.AddWithValue("@idCliente", idCliente);
+                cmd.Parameters.AddWithValue("@IdEstado", idNuevoEstado);
+                cmd.Parameters.AddWithValue("@IdReserva", idReserva);
                 conn.Open();
-
-                using (SqlDataReader lector = cmd.ExecuteReader())
-                {
-                    while (lector.Read())
-                    {
-                        Reserva reserva = new Reserva
-                        {
-                            IdReserva = Convert.ToInt32(lector["IdReserva"]),
-                            FechaReserva = Convert.ToDateTime(lector["FechaReserva"]),
-                            Cliente = new Cliente
-                            {
-                                IdCliente = Convert.ToInt32(lector["IdCliente"]),
-                                Nombre = lector["NombreCliente"].ToString(),
-                                Apellido = lector["Apellido"].ToString()
-                            },
-                            Estado = new EstadoReserva
-                            {
-                                IdEstadoReserva = Convert.ToInt32(lector["IdEstadoReserva"]),
-                                Nombre = lector["NombreEstado"].ToString()
-                            },
-                            Items = new List<DetalleReserva>()
-                        };
-
-                        // CORREGIDO: obtener ítems correctamente
-                        reserva.Items = DetalleReservaRepository.ObtenerPorReserva(reserva.IdReserva);
-                        reservas.Add(reserva);
-                    }
-                }
+                cmd.ExecuteNonQuery();
             }
-
-            return reservas;
         }
 
         /// <summary>
-        /// Inserta una nueva reserva con sus detalles.
+        /// Actualiza el estado de una reserva dentro de una transacción existente.
         /// </summary>
-        public static int Insertar(Reserva reserva)
+        public static void ActualizarEstado(int idReserva, int idNuevoEstado, SqlConnection conn, SqlTransaction transaction)
         {
-            using (SqlConnection conn = DbHelper.ObtenerConexion())
-            {
-                string insertQuery = @"INSERT INTO Reserva (FechaReserva, IdCliente, IdEstado)
-                                       VALUES (@fecha, @idCliente, @idEstado);
-                                       SELECT SCOPE_IDENTITY();";
-
-                SqlCommand cmd = new SqlCommand(insertQuery, conn);
-                cmd.Parameters.AddWithValue("@fecha", reserva.FechaReserva);
-                cmd.Parameters.AddWithValue("@idCliente", reserva.Cliente.IdCliente);
-                cmd.Parameters.AddWithValue("@idEstado", reserva.Estado.IdEstadoReserva);
-
-                conn.Open();
-                int nuevoId = Convert.ToInt32(cmd.ExecuteScalar());
-
-                // CORREGIDO: insertar detalles en el orden correcto
-                foreach (var item in reserva.Items)
-                {
-                    DetalleReservaRepository.Insertar(item, nuevoId);
-                }
-
-                return nuevoId;
-            }
+            string query = "UPDATE Reserva SET IdEstado = @IdEstado WHERE IdReserva = @IdReserva";
+            SqlCommand cmd = new SqlCommand(query, conn, transaction);
+            cmd.Parameters.AddWithValue("@IdEstado", idNuevoEstado);
+            cmd.Parameters.AddWithValue("@IdReserva", idReserva);
+            cmd.ExecuteNonQuery();
         }
     }
 }

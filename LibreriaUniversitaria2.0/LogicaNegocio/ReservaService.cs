@@ -9,12 +9,12 @@ using LibreriaUniversitaria.Datos;
 namespace LibreriaUniversitaria.LogicaNegocio
 {
     /// <summary>
-    /// Servicio para la gestión de reservas.
+    /// Clase de lógica de negocio para gestionar reservas.
     /// </summary>
     public static class ReservaService
     {
         /// <summary>
-        /// Obtiene todas las reservas registradas.
+        /// Obtiene todas las reservas del sistema, incluyendo cliente y estado.
         /// </summary>
         public static List<Reserva> ObtenerTodas()
         {
@@ -22,28 +22,42 @@ namespace LibreriaUniversitaria.LogicaNegocio
         }
 
         /// <summary>
-        /// Registra una nueva reserva.
+        /// Inserta una nueva reserva con estado "Pendiente".
         /// </summary>
+        /// <param name="reserva">Objeto reserva a insertar.</param>
         public static void RegistrarReserva(Reserva reserva)
         {
+            // Validaciones básicas antes de insertar
+            if (reserva == null)
+                throw new ArgumentNullException("La reserva no puede ser nula.");
+            if (reserva.Cliente == null || reserva.Cliente.IdCliente <= 0)
+                throw new ArgumentException("La reserva debe tener un cliente válido.");
+
+            // Asignar estado inicial "Pendiente"
+            EstadoReserva estadoPendiente = EstadoReservaService.ObtenerPorId(1); // ID 1: Pendiente
+            reserva.Estado = estadoPendiente;
+
+            reserva.FechaReserva = DateTime.Now;
+
+            // Insertar en la base de datos
             ReservaRepository.Insertar(reserva);
         }
 
         /// <summary>
-        /// Busca una reserva por su ID.
+        /// Filtra las reservas por estado.
         /// </summary>
-        public static Reserva BuscarPorId(int idReserva)
+        public static List<Reserva> ObtenerPorEstado(int idEstadoReserva)
         {
-            var todas = ReservaRepository.ObtenerTodas();
-            return todas.Find(r => r.IdReserva == idReserva);
+            List<Reserva> todas = ReservaRepository.ObtenerTodas();
+            return todas.FindAll(r => r.Estado.IdEstadoReserva == idEstadoReserva);
         }
 
         /// <summary>
-        /// Obtiene todas las reservas de un cliente específico.
+        /// Filtra las reservas por cliente.
         /// </summary>
         public static List<Reserva> ObtenerPorCliente(int idCliente)
         {
-            var todas = ReservaRepository.ObtenerTodas();
+            List<Reserva> todas = ReservaRepository.ObtenerTodas();
             return todas.FindAll(r => r.Cliente.IdCliente == idCliente);
         }
     }
