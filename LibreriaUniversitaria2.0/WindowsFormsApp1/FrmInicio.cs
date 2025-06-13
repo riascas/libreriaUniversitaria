@@ -12,33 +12,55 @@ using LibreriaUniversitaria.Entidades;
 namespace LibreriaUniversitaria.UI
 {
     /// <summary>
-    /// Formulario de inicio que se abre luego del login exitoso.
-    /// Muestra el nombre del empleado logueado.
+    /// Formulario principal que se muestra al iniciar sesión. Contiene accesos a otras secciones del sistema.
     /// </summary>
     public partial class FrmInicio : Form
     {
-        private Empleado _usuarioLogueado;
-
-        public FrmInicio(Empleado usuario)
+        public FrmInicio()
         {
             InitializeComponent();
-            _usuarioLogueado = usuario;
         }
 
-        /// <summary>
-        /// Al cargar el formulario, se muestra el nombre completo y rol del usuario.
-        /// </summary>
+        // Evento al cargar el formulario
         private void FrmInicio_Load(object sender, EventArgs e)
         {
-            lblBienvenida.Text = $"Bienvenido/a: {_usuarioLogueado.NombreCompleto()} ({_usuarioLogueado.Rol.Nombre})";
+            lblBienvenida.Text = $"Bienvenido/a - {Sesion.UsuarioLogueado.Nombre}";
         }
 
-        /// <summary>
-        /// Evento del botón cerrar (si lo agregás).
-        /// </summary>
-        private void BtnCerrar_Click(object sender, EventArgs e)
+        // Botón para abrir formulario de clientes
+        private void btnClientes_Click(object sender, EventArgs e)
         {
-            Application.Exit();
+            FrmClientes frm = new FrmClientes();
+            frm.ShowDialog();
+        }
+
+        // Botón para abrir formulario de libros
+        private void btnLibros_Click(object sender, EventArgs e)
+        {
+            FrmGestionLibros frm = new FrmGestionLibros();
+            frm.ShowDialog();
+        }
+
+        // Botón para abrir formulario de reservas
+        private void btnReservas_Click(object sender, EventArgs e)
+        {
+            FrmReservas frm = new FrmReservas();
+            frm.ShowDialog();
+        }
+
+        // Botón para abrir formulario de ventas
+        private void btnVentas_Click(object sender, EventArgs e)
+        {
+            FrmVentas frm = new FrmVentas();
+            frm.ShowDialog();
+        }
+
+        // Botón para cerrar sesión
+        private void btnCerrarSesion_Click(object sender, EventArgs e)
+        {
+            this.Hide(); // Oculta el formulario actual
+            FrmLogin login = new FrmLogin();
+            login.Show(); // Muestra nuevamente el login
         }
     }
 }

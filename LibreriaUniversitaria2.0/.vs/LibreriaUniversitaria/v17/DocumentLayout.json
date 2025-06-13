@@ -3,6 +3,22 @@
   "WorkspaceRootPath": "C:\\Users\\94603850\\source\\repos\\libreriaUniversitaria\\LibreriaUniversitaria2.0\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{2071F030-A7DD-4595-A4C9-845E46954CE9}|ClassLibrary1\\LibreriaUniversitaria.Entidades.csproj|c:\\users\\94603850\\source\\repos\\libreriauniversitaria\\libreriauniversitaria2.0\\classlibrary1\\detallereserva.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2071F030-A7DD-4595-A4C9-845E46954CE9}|ClassLibrary1\\LibreriaUniversitaria.Entidades.csproj|solutionrelative:classlibrary1\\detallereserva.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{923FB0F3-11D8-41D6-98DA-6878D3B8D9F8}|WindowsFormsApp1\\LibreriaUniversitaria.UI.csproj|c:\\users\\94603850\\source\\repos\\libreriauniversitaria\\libreriauniversitaria2.0\\windowsformsapp1\\frminicio.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{923FB0F3-11D8-41D6-98DA-6878D3B8D9F8}|WindowsFormsApp1\\LibreriaUniversitaria.UI.csproj|solutionrelative:windowsformsapp1\\frminicio.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{923FB0F3-11D8-41D6-98DA-6878D3B8D9F8}|WindowsFormsApp1\\LibreriaUniversitaria.UI.csproj|c:\\users\\94603850\\source\\repos\\libreriauniversitaria\\libreriauniversitaria2.0\\windowsformsapp1\\frminicio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{923FB0F3-11D8-41D6-98DA-6878D3B8D9F8}|WindowsFormsApp1\\LibreriaUniversitaria.UI.csproj|solutionrelative:windowsformsapp1\\frminicio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{923FB0F3-11D8-41D6-98DA-6878D3B8D9F8}|WindowsFormsApp1\\LibreriaUniversitaria.UI.csproj|c:\\users\\94603850\\source\\repos\\libreriauniversitaria\\libreriauniversitaria2.0\\windowsformsapp1\\frminicio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{923FB0F3-11D8-41D6-98DA-6878D3B8D9F8}|WindowsFormsApp1\\LibreriaUniversitaria.UI.csproj|solutionrelative:windowsformsapp1\\frminicio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{923FB0F3-11D8-41D6-98DA-6878D3B8D9F8}|WindowsFormsApp1\\LibreriaUniversitaria.UI.csproj|c:\\users\\94603850\\source\\repos\\libreriauniversitaria\\libreriauniversitaria2.0\\windowsformsapp1\\frmclientes.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{923FB0F3-11D8-41D6-98DA-6878D3B8D9F8}|WindowsFormsApp1\\LibreriaUniversitaria.UI.csproj|solutionrelative:windowsformsapp1\\frmclientes.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -26,7 +42,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Bookmark",
@@ -38,7 +54,58 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "DetalleReserva.cs",
+              "DocumentMoniker": "C:\\Users\\94603850\\source\\repos\\libreriaUniversitaria\\LibreriaUniversitaria2.0\\ClassLibrary1\\DetalleReserva.cs",
+              "RelativeDocumentMoniker": "ClassLibrary1\\DetalleReserva.cs",
+              "ToolTip": "C:\\Users\\94603850\\source\\repos\\libreriaUniversitaria\\LibreriaUniversitaria2.0\\ClassLibrary1\\DetalleReserva.cs",
+              "RelativeToolTip": "ClassLibrary1\\DetalleReserva.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-13T19:07:55.112Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "FrmInicio.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\94603850\\source\\repos\\libreriaUniversitaria\\LibreriaUniversitaria2.0\\WindowsFormsApp1\\FrmInicio.Designer.cs",
+              "RelativeDocumentMoniker": "WindowsFormsApp1\\FrmInicio.Designer.cs",
+              "ToolTip": "C:\\Users\\94603850\\source\\repos\\libreriaUniversitaria\\LibreriaUniversitaria2.0\\WindowsFormsApp1\\FrmInicio.Designer.cs",
+              "RelativeToolTip": "WindowsFormsApp1\\FrmInicio.Designer.cs",
+              "ViewState": "AQIAAGoAAAAAAAAAAAAAAH0AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-13T19:06:42.956Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 2,
+              "Title": "FrmInicio.cs",
+              "DocumentMoniker": "C:\\Users\\94603850\\source\\repos\\libreriaUniversitaria\\LibreriaUniversitaria2.0\\WindowsFormsApp1\\FrmInicio.cs",
+              "RelativeDocumentMoniker": "WindowsFormsApp1\\FrmInicio.cs",
+              "ToolTip": "C:\\Users\\94603850\\source\\repos\\libreriaUniversitaria\\LibreriaUniversitaria2.0\\WindowsFormsApp1\\FrmInicio.cs",
+              "RelativeToolTip": "WindowsFormsApp1\\FrmInicio.cs",
+              "ViewState": "AQIAACUAAAAAAAAAAAAxwAsAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-13T19:05:38.304Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "FrmInicio.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\94603850\\source\\repos\\libreriaUniversitaria\\LibreriaUniversitaria2.0\\WindowsFormsApp1\\FrmInicio.cs",
+              "RelativeDocumentMoniker": "WindowsFormsApp1\\FrmInicio.cs",
+              "ToolTip": "C:\\Users\\94603850\\source\\repos\\libreriaUniversitaria\\LibreriaUniversitaria2.0\\WindowsFormsApp1\\FrmInicio.cs [Dise\u00F1o]",
+              "RelativeToolTip": "WindowsFormsApp1\\FrmInicio.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-13T19:05:28.25Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
               "Title": "Cliente.cs",
               "DocumentMoniker": "C:\\Users\\94603850\\source\\repos\\libreriaUniversitaria\\LibreriaUniversitaria2.0\\ClassLibrary1\\Cliente.cs",
               "RelativeDocumentMoniker": "ClassLibrary1\\Cliente.cs",
@@ -51,20 +118,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 4,
               "Title": "FrmClientes.Designer.cs",
               "DocumentMoniker": "C:\\Users\\94603850\\source\\repos\\libreriaUniversitaria\\LibreriaUniversitaria2.0\\WindowsFormsApp1\\FrmClientes.Designer.cs",
               "RelativeDocumentMoniker": "WindowsFormsApp1\\FrmClientes.Designer.cs",
               "ToolTip": "C:\\Users\\94603850\\source\\repos\\libreriaUniversitaria\\LibreriaUniversitaria2.0\\WindowsFormsApp1\\FrmClientes.Designer.cs",
               "RelativeToolTip": "WindowsFormsApp1\\FrmClientes.Designer.cs",
-              "ViewState": "AQIAAF0AAAAAAAAAAAAAAHwAAAABAAAA",
+              "ViewState": "AQIAAGMAAAAAAAAAAAAAAHwAAAABAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-06-13T18:31:50.97Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 5,
               "Title": "FrmClientes.cs",
               "DocumentMoniker": "C:\\Users\\94603850\\source\\repos\\libreriaUniversitaria\\LibreriaUniversitaria2.0\\WindowsFormsApp1\\FrmClientes.cs",
               "RelativeDocumentMoniker": "WindowsFormsApp1\\FrmClientes.cs",
@@ -77,7 +144,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 7,
               "Title": "FrmClientes.cs [Dise\u00F1o]",
               "DocumentMoniker": "C:\\Users\\94603850\\source\\repos\\libreriaUniversitaria\\LibreriaUniversitaria2.0\\WindowsFormsApp1\\FrmClientes.cs",
               "RelativeDocumentMoniker": "WindowsFormsApp1\\FrmClientes.cs",
