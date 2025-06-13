@@ -4,6 +4,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using LibreriaUniversitaria.Entidades.Excepciones;
+
 
 namespace LibreriaUniversitaria.Entidades
 {
@@ -53,5 +55,25 @@ namespace LibreriaUniversitaria.Entidades
             Reserva = reserva;
             Total = total;
         }
+
+        /// <summary>
+        /// Valida que la venta tenga todos los datos obligatorios.
+        /// Lanza una excepción si hay datos inválidos.
+        /// </summary>
+        public void Validar()
+        {
+            if (Empleado == null)
+                throw new EntidadInvalidaException("La venta debe tener un empleado asignado.");
+
+            if (Reserva == null)
+                throw new EntidadInvalidaException("La venta debe estar asociada a una reserva.");
+
+            if (Fecha == DateTime.MinValue)
+                throw new EntidadInvalidaException("La venta debe tener una fecha válida.");
+
+            if (Total <= 0)
+                throw new EntidadInvalidaException("El total de la venta debe ser mayor a cero.");
+        }
     }
 }
+

@@ -6,18 +6,20 @@ using System.Threading.Tasks;
 
 namespace LibreriaUniversitaria.Entidades
 {
-    // Clase que representa un movimiento de stock (aumento o disminucion)
+    /// <summary>
+    /// Representa un movimiento de stock (entrada o salida) de un libro.
+    /// </summary>
     public class MovimientoStock
     {
-        // Atributos privados
+        // Campos privados
         private int _idMovimiento;
         private DateTime _fecha;
         private Libro _libro;
         private Empleado _empleado;
         private int _cantidad;
-        private string _tipoMovimiento;
+        private TipoMovimientoStock _tipoMovimiento;
 
-        // Propiedades publicas
+        // Propiedades públicas
         public int IdMovimiento
         {
             get { return _idMovimiento; }
@@ -45,20 +47,20 @@ namespace LibreriaUniversitaria.Entidades
         public int Cantidad
         {
             get { return _cantidad; }
-            set { _cantidad = value; }
+            set { _cantidad = value; } // Validación adicional puede agregarse en la lógica
         }
 
-        public string TipoMovimiento
+        public TipoMovimientoStock TipoMovimiento
         {
             get { return _tipoMovimiento; }
             set { _tipoMovimiento = value; }
         }
 
-        // Constructor vacio
+        // Constructor vacío
         public MovimientoStock() { }
 
-        // Constructor con parametros
-        public MovimientoStock(int idMovimiento, DateTime fecha, Libro libro, Empleado empleado, int cantidad, string tipoMovimiento)
+        // Constructor con parámetros
+        public MovimientoStock(int idMovimiento, DateTime fecha, Libro libro, Empleado empleado, int cantidad, TipoMovimientoStock tipoMovimiento)
         {
             _idMovimiento = idMovimiento;
             _fecha = fecha;
@@ -68,10 +70,22 @@ namespace LibreriaUniversitaria.Entidades
             _tipoMovimiento = tipoMovimiento;
         }
 
-        // Metodo ToString para mostrar resumen del movimiento
+        /// <summary>
+        /// Representación textual del movimiento, útil para listar en formularios.
+        /// </summary>
         public override string ToString()
         {
             return $"{Fecha.ToShortDateString()} - {TipoMovimiento} - {Libro.Titulo} x{Cantidad}";
         }
+    }
+
+    /// <summary>
+    /// Enum que representa los tipos posibles de movimiento de stock.
+    /// </summary>
+    public enum TipoMovimientoStock
+    {
+        Alta,   // Entrada de stock (compra, carga inicial, etc.)
+        Baja,   // Salida de stock (venta, reserva vencida, etc.)
+        Ajuste  // Ajustes manuales de stock (por error o auditoría)
     }
 }

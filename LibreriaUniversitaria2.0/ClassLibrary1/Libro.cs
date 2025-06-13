@@ -13,6 +13,7 @@ namespace LibreriaUniversitaria.Entidades
     {
         // Atributos privados
         private int _idLibro;
+        private string _isbn;
         private string _titulo;
         private string _autor;
         private decimal _precio;
@@ -24,6 +25,16 @@ namespace LibreriaUniversitaria.Entidades
         {
             get { return _idLibro; }
             set { _idLibro = value; }
+        }
+
+        /// <summary>
+        /// ISBN (código único internacional del libro).
+        /// Ejemplo: 978-3-16-148410-0
+        /// </summary>
+        public string ISBN
+        {
+            get { return _isbn; }
+            set { _isbn = value; }
         }
 
         public string Titulo
@@ -75,9 +86,10 @@ namespace LibreriaUniversitaria.Entidades
         public Libro() { }
 
         // Constructor con parámetros
-        public Libro(int idLibro, string titulo, string autor, decimal precio, int stock, Editorial editorial)
+        public Libro(int idLibro, string isbn, string titulo, string autor, decimal precio, int stock, Editorial editorial)
         {
             _idLibro = idLibro;
+            _isbn = isbn;
             _titulo = titulo;
             _autor = autor;
             _precio = precio;
@@ -92,3 +104,4 @@ namespace LibreriaUniversitaria.Entidades
         }
     }
 }
+

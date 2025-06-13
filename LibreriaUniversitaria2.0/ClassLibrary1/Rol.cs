@@ -3,10 +3,13 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using LibreriaUniversitaria.Entidades.Excepciones;
 
 namespace LibreriaUniversitaria.Entidades
 {
-    // Clase que representa un rol de usuario en el sistema (Administrador, Vendedor, etc.)
+    /// <summary>
+    /// Clase que representa un rol de usuario en el sistema (Administrador, Vendedor, etc.)
+    /// </summary>
     public class Rol
     {
         // Atributos privados
@@ -41,5 +44,16 @@ namespace LibreriaUniversitaria.Entidades
         {
             return Nombre;
         }
+
+        /// <summary>
+        /// Valida que el Rol tenga todos los datos obligatorios.
+        /// Lanza una excepción si hay datos inválidos.
+        /// </summary>
+        public void Validar()
+        {
+            if (string.IsNullOrWhiteSpace(Nombre))
+                throw new EntidadInvalidaException("El nombre del rol no puede estar vacío.");
+        }
     }
 }
+

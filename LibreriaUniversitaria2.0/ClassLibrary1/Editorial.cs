@@ -3,17 +3,21 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using LibreriaUniversitaria.Entidades.Excepciones;
 
 namespace LibreriaUniversitaria.Entidades
 {
-    // Clase que representa una editorial de libros
+    /// <summary>
+    /// Clase que representa una editorial de libros (proveedor).
+    /// </summary>
     public class Editorial
     {
-        // Atributos privados
         private int _idEditorial;
         private string _nombre;
+        private string _contacto;
+        private string _telefono;
+        private string _email;
 
-        // Propiedades publicas
         public int IdEditorial
         {
             get { return _idEditorial; }
@@ -26,20 +30,49 @@ namespace LibreriaUniversitaria.Entidades
             set { _nombre = value; }
         }
 
-        // Constructor vacio
+        public string Contacto
+        {
+            get { return _contacto; }
+            set { _contacto = value; }
+        }
+
+        public string Telefono
+        {
+            get { return _telefono; }
+            set { _telefono = value; }
+        }
+
+        public string Email
+        {
+            get { return _email; }
+            set { _email = value; }
+        }
+
         public Editorial() { }
 
-        // Constructor con parametros
-        public Editorial(int idEditorial, string nombre)
+        public Editorial(int idEditorial, string nombre, string contacto, string telefono, string email)
         {
             _idEditorial = idEditorial;
             _nombre = nombre;
+            _contacto = contacto;
+            _telefono = telefono;
+            _email = email;
         }
 
-        // Metodo ToString para mostrar el nombre de la editorial en comboBox o listas
         public override string ToString()
         {
             return Nombre;
+        }
+
+        /// <summary>
+        /// Valida que los datos obligatorios estén completos y correctos.
+        /// </summary>
+        public void Validar()
+        {
+            if (string.IsNullOrWhiteSpace(Nombre))
+                throw new EntidadInvalidaException("El nombre de la editorial no puede estar vacío.");
+
+            // Opcional: validar formato de teléfono o email si es necesario
         }
     }
 }

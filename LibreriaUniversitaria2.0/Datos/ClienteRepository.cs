@@ -7,7 +7,6 @@ using LibreriaUniversitaria.Entidades;
 using System.Data.SqlClient;
 using Libreria.DAL;
 
-
 namespace LibreriaUniversitaria.Datos
 {
     /// <summary>
@@ -15,7 +14,6 @@ namespace LibreriaUniversitaria.Datos
     /// </summary>
     public static class ClienteRepository
     {
-        // Cadena de conexión centralizada
         private static string connectionString = DbHelper.CadenaConexion;
 
         /// <summary>
@@ -25,29 +23,36 @@ namespace LibreriaUniversitaria.Datos
         {
             List<Cliente> lista = new List<Cliente>();
 
-            using (SqlConnection conn = new SqlConnection(connectionString))
+            try
             {
-                string query = "SELECT * FROM Cliente";
-                SqlCommand cmd = new SqlCommand(query, conn);
-                conn.Open();
-                SqlDataReader reader = cmd.ExecuteReader();
-
-                while (reader.Read())
+                using (SqlConnection conn = new SqlConnection(connectionString))
                 {
-                    Cliente cliente = new Cliente
+                    string query = "SELECT IdCliente, Nombre, Apellido, NumeroDocumento, EsEstudiante, Email FROM Cliente";
+                    SqlCommand cmd = new SqlCommand(query, conn);
+                    conn.Open();
+
+                    using (SqlDataReader reader = cmd.ExecuteReader())
                     {
-                        IdCliente = Convert.ToInt32(reader["IdCliente"]),
-                        Nombre = reader["Nombre"].ToString(),
-                        Apellido = reader["Apellido"].ToString(),
-                        TipoDocumento = reader["TipoDocumento"].ToString(),
-                        NumeroDocumento = reader["NroDocumento"].ToString(),
-                        EsEstudiante = Convert.ToBoolean(reader["EsEstudiante"])
-                    };
+                        while (reader.Read())
+                        {
+                            Cliente cliente = new Cliente
+                            {
+                                IdCliente = Convert.ToInt32(reader["IdCliente"]),
+                                Nombre = reader["Nombre"].ToString(),
+                                Apellido = reader["Apellido"].ToString(),
+                                NumeroDocumento = reader["NumeroDocumento"].ToString(),
+                                EsEstudiante = Convert.ToBoolean(reader["EsEstudiante"]),
+                                Email = reader["Email"] == DBNull.Value ? null : reader["Email"].ToString()
+                            };
 
-                    lista.Add(cliente);
+                            lista.Add(cliente);
+                        }
+                    }
                 }
-
-                reader.Close();
+            }
+            catch (Exception ex)
+            {
+                throw new Exception("Error al obtener clientes: " + ex.Message);
             }
 
             return lista;
@@ -60,65 +65,76 @@ namespace LibreriaUniversitaria.Datos
         {
             Cliente cliente = null;
 
-            using (SqlConnection conn = new SqlConnection(connectionString))
+            try
             {
-                string query = "SELECT * FROM Cliente WHERE IdCliente = @id";
-                SqlCommand cmd = new SqlCommand(query, conn);
-                cmd.Parameters.AddWithValue("@id", id);
-                conn.Open();
-
-                SqlDataReader reader = cmd.ExecuteReader();
-
-                if (reader.Read())
+                using (SqlConnection conn = new SqlConnection(connectionString))
                 {
-                    cliente = new Cliente
-                    {
-                        IdCliente = Convert.ToInt32(reader["IdCliente"]),
-                        Nombre = reader["Nombre"].ToString(),
-                        Apellido = reader["Apellido"].ToString(),
-                        TipoDocumento = reader["TipoDocumento"].ToString(),
-                        NumeroDocumento = reader["NroDocumento"].ToString(),
-                        EsEstudiante = Convert.ToBoolean(reader["EsEstudiante"])
-                    };
-                }
+                    string query = "SELECT IdCliente, Nombre, Apellido, NumeroDocumento, EsEstudiante, Email FROM Cliente WHERE IdCliente = @id";
+                    SqlCommand cmd = new SqlCommand(query, conn);
+                    cmd.Parameters.AddWithValue("@id", id);
+                    conn.Open();
 
-                reader.Close();
+                    using (SqlDataReader reader = cmd.ExecuteReader())
+                    {
+                        if (reader.Read())
+                        {
+                            cliente = new Cliente
+                            {
+                                IdCliente = Convert.ToInt32(reader["IdCliente"]),
+                                Nombre = reader["Nombre"].ToString(),
+                                Apellido = reader["Apellido"].ToString(),
+                                NumeroDocumento = reader["NumeroDocumento"].ToString(),
+                                EsEstudiante = Convert.ToBoolean(reader["EsEstudiante"]),
+                                Email = reader["Email"] == DBNull.Value ? null : reader["Email"].ToString()
+                            };
+                        }
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                throw new Exception("Error al buscar cliente por ID: " + ex.Message);
             }
 
             return cliente;
         }
 
         /// <summary>
-        /// Busca un cliente por tipo y número de documento.
+        /// Busca un cliente por número de documento.
         /// </summary>
-        public static Cliente BuscarPorDocumento(string tipoDoc, string nroDoc)
+        public static Cliente BuscarPorDocumento(string nroDoc)
         {
             Cliente cliente = null;
 
-            using (SqlConnection conn = new SqlConnection(connectionString))
+            try
             {
-                string query = "SELECT * FROM Cliente WHERE TipoDocumento = @tipo AND NroDocumento = @nro";
-                SqlCommand cmd = new SqlCommand(query, conn);
-                cmd.Parameters.AddWithValue("@tipo", tipoDoc);
-                cmd.Parameters.AddWithValue("@nro", nroDoc);
-                conn.Open();
-
-                SqlDataReader reader = cmd.ExecuteReader();
-
-                if (reader.Read())
+                using (SqlConnection conn = new SqlConnection(connectionString))
                 {
-                    cliente = new Cliente
-                    {
-                        IdCliente = Convert.ToInt32(reader["IdCliente"]),
-                        Nombre = reader["Nombre"].ToString(),
-                        Apellido = reader["Apellido"].ToString(),
-                        TipoDocumento = reader["TipoDocumento"].ToString(),
-                        NumeroDocumento = reader["NroDocumento"].ToString(),
-                        EsEstudiante = Convert.ToBoolean(reader["EsEstudiante"])
-                    };
-                }
+                    string query = "SELECT IdCliente, Nombre, Apellido, NumeroDocumento, EsEstudiante, Email FROM Cliente WHERE NumeroDocumento = @nro";
+                    SqlCommand cmd = new SqlCommand(query, conn);
+                    cmd.Parameters.AddWithValue("@nro", nroDoc);
+                    conn.Open();
 
-                reader.Close();
+                    using (SqlDataReader reader = cmd.ExecuteReader())
+                    {
+                        if (reader.Read())
+                        {
+                            cliente = new Cliente
+                            {
+                                IdCliente = Convert.ToInt32(reader["IdCliente"]),
+                                Nombre = reader["Nombre"].ToString(),
+                                Apellido = reader["Apellido"].ToString(),
+                                NumeroDocumento = reader["NumeroDocumento"].ToString(),
+                                EsEstudiante = Convert.ToBoolean(reader["EsEstudiante"]),
+                                Email = reader["Email"] == DBNull.Value ? null : reader["Email"].ToString()
+                            };
+                        }
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                throw new Exception("Error al buscar cliente por documento: " + ex.Message);
             }
 
             return cliente;
@@ -129,19 +145,26 @@ namespace LibreriaUniversitaria.Datos
         /// </summary>
         public static void Insertar(Cliente cliente)
         {
-            using (SqlConnection conn = new SqlConnection(connectionString))
+            try
             {
-                string query = @"INSERT INTO Cliente (Nombre, Apellido, TipoDocumento, NroDocumento, EsEstudiante) 
-                                 VALUES (@nombre, @apellido, @tipo, @nro, @esEstudiante)";
-                SqlCommand cmd = new SqlCommand(query, conn);
-                cmd.Parameters.AddWithValue("@nombre", cliente.Nombre);
-                cmd.Parameters.AddWithValue("@apellido", cliente.Apellido);
-                cmd.Parameters.AddWithValue("@tipo", cliente.TipoDocumento);
-                cmd.Parameters.AddWithValue("@nro", cliente.NumeroDocumento);
-                cmd.Parameters.AddWithValue("@esEstudiante", cliente.EsEstudiante);
+                using (SqlConnection conn = new SqlConnection(connectionString))
+                {
+                    string query = @"INSERT INTO Cliente (Nombre, Apellido, NumeroDocumento, EsEstudiante, Email) 
+                                     VALUES (@nombre, @apellido, @nro, @esEstudiante, @email)";
+                    SqlCommand cmd = new SqlCommand(query, conn);
+                    cmd.Parameters.AddWithValue("@nombre", cliente.Nombre);
+                    cmd.Parameters.AddWithValue("@apellido", cliente.Apellido);
+                    cmd.Parameters.AddWithValue("@nro", cliente.NumeroDocumento);
+                    cmd.Parameters.AddWithValue("@esEstudiante", cliente.EsEstudiante);
+                    cmd.Parameters.AddWithValue("@email", (object)cliente.Email ?? DBNull.Value);
 
-                conn.Open();
-                cmd.ExecuteNonQuery();
+                    conn.Open();
+                    cmd.ExecuteNonQuery();
+                }
+            }
+            catch (Exception ex)
+            {
+                throw new Exception("Error al insertar cliente: " + ex.Message);
             }
         }
 
@@ -150,21 +173,28 @@ namespace LibreriaUniversitaria.Datos
         /// </summary>
         public static void Actualizar(Cliente cliente)
         {
-            using (SqlConnection conn = new SqlConnection(connectionString))
+            try
             {
-                string query = @"UPDATE Cliente SET Nombre = @nombre, Apellido = @apellido, 
-                                 TipoDocumento = @tipo, NroDocumento = @nro, EsEstudiante = @esEstudiante 
-                                 WHERE IdCliente = @id";
-                SqlCommand cmd = new SqlCommand(query, conn);
-                cmd.Parameters.AddWithValue("@nombre", cliente.Nombre);
-                cmd.Parameters.AddWithValue("@apellido", cliente.Apellido);
-                cmd.Parameters.AddWithValue("@tipo", cliente.TipoDocumento);
-                cmd.Parameters.AddWithValue("@nro", cliente.NumeroDocumento);
-                cmd.Parameters.AddWithValue("@esEstudiante", cliente.EsEstudiante);
-                cmd.Parameters.AddWithValue("@id", cliente.IdCliente);
+                using (SqlConnection conn = new SqlConnection(connectionString))
+                {
+                    string query = @"UPDATE Cliente SET Nombre = @nombre, Apellido = @apellido, 
+                                     NumeroDocumento = @nro, EsEstudiante = @esEstudiante, Email = @email 
+                                     WHERE IdCliente = @id";
+                    SqlCommand cmd = new SqlCommand(query, conn);
+                    cmd.Parameters.AddWithValue("@nombre", cliente.Nombre);
+                    cmd.Parameters.AddWithValue("@apellido", cliente.Apellido);
+                    cmd.Parameters.AddWithValue("@nro", cliente.NumeroDocumento);
+                    cmd.Parameters.AddWithValue("@esEstudiante", cliente.EsEstudiante);
+                    cmd.Parameters.AddWithValue("@email", (object)cliente.Email ?? DBNull.Value);
+                    cmd.Parameters.AddWithValue("@id", cliente.IdCliente);
 
-                conn.Open();
-                cmd.ExecuteNonQuery();
+                    conn.Open();
+                    cmd.ExecuteNonQuery();
+                }
+            }
+            catch (Exception ex)
+            {
+                throw new Exception("Error al actualizar cliente: " + ex.Message);
             }
         }
 
@@ -173,14 +203,21 @@ namespace LibreriaUniversitaria.Datos
         /// </summary>
         public static void Eliminar(int id)
         {
-            using (SqlConnection conn = new SqlConnection(connectionString))
+            try
             {
-                string query = "DELETE FROM Cliente WHERE IdCliente = @id";
-                SqlCommand cmd = new SqlCommand(query, conn);
-                cmd.Parameters.AddWithValue("@id", id);
+                using (SqlConnection conn = new SqlConnection(connectionString))
+                {
+                    string query = "DELETE FROM Cliente WHERE IdCliente = @id";
+                    SqlCommand cmd = new SqlCommand(query, conn);
+                    cmd.Parameters.AddWithValue("@id", id);
 
-                conn.Open();
-                cmd.ExecuteNonQuery();
+                    conn.Open();
+                    cmd.ExecuteNonQuery();
+                }
+            }
+            catch (Exception ex)
+            {
+                throw new Exception("Error al eliminar cliente: " + ex.Message);
             }
         }
     }

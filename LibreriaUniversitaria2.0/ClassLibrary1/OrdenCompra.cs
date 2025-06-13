@@ -4,6 +4,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
+using LibreriaUniversitaria.Entidades.Excepciones;
+using System;
+using System.Collections.Generic;
+
 namespace LibreriaUniversitaria.Entidades
 {
     /// <summary>
@@ -12,11 +16,11 @@ namespace LibreriaUniversitaria.Entidades
     public class OrdenCompra
     {
         // Atributos privados
-        private int _idOrdenCompra; // CAMBIADO de IdCompra a IdOrdenCompra
+        private int _idOrdenCompra;
         private DateTime _fecha;
         private Editorial _editorial;
         private Empleado _empleado;
-        private List<DetalleCompra> _items; // CAMBIADO de _detalles a _items
+        private List<DetalleCompra> _items;
 
         // Propiedades públicas
         public int IdOrdenCompra
@@ -53,6 +57,7 @@ namespace LibreriaUniversitaria.Entidades
         public OrdenCompra()
         {
             _items = new List<DetalleCompra>();
+            _fecha = DateTime.Now;
         }
 
         // Constructor con parámetros
@@ -65,7 +70,9 @@ namespace LibreriaUniversitaria.Entidades
             _items = items ?? new List<DetalleCompra>();
         }
 
-        // Método para calcular el total de la orden
+        /// <summary>
+        /// Calcula el total sumando los subtotales de los ítems.
+        /// </summary>
         public decimal CalcularTotal()
         {
             decimal total = 0;
@@ -75,6 +82,25 @@ namespace LibreriaUniversitaria.Entidades
             }
             return total;
         }
+
+        /// <summary>
+        /// Valida que los datos de la orden estén completos.
+        /// </summary>
+        public void Validar()
+        {
+            if (_editorial == null)
+                throw new EntidadInvalidaException("La orden debe tener una editorial asignada.");
+
+            if (_empleado == null)
+                throw new EntidadInvalidaException("La orden debe tener un empleado responsable.");
+
+            if (_items == null || _items.Count == 0)
+                throw new EntidadInvalidaException("La orden debe incluir al menos un ítem.");
+
+            _editorial.Validar();
+            _empleado.Validar();
+        }
     }
 }
+
 

@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using LibreriaUniversitaria.Entidades.Excepciones;
+
 
 namespace LibreriaUniversitaria.Entidades
 {
@@ -68,6 +70,23 @@ namespace LibreriaUniversitaria.Entidades
                 total += item.Subtotal();
             }
             return total;
+        }
+
+        /// <summary>
+        /// Valida que la reserva tenga datos esenciales.
+        /// </summary>
+        public void Validar()
+        {
+            if (Cliente == null)
+                throw new EntidadInvalidaException("La reserva debe tener un cliente asociado.");
+
+            if (Estado == null)
+                throw new EntidadInvalidaException("La reserva debe tener un estado definido.");
+
+            if (Detalles == null || Detalles.Count == 0)
+                throw new EntidadInvalidaException("La reserva debe contener al menos un libro.");
+
+            Cliente.Validar(); // También se valida el cliente
         }
     }
 }

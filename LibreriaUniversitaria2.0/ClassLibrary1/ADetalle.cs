@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
+using LibreriaUniversitaria.Entidades.Excepciones;
 
 namespace LibreriaUniversitaria.Entidades
 {
@@ -25,7 +26,12 @@ namespace LibreriaUniversitaria.Entidades
         public Libro Libro
         {
             get { return _libro; }
-            set { _libro = value; }
+            set
+            {
+                if (value == null)
+                    throw new EntidadInvalidaException("El libro no puede ser nulo.");
+                _libro = value;
+            }
         }
 
         /// <summary>
@@ -34,7 +40,12 @@ namespace LibreriaUniversitaria.Entidades
         public int Cantidad
         {
             get { return _cantidad; }
-            set { _cantidad = value; }
+            set
+            {
+                if (value <= 0)
+                    throw new EntidadInvalidaException("La cantidad debe ser mayor que cero.");
+                _cantidad = value;
+            }
         }
 
         /// <summary>
@@ -45,3 +56,4 @@ namespace LibreriaUniversitaria.Entidades
         public abstract decimal Subtotal();
     }
 }
+

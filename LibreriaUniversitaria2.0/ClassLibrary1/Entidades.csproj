@@ -42,7 +42,6 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ADetalle.cs" />
-    <Compile Include="APersona.cs" />
     <Compile Include="Cliente.cs" />
     <Compile Include="DetalleCompra.cs" />
     <Compile Include="DetalleReserva.cs" />
@@ -51,6 +50,8 @@
     <Compile Include="Editorial.cs" />
     <Compile Include="Empleado.cs" />
     <Compile Include="EstadoReserva.cs" />
+    <Compile Include="Excepciones\AccesoDatosException.cs" />
+    <Compile Include="Excepciones\EntidadInvalidaException.cs" />
     <Compile Include="Libro.cs" />
     <Compile Include="Localidad.cs" />
     <Compile Include="MovimientoStock.cs" />
@@ -61,5 +62,6 @@
     <Compile Include="Rol.cs" />
     <Compile Include="Venta.cs" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

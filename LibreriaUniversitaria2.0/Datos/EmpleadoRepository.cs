@@ -21,82 +21,97 @@ namespace LibreriaUniversitaria.Datos
         {
             List<Empleado> empleados = new List<Empleado>();
 
-            using (SqlConnection conn = DbHelper.ObtenerConexion())
+            try
             {
-                string query = @"SELECT e.IdEmpleado, e.Nombre, e.Apellido, e.Documento, e.Clave,
-                                        r.IdRol, r.Nombre AS NombreRol
-                                 FROM Empleado e
-                                 JOIN Rol r ON e.IdRol = r.IdRol";
-
-                SqlCommand cmd = new SqlCommand(query, conn);
-                conn.Open();
-
-                using (SqlDataReader reader = cmd.ExecuteReader())
+                using (SqlConnection conn = DbHelper.ObtenerConexion())
                 {
-                    while (reader.Read())
-                    {
-                        Empleado emp = new Empleado
-                        {
-                            IdEmpleado = reader.GetInt32(0),
-                            Nombre = reader.GetString(1),
-                            Apellido = reader.GetString(2),
-                            Documento = reader.GetString(3),
-                            Clave = reader.GetString(4),
-                            Rol = new Rol
-                            {
-                                IdRol = reader.GetInt32(5),
-                                Nombre = reader.GetString(6)
-                            }
-                        };
+                    string query = @"SELECT e.IdEmpleado, e.Nombre, e.Apellido, e.DNI, e.Clave,
+                                            r.IdRol, r.Nombre AS NombreRol
+                                     FROM Empleado e
+                                     JOIN Rol r ON e.IdRol = r.IdRol";
 
-                        empleados.Add(emp);
+                    SqlCommand cmd = new SqlCommand(query, conn);
+                    conn.Open();
+
+                    using (SqlDataReader reader = cmd.ExecuteReader())
+                    {
+                        while (reader.Read())
+                        {
+                            Empleado emp = new Empleado
+                            {
+                                IdEmpleado = reader.GetInt32(0),
+                                Nombre = reader.GetString(1),
+                                Apellido = reader.GetString(2),
+                                DNI = reader.GetString(3),       // Cambiado Documento por DNI
+                                Clave = reader.GetString(4),
+                                Rol = new Rol
+                                {
+                                    IdRol = reader.GetInt32(5),
+                                    Nombre = reader.GetString(6)
+                                }
+                            };
+
+                            empleados.Add(emp);
+                        }
                     }
                 }
+            }
+            catch (Exception ex)
+            {
+                // Manejo o relanzamiento de excepción personalizado
+                throw new Exception("Error al obtener empleados: " + ex.Message);
             }
 
             return empleados;
         }
 
         /// <summary>
-        /// Busca un empleado por número de documento y clave (para login).
+        /// Busca un empleado por número de DNI y clave (para login).
         /// </summary>
-        public static Empleado ObtenerPorDocumentoYClave(string documento, string clave)
+        public static Empleado ObtenerPorDocumentoYClave(string dni, string clave)
         {
             Empleado emp = null;
 
-            using (SqlConnection conn = DbHelper.ObtenerConexion())
+            try
             {
-                string query = @"SELECT e.IdEmpleado, e.Nombre, e.Apellido, e.Documento, e.Clave,
-                                        r.IdRol, r.Nombre AS NombreRol
-                                 FROM Empleado e
-                                 JOIN Rol r ON e.IdRol = r.IdRol
-                                 WHERE e.Documento = @Documento AND e.Clave = @Clave";
-
-                SqlCommand cmd = new SqlCommand(query, conn);
-                cmd.Parameters.AddWithValue("@Documento", documento);
-                cmd.Parameters.AddWithValue("@Clave", clave);
-
-                conn.Open();
-
-                using (SqlDataReader reader = cmd.ExecuteReader())
+                using (SqlConnection conn = DbHelper.ObtenerConexion())
                 {
-                    if (reader.Read())
+                    string query = @"SELECT e.IdEmpleado, e.Nombre, e.Apellido, e.DNI, e.Clave,
+                                            r.IdRol, r.Nombre AS NombreRol
+                                     FROM Empleado e
+                                     JOIN Rol r ON e.IdRol = r.IdRol
+                                     WHERE e.DNI = @DNI AND e.Clave = @Clave";
+
+                    SqlCommand cmd = new SqlCommand(query, conn);
+                    cmd.Parameters.AddWithValue("@DNI", dni);
+                    cmd.Parameters.AddWithValue("@Clave", clave);
+
+                    conn.Open();
+
+                    using (SqlDataReader reader = cmd.ExecuteReader())
                     {
-                        emp = new Empleado
+                        if (reader.Read())
                         {
-                            IdEmpleado = reader.GetInt32(0),
-                            Nombre = reader.GetString(1),
-                            Apellido = reader.GetString(2),
-                            Documento = reader.GetString(3),
-                            Clave = reader.GetString(4),
-                            Rol = new Rol
+                            emp = new Empleado
                             {
-                                IdRol = reader.GetInt32(5),
-                                Nombre = reader.GetString(6)
-                            }
-                        };
+                                IdEmpleado = reader.GetInt32(0),
+                                Nombre = reader.GetString(1),
+                                Apellido = reader.GetString(2),
+                                DNI = reader.GetString(3),
+                                Clave = reader.GetString(4),
+                                Rol = new Rol
+                                {
+                                    IdRol = reader.GetInt32(5),
+                                    Nombre = reader.GetString(6)
+                                }
+                            };
+                        }
                     }
                 }
+            }
+            catch (Exception ex)
+            {
+                throw new Exception("Error al buscar empleado por DNI y clave: " + ex.Message);
             }
 
             return emp;
@@ -109,43 +124,49 @@ namespace LibreriaUniversitaria.Datos
         {
             List<Empleado> empleados = new List<Empleado>();
 
-            using (SqlConnection conn = DbHelper.ObtenerConexion())
+            try
             {
-                string query = @"SELECT e.IdEmpleado, e.Nombre, e.Apellido, e.Documento, e.Clave,
-                                        r.IdRol, r.Nombre AS NombreRol
-                                 FROM Empleado e
-                                 JOIN Rol r ON e.IdRol = r.IdRol
-                                 WHERE r.Nombre = @NombreRol";
-
-                SqlCommand cmd = new SqlCommand(query, conn);
-                cmd.Parameters.AddWithValue("@NombreRol", nombreRol);
-                conn.Open();
-
-                using (SqlDataReader reader = cmd.ExecuteReader())
+                using (SqlConnection conn = DbHelper.ObtenerConexion())
                 {
-                    while (reader.Read())
-                    {
-                        Empleado emp = new Empleado
-                        {
-                            IdEmpleado = reader.GetInt32(0),
-                            Nombre = reader.GetString(1),
-                            Apellido = reader.GetString(2),
-                            Documento = reader.GetString(3),
-                            Clave = reader.GetString(4),
-                            Rol = new Rol
-                            {
-                                IdRol = reader.GetInt32(5),
-                                Nombre = reader.GetString(6)
-                            }
-                        };
+                    string query = @"SELECT e.IdEmpleado, e.Nombre, e.Apellido, e.DNI, e.Clave,
+                                            r.IdRol, r.Nombre AS NombreRol
+                                     FROM Empleado e
+                                     JOIN Rol r ON e.IdRol = r.IdRol
+                                     WHERE r.Nombre = @NombreRol";
 
-                        empleados.Add(emp);
+                    SqlCommand cmd = new SqlCommand(query, conn);
+                    cmd.Parameters.AddWithValue("@NombreRol", nombreRol);
+                    conn.Open();
+
+                    using (SqlDataReader reader = cmd.ExecuteReader())
+                    {
+                        while (reader.Read())
+                        {
+                            Empleado emp = new Empleado
+                            {
+                                IdEmpleado = reader.GetInt32(0),
+                                Nombre = reader.GetString(1),
+                                Apellido = reader.GetString(2),
+                                DNI = reader.GetString(3),
+                                Clave = reader.GetString(4),
+                                Rol = new Rol
+                                {
+                                    IdRol = reader.GetInt32(5),
+                                    Nombre = reader.GetString(6)
+                                }
+                            };
+
+                            empleados.Add(emp);
+                        }
                     }
                 }
+            }
+            catch (Exception ex)
+            {
+                throw new Exception("Error al obtener empleados por rol: " + ex.Message);
             }
 
             return empleados;
         }
     }
 }
-
