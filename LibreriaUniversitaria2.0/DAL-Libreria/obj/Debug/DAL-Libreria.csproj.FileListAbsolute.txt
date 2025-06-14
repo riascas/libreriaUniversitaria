@@ -1,0 +1,9 @@
+H:\Tecnicas2025\Parcial\DAL-Libreria\bin\Debug\DAL-Libreria.dll
+H:\Tecnicas2025\Parcial\DAL-Libreria\bin\Debug\DAL-Libreria.pdb
+H:\Tecnicas2025\Parcial\DAL-Libreria\bin\Debug\ENT-Libreria.dll
+H:\Tecnicas2025\Parcial\DAL-Libreria\bin\Debug\ENT-Libreria.pdb
+H:\Tecnicas2025\Parcial\DAL-Libreria\obj\Debug\DAL-Libreria.csproj.AssemblyReference.cache
+H:\Tecnicas2025\Parcial\DAL-Libreria\obj\Debug\DAL-Libreria.csproj.CoreCompileInputs.cache
+H:\Tecnicas2025\Parcial\DAL-Libreria\obj\Debug\DAL-Libr.6CE8DF4C.Up2Date
+H:\Tecnicas2025\Parcial\DAL-Libreria\obj\Debug\DAL-Libreria.dll
+H:\Tecnicas2025\Parcial\DAL-Libreria\obj\Debug\DAL-Libreria.pdb
