@@ -36,5 +36,10 @@ namespace Sistema_Libreria
             this.Show();
 
         }
+
+        private void Login_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
