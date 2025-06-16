@@ -6,7 +6,14 @@ using System.Threading.Tasks;
 
 namespace ENT_Libreria
 {
-    internal class Municipio
+    public class Municipio
     {
+        private string _nombreMunicipio;
+
+        public string NombreMunicipio
+        {
+            get { return _nombreMunicipio; }
+            set { _nombreMunicipio = value; }
+        }
     }
 }

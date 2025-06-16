@@ -6,7 +6,21 @@ using System.Threading.Tasks;
 
 namespace ENT_Libreria
 {
-    internal class Localidad
+    public class Localidad
     {
+        private string _codigoPostal;
+        private Municipio _unMunicipio;
+
+        public string CodigoPostal
+        {
+            get { return _codigoPostal; }
+            set { _codigoPostal = value; }
+        }
+
+        public Municipio UnMunicipio
+        {
+            get { return _unMunicipio; }
+            set { _unMunicipio = value; }
+        }
     }
 }

@@ -6,7 +6,14 @@ using System.Threading.Tasks;
 
 namespace ENT_Libreria
 {
-    internal class EstadoLibro
+    public class EstadoLibro
     {
+        private string _descripcionEstadoLibro;
+
+        public string DescripcionEstadoLibro
+        {
+            get { return _descripcionEstadoLibro; }
+            set { _descripcionEstadoLibro = value; }
+        }
     }
 }

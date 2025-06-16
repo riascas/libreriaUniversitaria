@@ -6,7 +6,21 @@ using System.Threading.Tasks;
 
 namespace ENT_Libreria
 {
-    internal class MovimientoStock
+    public class MovimientoStock
     {
+        private int _cantidadStock;
+        private DateTime _fechaStock;
+
+        public int CantidadStock
+        {
+            get { return _cantidadStock; }
+            set { _cantidadStock = value; }
+        }
+
+        public DateTime FechaStock
+        {
+            get { return _fechaStock; }
+            set { _fechaStock = value; }
+        }
     }
 }
