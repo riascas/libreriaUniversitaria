@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace ENT_Libreria
 {
-    public class Class1
+    internal class Empleado
     {
     }
 }
