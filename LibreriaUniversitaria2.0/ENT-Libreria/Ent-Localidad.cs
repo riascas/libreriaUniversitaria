@@ -7,6 +7,7 @@ using System.Threading.Tasks;
 namespace ENT_Libreria
 {
     public class Localidad
+
     {
         private string _codigoPostal;
         private Municipio _unMunicipio;

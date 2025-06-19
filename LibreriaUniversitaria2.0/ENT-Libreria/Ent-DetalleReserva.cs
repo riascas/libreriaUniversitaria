@@ -15,14 +15,10 @@ namespace ENT_Libreria
             get { return _precioEstimado; }
             set { _precioEstimado = value; }
         }
-        /// <summary>
-        /// Metodo que calcula el subtotal de un detalle de reserva.
-        /// </summary>
-        /// <returns></returns>
-        /// <exception cref="NotImplementedException"></exception>
+
         public decimal CalcularSubTotal()
         {
-           return Cantidad * PrecioEstimado;
+            return Cantidad * PrecioEstimado;
         }
     }
 }

@@ -15,14 +15,9 @@ namespace ENT_Libreria
             get { return _precioVenta; }
             set { _precioVenta = value; }
         }
-        /// <summary>
-        /// Metodo que calcula el subtotal de un detalle de venta.
-        /// </summary>
-        /// <returns></returns>
-        /// <exception cref="NotImplementedException"></exception>
+
         public decimal CalcularSubTotal()
         {
-           
             return Cantidad * PrecioVenta;
         }
     }

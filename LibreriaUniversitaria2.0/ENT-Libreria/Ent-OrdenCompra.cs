@@ -10,7 +10,6 @@ namespace ENT_Libreria
     {
         private DateTime _fechaCompra;
         private Editorial _unaEditorial;
-        private List<DetalleVenta> _detalleVenta;
 
         public DateTime FechaCompra
         {
@@ -23,30 +22,26 @@ namespace ENT_Libreria
             get { return _unaEditorial; }
             set { _unaEditorial = value; }
         }
-
-        public List<DetalleVenta> DetalleVenta
+        /* me falta  hacer este metodo
+        private decimal DetalleVenta;
+        
+        public decimal detalleventa
         {
-            get { return _detalleVenta; }
-            set { _detalleVenta = value; }
+            get { return DetalleVenta; }
+            set { DetalleVenta = value; }
         }
 
-        /// <summary>
-        /// Metodo que calcula el total de una orden de compra.
-        /// </summary>
-        /// <returns></returns>
         public decimal CalcularTotal()
         {
             decimal total = 0;
 
-            if (_detalleVenta != null)
+            foreach (var detalle in DetalleVenta)
             {
-                foreach (var detalle in _detalleVenta)
-                {
-                    total += detalle.CalcularSubTotal();
-                }
+                total += detalle.CalcularSubTotal();
             }
 
             return total;
         }
+        */
     }
 }

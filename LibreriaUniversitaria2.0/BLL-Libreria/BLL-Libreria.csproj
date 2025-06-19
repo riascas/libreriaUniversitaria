@@ -49,10 +49,6 @@
       <Project>{1f654b32-6361-4153-bacc-0819270824fe}</Project>
       <Name>DAL-Libreria</Name>
     </ProjectReference>
-    <ProjectReference Include="..\ENT-Libreria\ENT-Libreria.csproj">
-      <Project>{e1ecc4c6-9c3c-4129-95da-9b59ad2eede8}</Project>
-      <Name>ENT-Libreria</Name>
-    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

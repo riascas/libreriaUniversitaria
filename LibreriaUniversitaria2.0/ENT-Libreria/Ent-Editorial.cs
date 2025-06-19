@@ -7,6 +7,7 @@ using System.Threading.Tasks;
 namespace ENT_Libreria
 {
     public class Editorial
+
     {
         private string _contactoEditorial;
         private string _cuitEditorial;

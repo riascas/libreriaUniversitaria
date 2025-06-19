@@ -8,6 +8,7 @@ namespace ENT_Libreria
 {
     public class Persona
     {
+
         private string _apellido;
         private string _dni;
         private string _email;

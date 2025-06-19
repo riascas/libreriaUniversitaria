@@ -57,14 +57,10 @@ namespace ENT_Libreria
             get { return _estadoLibro; }
             set { _estadoLibro = value; }
         }
-        /// <summary>
-        /// Metodo para calcular la disponibilidad del libro.
-        /// </summary>
-        /// <returns></returns>
+
         public bool CalculaDisponibilidad()
         {
-            
-           return Disponible;
+            return Disponible;
         }
     }
 }
