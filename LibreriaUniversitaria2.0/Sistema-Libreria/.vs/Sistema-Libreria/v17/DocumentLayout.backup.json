@@ -66,7 +66,7 @@
       "AbsoluteMoniker": "D:0:0:{1F654B32-6361-4153-BACC-0819270824FE}|..\\DAL-Libreria\\DAL-Libreria.csproj|c:\\users\\alex\\desktop\\upelibre\\libreriauniversitaria\\libreriauniversitaria2.0\\dal-libreria\\dal-cliente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{90AD7DBD-C19E-4618-847F-D2CEE12686BE}|Sistema-Libreria.csproj|c:\\users\\alex\\desktop\\upelibre\\libreriauniversitaria\\libreriauniversitaria2.0\\sistema-libreria\\frmusuarios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{90AD7DBD-C19E-4618-847F-D2CEE12686BE}|Sistema-Libreria.csproj|C:\\Users\\Alex\\Desktop\\UPELibre\\libreriaUniversitaria\\LibreriaUniversitaria2.0\\Sistema-Libreria\\frmusuarios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{90AD7DBD-C19E-4618-847F-D2CEE12686BE}|Sistema-Libreria.csproj|solutionrelative:frmusuarios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
@@ -109,8 +109,7 @@
               "RelativeToolTip": "..\\DAL-Libreria\\DAL-Libro.cs",
               "ViewState": "AgIAADIAAAAAAAAAAAAswEEAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-18T23:39:00.752Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-18T23:39:00.752Z"
             },
             {
               "$type": "Document",
@@ -122,8 +121,7 @@
               "RelativeToolTip": "..\\DAL-Libreria\\DAL-MovimientoStock.cs",
               "ViewState": "AgIAAA4AAAAAAAAAAAAAwBoAAAACAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-18T23:36:49.514Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-18T23:36:49.514Z"
             },
             {
               "$type": "Document",
@@ -135,8 +133,7 @@
               "RelativeToolTip": "..\\DAL-Libreria\\DAL-EstadoReserva.cs",
               "ViewState": "AgIAAAQAAAAAAAAAAAAuwBEAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-18T23:24:32.556Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-18T23:24:32.556Z"
             },
             {
               "$type": "Document",
@@ -161,8 +158,7 @@
               "RelativeToolTip": "..\\DAL-Libreria\\DAL-BaseDetalle.cs",
               "ViewState": "AgIAABYAAAAAAAAAAAAuwCAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-18T23:27:35.111Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-18T23:27:35.111Z"
             },
             {
               "$type": "Document",
@@ -174,8 +170,7 @@
               "RelativeToolTip": "..\\DAL-Libreria\\DAL-Venta.cs",
               "ViewState": "AgIAABQAAAAAAAAAAAAuwCEAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-18T23:22:08.162Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-18T23:22:08.162Z"
             },
             {
               "$type": "Document",
@@ -187,8 +182,7 @@
               "RelativeToolTip": "..\\DAL-Libreria\\DAL-OrdenCompra.cs",
               "ViewState": "AgIAACQAAAAAAAAAAAAuwDEAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-18T23:12:26.651Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-18T23:12:26.651Z"
             },
             {
               "$type": "Document",
@@ -200,8 +194,7 @@
               "RelativeToolTip": "..\\DAL-Libreria\\DAL-SistemaLibreria.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAADEAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-18T23:45:23.951Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-18T23:45:23.951Z"
             },
             {
               "$type": "Document",
@@ -213,8 +206,7 @@
               "RelativeToolTip": "..\\DAL-Libreria\\DAL-CategoriaLibro.cs",
               "ViewState": "AgIAAAYAAAAAAAAAAAAAABEAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-18T23:44:02.347Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-18T23:44:02.347Z"
             },
             {
               "$type": "Document",
@@ -226,8 +218,7 @@
               "RelativeToolTip": "..\\DAL-Libreria\\DAL-EstadoLibro.cs",
               "ViewState": "AgIAAAgAAAAAAAAAAAAzwBEAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-18T23:42:49.113Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-18T23:42:49.113Z"
             },
             {
               "$type": "Document",
@@ -239,8 +230,7 @@
               "RelativeToolTip": "..\\DAL-Libreria\\DAL-DetalleReserva.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-18T23:34:55.406Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-18T23:34:55.406Z"
             },
             {
               "$type": "Document",
@@ -252,8 +242,7 @@
               "RelativeToolTip": "..\\DAL-Libreria\\DAL-DetalleVenta.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-18T23:34:12.479Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-18T23:34:12.479Z"
             },
             {
               "$type": "Document",
@@ -265,8 +254,7 @@
               "RelativeToolTip": "..\\DAL-Libreria\\DAL-DetalleOrdenCompra.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-18T23:32:43.861Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-18T23:32:43.861Z"
             },
             {
               "$type": "Document",
@@ -278,8 +266,7 @@
               "RelativeToolTip": "..\\DAL-Libreria\\DAL-Editorial.cs",
               "ViewState": "AgIAABUAAAAAAAAAAAAAACIAAAACAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-18T23:09:12.75Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-18T23:09:12.75Z"
             },
             {
               "$type": "Document",
@@ -291,8 +278,7 @@
               "RelativeToolTip": "..\\DAL-Libreria\\DAL-Municipio.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAACAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-18T23:02:23.102Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-18T23:02:23.102Z"
             },
             {
               "$type": "Document",
@@ -304,8 +290,7 @@
               "RelativeToolTip": "..\\DAL-Libreria\\DAL-Localidad.cs",
               "ViewState": "AgIAAAsAAAAAAAAAAAAAwBkAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-18T23:01:09.963Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-18T23:01:09.963Z"
             },
             {
               "$type": "Document",
@@ -317,8 +302,7 @@
               "RelativeToolTip": "..\\DAL-Libreria\\DAL-Domicilio.cs",
               "ViewState": "AgIAABcAAAAAAAAAAAAuwCEAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-18T22:59:47.091Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-18T22:59:47.091Z"
             },
             {
               "$type": "Document",
@@ -330,8 +314,7 @@
               "RelativeToolTip": "..\\DAL-Libreria\\DAL-Empleado.cs",
               "ViewState": "AgIAABUAAAAAAAAAAAAYwCEAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-18T22:46:50.652Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-18T22:46:50.652Z"
             },
             {
               "$type": "Document",
@@ -343,8 +326,7 @@
               "RelativeToolTip": "..\\DAL-Libreria\\DAL-Persona.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAC4AAAAfAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-18T22:30:11.568Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-18T22:30:11.568Z"
             },
             {
               "$type": "Document",
@@ -356,8 +338,7 @@
               "RelativeToolTip": "..\\DAL-Libreria\\DAL-RolEmpleado.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-18T22:51:35.815Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-18T22:51:35.815Z"
             },
             {
               "$type": "Document",
@@ -369,8 +350,7 @@
               "RelativeToolTip": "..\\DAL-Libreria\\DAL-Cliente.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAACAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-18T22:43:45.448Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-18T22:43:45.448Z"
             },
             {
               "$type": "Document",
@@ -393,8 +373,7 @@
               "ToolTip": "C:\\Users\\Alex\\Desktop\\UPELibre\\libreriaUniversitaria\\LibreriaUniversitaria2.0\\Sistema-Libreria\\frmUsuarios.cs [Dise\u00F1o]",
               "RelativeToolTip": "frmUsuarios.cs [Dise\u00F1o]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-14T00:42:57.643Z",
-              "EditorCaption": " [Dise\u00F1o]"
+              "WhenOpened": "2025-06-14T00:42:57.643Z"
             },
             {
               "$type": "Document",
