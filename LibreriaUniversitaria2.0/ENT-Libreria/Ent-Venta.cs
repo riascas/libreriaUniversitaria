@@ -22,6 +22,7 @@ namespace ENT_Libreria
             get { return _fechaVenta; }
             set { _fechaVenta = value; }
         }
+
         public float AplicarDescuento()
         {
             decimal total = CalcularTotal();
@@ -30,6 +31,7 @@ namespace ENT_Libreria
                 return 0.10f; // 10% de descuento
 
             return 0; // Sin descuento
+
         }
 
         public decimal CalcularTotal()
@@ -43,6 +45,5 @@ namespace ENT_Libreria
 
             return total;
         }
-
     }
- }
+}

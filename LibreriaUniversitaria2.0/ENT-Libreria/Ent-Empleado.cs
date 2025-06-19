@@ -30,13 +30,14 @@ namespace ENT_Libreria
             set { _usuario = value; }
         }
         /// <summary>
-        /// Validamos que el usuario y la clave no esten vacios para iniciar sesion.
+        /// validamos que no fuera vacio el usuario y la clave
         /// </summary>
         /// <returns></returns>
         public bool IniciarSesion()
         {
-            
+
             return !string.IsNullOrEmpty(Usuario) && !string.IsNullOrEmpty(Clave);
+
         }
     }
 }

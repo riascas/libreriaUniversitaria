@@ -7,6 +7,7 @@ using System.Threading.Tasks;
 namespace ENT_Libreria
 {
     public class RolEmpleado
+
     {
         private int _id;
         private string _nombre;

@@ -15,15 +15,20 @@ namespace ENT_Libreria
             get { return _precioCosto; }
             set { _precioCosto = value; }
         }
-        /// <summary>
-        /// Metodo que calcula el subtotal de un detalle de orden de compra.
-        /// </summary>
-        /// <returns></returns>
-        /// <exception cref="NotImplementedException"></exception>
+
+        private decimal DetalleVenta;
+
+        public decimal _detalleventa
+        {
+            get { return DetalleVenta; }
+            set { DetalleVenta = value; }
+        }
+
+
         public decimal CalcularSubTotal()
         {
-           
             return Cantidad * PrecioCosto;
+
         }
     }
 }

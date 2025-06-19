@@ -10,6 +10,7 @@ namespace ENT_Libreria
     {
         private string _descripcionEstadoLibro;
 
+
         public string DescripcionEstadoLibro
         {
             get { return _descripcionEstadoLibro; }

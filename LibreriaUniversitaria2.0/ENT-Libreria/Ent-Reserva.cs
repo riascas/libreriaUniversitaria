@@ -44,7 +44,15 @@ namespace ENT_Libreria
 
         public void CancelarReserva()
         {
-            UnEstadoReserva.DescripcionEstadoReserva = "Cancelada";
+            if (UnEstadoReserva.DescripcionEstadoReserva == "Reservado")
+            {
+                UnEstadoReserva.DescripcionEstadoReserva = "Cancelado";
+            }
+            else
+            {
+                throw new InvalidOperationException("La reserva no se puede cancelar porque ya está en un estado diferente.");
+            }
+
         }
     }
 }
