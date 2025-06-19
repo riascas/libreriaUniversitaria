@@ -7,3 +7,13 @@ H:\Tecnicas2025\Parcial\DAL-Libreria\obj\Debug\DAL-Libreria.csproj.CoreCompileIn
 H:\Tecnicas2025\Parcial\DAL-Libreria\obj\Debug\DAL-Libr.6CE8DF4C.Up2Date
 H:\Tecnicas2025\Parcial\DAL-Libreria\obj\Debug\DAL-Libreria.dll
 H:\Tecnicas2025\Parcial\DAL-Libreria\obj\Debug\DAL-Libreria.pdb
+C:\Users\Alex\Desktop\UPELibre\libreriaUniversitaria\LibreriaUniversitaria2.0\DAL-Libreria\bin\Debug\DAL-Libreria.dll
+C:\Users\Alex\Desktop\UPELibre\libreriaUniversitaria\LibreriaUniversitaria2.0\DAL-Libreria\bin\Debug\DAL-Libreria.pdb
+C:\Users\Alex\Desktop\UPELibre\libreriaUniversitaria\LibreriaUniversitaria2.0\DAL-Libreria\bin\Debug\ENT-Libreria.dll
+C:\Users\Alex\Desktop\UPELibre\libreriaUniversitaria\LibreriaUniversitaria2.0\DAL-Libreria\bin\Debug\ENT-Libreria.pdb
+C:\Users\Alex\Desktop\UPELibre\libreriaUniversitaria\LibreriaUniversitaria2.0\DAL-Libreria\obj\Debug\DAL-Libreria.csproj.AssemblyReference.cache
+C:\Users\Alex\Desktop\UPELibre\libreriaUniversitaria\LibreriaUniversitaria2.0\DAL-Libreria\obj\Debug\DAL-Libreria.csproj.CoreCompileInputs.cache
+C:\Users\Alex\Desktop\UPELibre\libreriaUniversitaria\LibreriaUniversitaria2.0\DAL-Libreria\obj\Debug\DAL-Libr.6CE8DF4C.Up2Date
+C:\Users\Alex\Desktop\UPELibre\libreriaUniversitaria\LibreriaUniversitaria2.0\DAL-Libreria\obj\Debug\DAL-Libreria.dll
+C:\Users\Alex\Desktop\UPELibre\libreriaUniversitaria\LibreriaUniversitaria2.0\DAL-Libreria\obj\Debug\DAL-Libreria.pdb
+C:\Users\Alex\Desktop\UPELibre\libreriaUniversitaria\LibreriaUniversitaria2.0\DAL-Libreria\bin\Debug\FontAwesome.Sharp.dll

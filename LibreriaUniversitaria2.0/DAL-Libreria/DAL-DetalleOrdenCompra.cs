@@ -6,7 +6,8 @@ using System.Threading.Tasks;
 
 namespace DAL_Libreria
 {
-    public class Class1
+    public class DAL_DetalleOrdenCompra : DAL_BaseDetalle
     {
+
     }
 }

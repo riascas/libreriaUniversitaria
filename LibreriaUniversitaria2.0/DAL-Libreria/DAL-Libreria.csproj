@@ -31,17 +31,45 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="FontAwesome.Sharp, Version=6.6.0.0, Culture=neutral, PublicKeyToken=d16d1e4e568ec10f, processorArchitecture=MSIL">
+      <HintPath>..\Sistema-Libreria\packages\FontAwesome.Sharp.6.6.0\lib\net472\FontAwesome.Sharp.dll</HintPath>
+    </Reference>
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xaml" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System.Data" />
     <Reference Include="System.Net.Http" />
     <Reference Include="System.Xml" />
+    <Reference Include="WindowsBase" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Class1.cs" />
+    <Compile Include="DAL-BaseDetalle.cs" />
+    <Compile Include="DAL-CategoriaLibro.cs" />
+    <Compile Include="DAL-Cliente.cs" />
+    <Compile Include="DAL-DetalleOrdenCompra.cs" />
+    <Compile Include="DAL-DetalleReserva.cs" />
+    <Compile Include="DAL-DetalleVenta.cs" />
+    <Compile Include="DAL-Domicilio.cs" />
+    <Compile Include="DAL-Editorial.cs" />
+    <Compile Include="DAL-Empleado.cs" />
+    <Compile Include="DAL-EstadoLibro.cs" />
+    <Compile Include="DAL-EstadoReserva.cs" />
+    <Compile Include="DAL-Libro.cs" />
+    <Compile Include="DAL-Localidad.cs" />
+    <Compile Include="DAL-MovimientoStock.cs" />
+    <Compile Include="DAL-Municipio.cs" />
+    <Compile Include="DAL-OrdenCompra.cs" />
+    <Compile Include="DAL-Persona.cs" />
+    <Compile Include="DAL-Reserva.cs" />
+    <Compile Include="DAL-RolEmpleado.cs" />
+    <Compile Include="DAL-SistemaLibreria.cs" />
+    <Compile Include="DAL-Venta.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -49,6 +77,9 @@
       <Project>{e1ecc4c6-9c3c-4129-95da-9b59ad2eede8}</Project>
       <Name>ENT-Libreria</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
