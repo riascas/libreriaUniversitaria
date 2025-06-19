@@ -1,80 +1,143 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "H:\\Tecnicas2025\\UPE-Libre\\Sistema-Libreria\\",
+  "WorkspaceRootPath": "C:\\xampp2\\htdocs\\libreriaUniversitaria\\LibreriaUniversitaria2.0\\Sistema-Libreria\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{90AD7DBD-C19E-4618-847F-D2CEE12686BE}|Sistema-Libreria.csproj|h:\\tecnicas2025\\upe-libre\\sistema-libreria\\inicio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{E1ECC4C6-9C3C-4129-95DA-9B59AD2EEDE8}|..\\ENT-Libreria\\ENT-Libreria.csproj|c:\\xampp2\\htdocs\\libreriauniversitaria\\libreriauniversitaria2.0\\ent-libreria\\detalleordencompra.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E1ECC4C6-9C3C-4129-95DA-9B59AD2EEDE8}|..\\ENT-Libreria\\ENT-Libreria.csproj|c:\\xampp2\\htdocs\\libreriauniversitaria\\libreriauniversitaria2.0\\ent-libreria\\venta.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E1ECC4C6-9C3C-4129-95DA-9B59AD2EEDE8}|..\\ENT-Libreria\\ENT-Libreria.csproj|c:\\xampp2\\htdocs\\libreriauniversitaria\\libreriauniversitaria2.0\\ent-libreria\\rolempleado.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E1ECC4C6-9C3C-4129-95DA-9B59AD2EEDE8}|..\\ENT-Libreria\\ENT-Libreria.csproj|c:\\xampp2\\htdocs\\libreriauniversitaria\\libreriauniversitaria2.0\\ent-libreria\\empleado.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E1ECC4C6-9C3C-4129-95DA-9B59AD2EEDE8}|..\\ENT-Libreria\\ENT-Libreria.csproj|c:\\xampp2\\htdocs\\libreriauniversitaria\\libreriauniversitaria2.0\\ent-libreria\\reserva.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E1ECC4C6-9C3C-4129-95DA-9B59AD2EEDE8}|..\\ENT-Libreria\\ENT-Libreria.csproj|c:\\xampp2\\htdocs\\libreriauniversitaria\\libreriauniversitaria2.0\\ent-libreria\\ordencompra.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E1ECC4C6-9C3C-4129-95DA-9B59AD2EEDE8}|..\\ENT-Libreria\\ENT-Libreria.csproj|c:\\xampp2\\htdocs\\libreriauniversitaria\\libreriauniversitaria2.0\\ent-libreria\\detallereserva.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E1ECC4C6-9C3C-4129-95DA-9B59AD2EEDE8}|..\\ENT-Libreria\\ENT-Libreria.csproj|c:\\xampp2\\htdocs\\libreriauniversitaria\\libreriauniversitaria2.0\\ent-libreria\\detalleventa.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E1ECC4C6-9C3C-4129-95DA-9B59AD2EEDE8}|..\\ENT-Libreria\\ENT-Libreria.csproj|c:\\xampp2\\htdocs\\libreriauniversitaria\\libreriauniversitaria2.0\\ent-libreria\\basedetalle.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E1ECC4C6-9C3C-4129-95DA-9B59AD2EEDE8}|..\\ENT-Libreria\\ENT-Libreria.csproj|c:\\xampp2\\htdocs\\libreriauniversitaria\\libreriauniversitaria2.0\\ent-libreria\\libro.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E1ECC4C6-9C3C-4129-95DA-9B59AD2EEDE8}|..\\ENT-Libreria\\ENT-Libreria.csproj|c:\\xampp2\\htdocs\\libreriauniversitaria\\libreriauniversitaria2.0\\ent-libreria\\sistemalibreria.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E1ECC4C6-9C3C-4129-95DA-9B59AD2EEDE8}|..\\ENT-Libreria\\ENT-Libreria.csproj|c:\\xampp2\\htdocs\\libreriauniversitaria\\libreriauniversitaria2.0\\ent-libreria\\movimientostock.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E1ECC4C6-9C3C-4129-95DA-9B59AD2EEDE8}|..\\ENT-Libreria\\ENT-Libreria.csproj|c:\\xampp2\\htdocs\\libreriauniversitaria\\libreriauniversitaria2.0\\ent-libreria\\estadoreserva.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E1ECC4C6-9C3C-4129-95DA-9B59AD2EEDE8}|..\\ENT-Libreria\\ENT-Libreria.csproj|c:\\xampp2\\htdocs\\libreriauniversitaria\\libreriauniversitaria2.0\\ent-libreria\\estadolibro.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E1ECC4C6-9C3C-4129-95DA-9B59AD2EEDE8}|..\\ENT-Libreria\\ENT-Libreria.csproj|c:\\xampp2\\htdocs\\libreriauniversitaria\\libreriauniversitaria2.0\\ent-libreria\\categorialibro.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E1ECC4C6-9C3C-4129-95DA-9B59AD2EEDE8}|..\\ENT-Libreria\\ENT-Libreria.csproj|c:\\xampp2\\htdocs\\libreriauniversitaria\\libreriauniversitaria2.0\\ent-libreria\\editorial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E1ECC4C6-9C3C-4129-95DA-9B59AD2EEDE8}|..\\ENT-Libreria\\ENT-Libreria.csproj|c:\\xampp2\\htdocs\\libreriauniversitaria\\libreriauniversitaria2.0\\ent-libreria\\municipio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E1ECC4C6-9C3C-4129-95DA-9B59AD2EEDE8}|..\\ENT-Libreria\\ENT-Libreria.csproj|c:\\xampp2\\htdocs\\libreriauniversitaria\\libreriauniversitaria2.0\\ent-libreria\\localidad.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E1ECC4C6-9C3C-4129-95DA-9B59AD2EEDE8}|..\\ENT-Libreria\\ENT-Libreria.csproj|c:\\xampp2\\htdocs\\libreriauniversitaria\\libreriauniversitaria2.0\\ent-libreria\\domicilio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E1ECC4C6-9C3C-4129-95DA-9B59AD2EEDE8}|..\\ENT-Libreria\\ENT-Libreria.csproj|c:\\xampp2\\htdocs\\libreriauniversitaria\\libreriauniversitaria2.0\\ent-libreria\\cliente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E1ECC4C6-9C3C-4129-95DA-9B59AD2EEDE8}|..\\ENT-Libreria\\ENT-Libreria.csproj|c:\\xampp2\\htdocs\\libreriauniversitaria\\libreriauniversitaria2.0\\ent-libreria\\persona.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{90AD7DBD-C19E-4618-847F-D2CEE12686BE}|Sistema-Libreria.csproj|c:\\xampp2\\htdocs\\libreriauniversitaria\\libreriauniversitaria2.0\\sistema-libreria\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{90AD7DBD-C19E-4618-847F-D2CEE12686BE}|Sistema-Libreria.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{90AD7DBD-C19E-4618-847F-D2CEE12686BE}|Sistema-Libreria.csproj|C:\\xampp2\\htdocs\\libreriaUniversitaria\\LibreriaUniversitaria2.0\\Sistema-Libreria\\frmusuarios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{90AD7DBD-C19E-4618-847F-D2CEE12686BE}|Sistema-Libreria.csproj|solutionrelative:frmusuarios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{90AD7DBD-C19E-4618-847F-D2CEE12686BE}|Sistema-Libreria.csproj|C:\\xampp2\\htdocs\\libreriaUniversitaria\\LibreriaUniversitaria2.0\\Sistema-Libreria\\inicio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{90AD7DBD-C19E-4618-847F-D2CEE12686BE}|Sistema-Libreria.csproj|solutionrelative:inicio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{90AD7DBD-C19E-4618-847F-D2CEE12686BE}|Sistema-Libreria.csproj|H:\\Tecnicas2025\\UPE-Libre\\Sistema-Libreria\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{90AD7DBD-C19E-4618-847F-D2CEE12686BE}|Sistema-Libreria.csproj|C:\\xampp2\\htdocs\\libreriaUniversitaria\\LibreriaUniversitaria2.0\\Sistema-Libreria\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{90AD7DBD-C19E-4618-847F-D2CEE12686BE}|Sistema-Libreria.csproj|solutionrelative:login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{90AD7DBD-C19E-4618-847F-D2CEE12686BE}|Sistema-Libreria.csproj|H:\\Tecnicas2025\\UPE-Libre\\Sistema-Libreria\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{90AD7DBD-C19E-4618-847F-D2CEE12686BE}|Sistema-Libreria.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|H:\\Tecnicas2025\\Parcial\\ENT-Libreria\\Class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{90AD7DBD-C19E-4618-847F-D2CEE12686BE}|Sistema-Libreria.csproj|H:\\Tecnicas2025\\UPE-Libre\\Sistema-Libreria\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{90AD7DBD-C19E-4618-847F-D2CEE12686BE}|Sistema-Libreria.csproj|C:\\xampp2\\htdocs\\libreriaUniversitaria\\LibreriaUniversitaria2.0\\Sistema-Libreria\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{90AD7DBD-C19E-4618-847F-D2CEE12686BE}|Sistema-Libreria.csproj|solutionrelative:login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{90AD7DBD-C19E-4618-847F-D2CEE12686BE}|Sistema-Libreria.csproj|H:\\Tecnicas2025\\UPE-Libre\\Sistema-Libreria\\inicio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{90AD7DBD-C19E-4618-847F-D2CEE12686BE}|Sistema-Libreria.csproj|C:\\xampp2\\htdocs\\libreriaUniversitaria\\LibreriaUniversitaria2.0\\Sistema-Libreria\\inicio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{90AD7DBD-C19E-4618-847F-D2CEE12686BE}|Sistema-Libreria.csproj|solutionrelative:inicio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{90AD7DBD-C19E-4618-847F-D2CEE12686BE}|Sistema-Libreria.csproj|H:\\Tecnicas2025\\UPE-Libre\\Sistema-Libreria\\frmusuarios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{90AD7DBD-C19E-4618-847F-D2CEE12686BE}|Sistema-Libreria.csproj|solutionrelative:frmusuarios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{90AD7DBD-C19E-4618-847F-D2CEE12686BE}|Sistema-Libreria.csproj|H:\\Tecnicas2025\\UPE-Libre\\Sistema-Libreria\\frmusuarios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{90AD7DBD-C19E-4618-847F-D2CEE12686BE}|Sistema-Libreria.csproj|C:\\xampp2\\htdocs\\libreriaUniversitaria\\LibreriaUniversitaria2.0\\Sistema-Libreria\\frmusuarios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{90AD7DBD-C19E-4618-847F-D2CEE12686BE}|Sistema-Libreria.csproj|solutionrelative:frmusuarios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{90AD7DBD-C19E-4618-847F-D2CEE12686BE}|Sistema-Libreria.csproj|H:\\Tecnicas2025\\UPE-Libre\\Sistema-Libreria\\frmcompras.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{90AD7DBD-C19E-4618-847F-D2CEE12686BE}|Sistema-Libreria.csproj|C:\\xampp2\\htdocs\\libreriaUniversitaria\\LibreriaUniversitaria2.0\\Sistema-Libreria\\frmcompras.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{90AD7DBD-C19E-4618-847F-D2CEE12686BE}|Sistema-Libreria.csproj|solutionrelative:frmcompras.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{90AD7DBD-C19E-4618-847F-D2CEE12686BE}|Sistema-Libreria.csproj|H:\\Tecnicas2025\\UPE-Libre\\Sistema-Libreria\\frmproveedores.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{90AD7DBD-C19E-4618-847F-D2CEE12686BE}|Sistema-Libreria.csproj|C:\\xampp2\\htdocs\\libreriaUniversitaria\\LibreriaUniversitaria2.0\\Sistema-Libreria\\frmproveedores.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{90AD7DBD-C19E-4618-847F-D2CEE12686BE}|Sistema-Libreria.csproj|solutionrelative:frmproveedores.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{90AD7DBD-C19E-4618-847F-D2CEE12686BE}|Sistema-Libreria.csproj|H:\\Tecnicas2025\\UPE-Libre\\Sistema-Libreria\\frmproveedor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{90AD7DBD-C19E-4618-847F-D2CEE12686BE}|Sistema-Libreria.csproj|C:\\xampp2\\htdocs\\libreriaUniversitaria\\LibreriaUniversitaria2.0\\Sistema-Libreria\\frmproveedor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{90AD7DBD-C19E-4618-847F-D2CEE12686BE}|Sistema-Libreria.csproj|solutionrelative:frmproveedor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{90AD7DBD-C19E-4618-847F-D2CEE12686BE}|Sistema-Libreria.csproj|H:\\Tecnicas2025\\UPE-Libre\\Sistema-Libreria\\frmventas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{90AD7DBD-C19E-4618-847F-D2CEE12686BE}|Sistema-Libreria.csproj|C:\\xampp2\\htdocs\\libreriaUniversitaria\\LibreriaUniversitaria2.0\\Sistema-Libreria\\frmventas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{90AD7DBD-C19E-4618-847F-D2CEE12686BE}|Sistema-Libreria.csproj|solutionrelative:frmventas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{90AD7DBD-C19E-4618-847F-D2CEE12686BE}|Sistema-Libreria.csproj|H:\\Tecnicas2025\\UPE-Libre\\Sistema-Libreria\\frmusuarios.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{90AD7DBD-C19E-4618-847F-D2CEE12686BE}|Sistema-Libreria.csproj|C:\\xampp2\\htdocs\\libreriaUniversitaria\\LibreriaUniversitaria2.0\\Sistema-Libreria\\frmusuarios.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{90AD7DBD-C19E-4618-847F-D2CEE12686BE}|Sistema-Libreria.csproj|solutionrelative:frmusuarios.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{90AD7DBD-C19E-4618-847F-D2CEE12686BE}|Sistema-Libreria.csproj|H:\\Tecnicas2025\\UPE-Libre\\Sistema-Libreria\\inicio.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{90AD7DBD-C19E-4618-847F-D2CEE12686BE}|Sistema-Libreria.csproj|C:\\xampp2\\htdocs\\libreriaUniversitaria\\LibreriaUniversitaria2.0\\Sistema-Libreria\\inicio.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{90AD7DBD-C19E-4618-847F-D2CEE12686BE}|Sistema-Libreria.csproj|solutionrelative:inicio.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{90AD7DBD-C19E-4618-847F-D2CEE12686BE}|Sistema-Libreria.csproj|H:\\Tecnicas2025\\UPE-Libre\\Sistema-Libreria\\inicio.resx||{81828910-B8B3-4D2B-99A3-067027C180C1}",
+      "AbsoluteMoniker": "D:0:0:{90AD7DBD-C19E-4618-847F-D2CEE12686BE}|Sistema-Libreria.csproj|C:\\xampp2\\htdocs\\libreriaUniversitaria\\LibreriaUniversitaria2.0\\Sistema-Libreria\\inicio.resx||{81828910-B8B3-4D2B-99A3-067027C180C1}",
       "RelativeMoniker": "D:0:0:{90AD7DBD-C19E-4618-847F-D2CEE12686BE}|Sistema-Libreria.csproj|solutionrelative:inicio.resx||{81828910-B8B3-4D2B-99A3-067027C180C1}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{90AD7DBD-C19E-4618-847F-D2CEE12686BE}|Sistema-Libreria.csproj|H:\\Tecnicas2025\\UPE-Libre\\Sistema-Libreria\\frmusuarios.resx||{81828910-B8B3-4D2B-99A3-067027C180C1}",
+      "AbsoluteMoniker": "D:0:0:{90AD7DBD-C19E-4618-847F-D2CEE12686BE}|Sistema-Libreria.csproj|C:\\xampp2\\htdocs\\libreriaUniversitaria\\LibreriaUniversitaria2.0\\Sistema-Libreria\\frmusuarios.resx||{81828910-B8B3-4D2B-99A3-067027C180C1}",
       "RelativeMoniker": "D:0:0:{90AD7DBD-C19E-4618-847F-D2CEE12686BE}|Sistema-Libreria.csproj|solutionrelative:frmusuarios.resx||{81828910-B8B3-4D2B-99A3-067027C180C1}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{90AD7DBD-C19E-4618-847F-D2CEE12686BE}|Sistema-Libreria.csproj|H:\\Tecnicas2025\\UPE-Libre\\Sistema-Libreria\\frmclientes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{90AD7DBD-C19E-4618-847F-D2CEE12686BE}|Sistema-Libreria.csproj|C:\\xampp2\\htdocs\\libreriaUniversitaria\\LibreriaUniversitaria2.0\\Sistema-Libreria\\frmclientes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{90AD7DBD-C19E-4618-847F-D2CEE12686BE}|Sistema-Libreria.csproj|solutionrelative:frmclientes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{90AD7DBD-C19E-4618-847F-D2CEE12686BE}|Sistema-Libreria.csproj|H:\\Tecnicas2025\\UPE-Libre\\Sistema-Libreria\\frmacercade.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{90AD7DBD-C19E-4618-847F-D2CEE12686BE}|Sistema-Libreria.csproj|C:\\xampp2\\htdocs\\libreriaUniversitaria\\LibreriaUniversitaria2.0\\Sistema-Libreria\\frmacercade.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{90AD7DBD-C19E-4618-847F-D2CEE12686BE}|Sistema-Libreria.csproj|solutionrelative:frmacercade.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{90AD7DBD-C19E-4618-847F-D2CEE12686BE}|Sistema-Libreria.csproj|H:\\Tecnicas2025\\UPE-Libre\\Sistema-Libreria\\frmreportes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{90AD7DBD-C19E-4618-847F-D2CEE12686BE}|Sistema-Libreria.csproj|C:\\xampp2\\htdocs\\libreriaUniversitaria\\LibreriaUniversitaria2.0\\Sistema-Libreria\\frmreportes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{90AD7DBD-C19E-4618-847F-D2CEE12686BE}|Sistema-Libreria.csproj|solutionrelative:frmreportes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
@@ -91,130 +154,426 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 9,
+          "SelectedChildIndex": 15,
           "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:129:0:{75188d03-9892-4ae2-abf1-207126247ce5}"
+            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{eefa5220-e298-11d0-8f78-00a0c9110057}"
             },
             {
               "$type": "Bookmark",
-              "Name": "ST:0:0:{56df62a4-05a3-4e5b-aa1a-99371ccfb997}"
+              "Name": "ST:128:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
             },
             {
               "$type": "Bookmark",
-              "Name": "ST:0:0:{269a02dc-6af8-11d3-bdc4-00c04f688e50}"
+              "Name": "ST:130:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:129:0:{13b12e3e-c1b4-4539-9371-4fe9a0d523fc}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:1:0:{f2bd8fb8-fc94-3dae-a733-fd993c73cc87}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c64b9c2-e352-428e-a56d-0ace190b99a6}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{c9c0ae26-aa77-11d2-b3f0-0000f87570ee}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "RolEmpleado.cs",
+              "DocumentMoniker": "C:\\xampp2\\htdocs\\libreriaUniversitaria\\LibreriaUniversitaria2.0\\ENT-Libreria\\RolEmpleado.cs",
+              "RelativeDocumentMoniker": "..\\ENT-Libreria\\RolEmpleado.cs",
+              "ToolTip": "C:\\xampp2\\htdocs\\libreriaUniversitaria\\LibreriaUniversitaria2.0\\ENT-Libreria\\RolEmpleado.cs",
+              "RelativeToolTip": "..\\ENT-Libreria\\RolEmpleado.cs",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAYwB8AAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-16T16:22:37.961Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "DetalleReserva.cs",
+              "DocumentMoniker": "C:\\xampp2\\htdocs\\libreriaUniversitaria\\LibreriaUniversitaria2.0\\ENT-Libreria\\DetalleReserva.cs",
+              "RelativeDocumentMoniker": "..\\ENT-Libreria\\DetalleReserva.cs",
+              "ToolTip": "C:\\xampp2\\htdocs\\libreriaUniversitaria\\LibreriaUniversitaria2.0\\ENT-Libreria\\DetalleReserva.cs",
+              "RelativeToolTip": "..\\ENT-Libreria\\DetalleReserva.cs",
+              "ViewState": "AgIAAA0AAACAmZmZmZkVwBIAAABEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-16T15:51:36.672Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "OrdenCompra.cs",
+              "DocumentMoniker": "C:\\xampp2\\htdocs\\libreriaUniversitaria\\LibreriaUniversitaria2.0\\ENT-Libreria\\OrdenCompra.cs",
+              "RelativeDocumentMoniker": "..\\ENT-Libreria\\OrdenCompra.cs",
+              "ToolTip": "C:\\xampp2\\htdocs\\libreriaUniversitaria\\LibreriaUniversitaria2.0\\ENT-Libreria\\OrdenCompra.cs",
+              "RelativeToolTip": "..\\ENT-Libreria\\OrdenCompra.cs",
+              "ViewState": "AgIAAAgAAADQzMzMzEwxwAwAAAAxAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-16T15:52:40.35Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Venta.cs",
+              "DocumentMoniker": "C:\\xampp2\\htdocs\\libreriaUniversitaria\\LibreriaUniversitaria2.0\\ENT-Libreria\\Venta.cs",
+              "RelativeDocumentMoniker": "..\\ENT-Libreria\\Venta.cs",
+              "ToolTip": "C:\\xampp2\\htdocs\\libreriaUniversitaria\\LibreriaUniversitaria2.0\\ENT-Libreria\\Venta.cs",
+              "RelativeToolTip": "..\\ENT-Libreria\\Venta.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAC4AAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-16T15:53:39.505Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Reserva.cs",
+              "DocumentMoniker": "C:\\xampp2\\htdocs\\libreriaUniversitaria\\LibreriaUniversitaria2.0\\ENT-Libreria\\Reserva.cs",
+              "RelativeDocumentMoniker": "..\\ENT-Libreria\\Reserva.cs",
+              "ToolTip": "C:\\xampp2\\htdocs\\libreriaUniversitaria\\LibreriaUniversitaria2.0\\ENT-Libreria\\Reserva.cs",
+              "RelativeToolTip": "..\\ENT-Libreria\\Reserva.cs",
+              "ViewState": "AgIAACMAAADAzMzMzMwiwC8AAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-16T15:55:01.908Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "DetalleOrdenCompra.cs",
+              "DocumentMoniker": "C:\\xampp2\\htdocs\\libreriaUniversitaria\\LibreriaUniversitaria2.0\\ENT-Libreria\\DetalleOrdenCompra.cs",
+              "RelativeDocumentMoniker": "..\\ENT-Libreria\\DetalleOrdenCompra.cs",
+              "ToolTip": "C:\\xampp2\\htdocs\\libreriaUniversitaria\\LibreriaUniversitaria2.0\\ENT-Libreria\\DetalleOrdenCompra.cs",
+              "RelativeToolTip": "..\\ENT-Libreria\\DetalleOrdenCompra.cs",
+              "ViewState": "AgIAAAwAAAAAAAAAAAA9wBYAAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-16T15:49:39.675Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "DetalleVenta.cs",
+              "DocumentMoniker": "C:\\xampp2\\htdocs\\libreriaUniversitaria\\LibreriaUniversitaria2.0\\ENT-Libreria\\DetalleVenta.cs",
+              "RelativeDocumentMoniker": "..\\ENT-Libreria\\DetalleVenta.cs",
+              "ToolTip": "C:\\xampp2\\htdocs\\libreriaUniversitaria\\LibreriaUniversitaria2.0\\ENT-Libreria\\DetalleVenta.cs",
+              "RelativeToolTip": "..\\ENT-Libreria\\DetalleVenta.cs",
+              "ViewState": "AgIAAAoAAADQzMzMzMwowBIAAABBAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-16T15:50:42.025Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "Class1.cs",
-              "DocumentMoniker": "H:\\Tecnicas2025\\Parcial\\ENT-Libreria\\Class1.cs",
-              "RelativeDocumentMoniker": "..\\..\\Parcial\\ENT-Libreria\\Class1.cs",
-              "ToolTip": "H:\\Tecnicas2025\\Parcial\\ENT-Libreria\\Class1.cs",
-              "RelativeToolTip": "..\\..\\Parcial\\ENT-Libreria\\Class1.cs",
+              "Title": "Empleado.cs",
+              "DocumentMoniker": "C:\\xampp2\\htdocs\\libreriaUniversitaria\\LibreriaUniversitaria2.0\\ENT-Libreria\\Empleado.cs",
+              "RelativeDocumentMoniker": "..\\ENT-Libreria\\Empleado.cs",
+              "ToolTip": "C:\\xampp2\\htdocs\\libreriaUniversitaria\\LibreriaUniversitaria2.0\\ENT-Libreria\\Empleado.cs",
+              "RelativeToolTip": "..\\ENT-Libreria\\Empleado.cs",
+              "ViewState": "AgIAAAEAAAAAAAAAAAAwwAsAAAAQAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-13T23:17:32.788Z"
+              "WhenOpened": "2025-06-16T15:40:41.548Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "BaseDetalle.cs",
+              "DocumentMoniker": "C:\\xampp2\\htdocs\\libreriaUniversitaria\\LibreriaUniversitaria2.0\\ENT-Libreria\\BaseDetalle.cs",
+              "RelativeDocumentMoniker": "..\\ENT-Libreria\\BaseDetalle.cs",
+              "ToolTip": "C:\\xampp2\\htdocs\\libreriaUniversitaria\\LibreriaUniversitaria2.0\\ENT-Libreria\\BaseDetalle.cs",
+              "RelativeToolTip": "..\\ENT-Libreria\\BaseDetalle.cs",
+              "ViewState": "AgIAABMAAAAgMzMzMzM0wBkAAABtAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-16T15:48:43.69Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Libro.cs",
+              "DocumentMoniker": "C:\\xampp2\\htdocs\\libreriaUniversitaria\\LibreriaUniversitaria2.0\\ENT-Libreria\\Libro.cs",
+              "RelativeDocumentMoniker": "..\\ENT-Libreria\\Libro.cs",
+              "ToolTip": "C:\\xampp2\\htdocs\\libreriaUniversitaria\\LibreriaUniversitaria2.0\\ENT-Libreria\\Libro.cs",
+              "RelativeToolTip": "..\\ENT-Libreria\\Libro.cs",
+              "ViewState": "AgIAADUAAAAAZmZmZmYawDwAAAAOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-16T15:46:11.079Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "SistemaLibreria.cs",
+              "DocumentMoniker": "C:\\xampp2\\htdocs\\libreriaUniversitaria\\LibreriaUniversitaria2.0\\ENT-Libreria\\SistemaLibreria.cs",
+              "RelativeDocumentMoniker": "..\\ENT-Libreria\\SistemaLibreria.cs",
+              "ToolTip": "C:\\xampp2\\htdocs\\libreriaUniversitaria\\LibreriaUniversitaria2.0\\ENT-Libreria\\SistemaLibreria.cs",
+              "RelativeToolTip": "..\\ENT-Libreria\\SistemaLibreria.cs",
+              "ViewState": "AgIAACYAAAAAAAAAAAAIwC0AAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-16T15:56:46.505Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "MovimientoStock.cs",
+              "DocumentMoniker": "C:\\xampp2\\htdocs\\libreriaUniversitaria\\LibreriaUniversitaria2.0\\ENT-Libreria\\MovimientoStock.cs",
+              "RelativeDocumentMoniker": "..\\ENT-Libreria\\MovimientoStock.cs",
+              "ToolTip": "C:\\xampp2\\htdocs\\libreriaUniversitaria\\LibreriaUniversitaria2.0\\ENT-Libreria\\MovimientoStock.cs",
+              "RelativeToolTip": "..\\ENT-Libreria\\MovimientoStock.cs",
+              "ViewState": "AgIAABAAAAAAAAAAAAAkwBgAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-16T15:56:14.965Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "EstadoReserva.cs",
+              "DocumentMoniker": "C:\\xampp2\\htdocs\\libreriaUniversitaria\\LibreriaUniversitaria2.0\\ENT-Libreria\\EstadoReserva.cs",
+              "RelativeDocumentMoniker": "..\\ENT-Libreria\\EstadoReserva.cs",
+              "ToolTip": "C:\\xampp2\\htdocs\\libreriaUniversitaria\\LibreriaUniversitaria2.0\\ENT-Libreria\\EstadoReserva.cs",
+              "RelativeToolTip": "..\\ENT-Libreria\\EstadoReserva.cs",
+              "ViewState": "AgIAAA0AAAAAAAAAAAAgwBEAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-16T15:55:49.643Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "EstadoLibro.cs",
+              "DocumentMoniker": "C:\\xampp2\\htdocs\\libreriaUniversitaria\\LibreriaUniversitaria2.0\\ENT-Libreria\\EstadoLibro.cs",
+              "RelativeDocumentMoniker": "..\\ENT-Libreria\\EstadoLibro.cs",
+              "ToolTip": "C:\\xampp2\\htdocs\\libreriaUniversitaria\\LibreriaUniversitaria2.0\\ENT-Libreria\\EstadoLibro.cs",
+              "RelativeToolTip": "..\\ENT-Libreria\\EstadoLibro.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAxwBEAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-16T15:48:15.692Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "CategoriaLibro.cs",
+              "DocumentMoniker": "C:\\xampp2\\htdocs\\libreriaUniversitaria\\LibreriaUniversitaria2.0\\ENT-Libreria\\CategoriaLibro.cs",
+              "RelativeDocumentMoniker": "..\\ENT-Libreria\\CategoriaLibro.cs",
+              "ToolTip": "C:\\xampp2\\htdocs\\libreriaUniversitaria\\LibreriaUniversitaria2.0\\ENT-Libreria\\CategoriaLibro.cs",
+              "RelativeToolTip": "..\\ENT-Libreria\\CategoriaLibro.cs",
+              "ViewState": "AgIAAAgAAABAMzMzMzMbwBEAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-16T15:47:35.747Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "Editorial.cs",
+              "DocumentMoniker": "C:\\xampp2\\htdocs\\libreriaUniversitaria\\LibreriaUniversitaria2.0\\ENT-Libreria\\Editorial.cs",
+              "RelativeDocumentMoniker": "..\\ENT-Libreria\\Editorial.cs",
+              "ToolTip": "C:\\xampp2\\htdocs\\libreriaUniversitaria\\LibreriaUniversitaria2.0\\ENT-Libreria\\Editorial.cs",
+              "RelativeToolTip": "..\\ENT-Libreria\\Editorial.cs",
+              "ViewState": "AgIAAA4AAABgZmZmZmYswB8AAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-16T15:45:44.338Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "Municipio.cs",
+              "DocumentMoniker": "C:\\xampp2\\htdocs\\libreriaUniversitaria\\LibreriaUniversitaria2.0\\ENT-Libreria\\Municipio.cs",
+              "RelativeDocumentMoniker": "..\\ENT-Libreria\\Municipio.cs",
+              "ToolTip": "C:\\xampp2\\htdocs\\libreriaUniversitaria\\LibreriaUniversitaria2.0\\ENT-Libreria\\Municipio.cs",
+              "RelativeToolTip": "..\\ENT-Libreria\\Municipio.cs",
+              "ViewState": "AgIAAAQAAABAMzMzMzMLwBEAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-16T15:45:07.067Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "Localidad.cs",
+              "DocumentMoniker": "C:\\xampp2\\htdocs\\libreriaUniversitaria\\LibreriaUniversitaria2.0\\ENT-Libreria\\Localidad.cs",
+              "RelativeDocumentMoniker": "..\\ENT-Libreria\\Localidad.cs",
+              "ToolTip": "C:\\xampp2\\htdocs\\libreriaUniversitaria\\LibreriaUniversitaria2.0\\ENT-Libreria\\Localidad.cs",
+              "RelativeToolTip": "..\\ENT-Libreria\\Localidad.cs",
+              "ViewState": "AgIAABAAAAAAAAAAAAAkwBgAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-16T15:44:40.516Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "Domicilio.cs",
+              "DocumentMoniker": "C:\\xampp2\\htdocs\\libreriaUniversitaria\\LibreriaUniversitaria2.0\\ENT-Libreria\\Domicilio.cs",
+              "RelativeDocumentMoniker": "..\\ENT-Libreria\\Domicilio.cs",
+              "ToolTip": "C:\\xampp2\\htdocs\\libreriaUniversitaria\\LibreriaUniversitaria2.0\\ENT-Libreria\\Domicilio.cs",
+              "RelativeToolTip": "..\\ENT-Libreria\\Domicilio.cs",
+              "ViewState": "AgIAAAMAAACgmZmZmZkhwB8AAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-16T15:44:07.651Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 19,
-              "Title": "Class1.cs",
-              "DocumentMoniker": "H:\\Tecnicas2025\\Parcial\\BLL-Libreria\\Class1.cs",
-              "RelativeDocumentMoniker": "..\\..\\Parcial\\BLL-Libreria\\Class1.cs",
-              "ToolTip": "H:\\Tecnicas2025\\Parcial\\BLL-Libreria\\Class1.cs",
-              "RelativeToolTip": "..\\..\\Parcial\\BLL-Libreria\\Class1.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Title": "Cliente.cs",
+              "DocumentMoniker": "C:\\xampp2\\htdocs\\libreriaUniversitaria\\LibreriaUniversitaria2.0\\ENT-Libreria\\Cliente.cs",
+              "RelativeDocumentMoniker": "..\\ENT-Libreria\\Cliente.cs",
+              "ToolTip": "C:\\xampp2\\htdocs\\libreriaUniversitaria\\LibreriaUniversitaria2.0\\ENT-Libreria\\Cliente.cs",
+              "RelativeToolTip": "..\\ENT-Libreria\\Cliente.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAgPREAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-13T23:17:09.006Z"
+              "WhenOpened": "2025-06-16T15:43:10.964Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 20,
+              "Title": "Persona.cs",
+              "DocumentMoniker": "C:\\xampp2\\htdocs\\libreriaUniversitaria\\LibreriaUniversitaria2.0\\ENT-Libreria\\Persona.cs",
+              "RelativeDocumentMoniker": "..\\ENT-Libreria\\Persona.cs",
+              "ToolTip": "C:\\xampp2\\htdocs\\libreriaUniversitaria\\LibreriaUniversitaria2.0\\ENT-Libreria\\Persona.cs",
+              "RelativeToolTip": "..\\ENT-Libreria\\Persona.cs",
+              "ViewState": "AgIAABsAAAAgMzMzMzM2wCYAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-16T15:39:51.915Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\xampp2\\htdocs\\libreriaUniversitaria\\LibreriaUniversitaria2.0\\Sistema-Libreria\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\xampp2\\htdocs\\libreriaUniversitaria\\LibreriaUniversitaria2.0\\Sistema-Libreria\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAArAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-10T23:10:17.743Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 41,
               "Title": "Class1.cs",
               "DocumentMoniker": "H:\\Tecnicas2025\\Parcial\\DAL-Libreria\\Class1.cs",
-              "RelativeDocumentMoniker": "..\\..\\Parcial\\DAL-Libreria\\Class1.cs",
               "ToolTip": "H:\\Tecnicas2025\\Parcial\\DAL-Libreria\\Class1.cs",
-              "RelativeToolTip": "..\\..\\Parcial\\DAL-Libreria\\Class1.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-06-13T23:16:40.555Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 24,
               "Title": "Login.cs [Dise\u00F1o]",
-              "DocumentMoniker": "H:\\Tecnicas2025\\UPE-Libre\\Sistema-Libreria\\Login.cs",
+              "DocumentMoniker": "C:\\xampp2\\htdocs\\libreriaUniversitaria\\LibreriaUniversitaria2.0\\Sistema-Libreria\\Login.cs",
               "RelativeDocumentMoniker": "Login.cs",
               "ToolTip": "H:\\Tecnicas2025\\UPE-Libre\\Sistema-Libreria\\Login.cs [Dise\u00F1o]",
-              "RelativeToolTip": "Login.cs [Dise\u00F1o]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-06-11T23:27:26.105Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "frmProveedores.cs [Dise\u00F1o]",
-              "DocumentMoniker": "H:\\Tecnicas2025\\UPE-Libre\\Sistema-Libreria\\frmProveedores.cs",
-              "RelativeDocumentMoniker": "frmProveedores.cs",
-              "ToolTip": "H:\\Tecnicas2025\\Parcial\\Sistema-Libreria\\frmProveedores.cs [Dise\u00F1o]",
-              "RelativeToolTip": "..\\..\\Parcial\\Sistema-Libreria\\frmProveedores.cs [Dise\u00F1o]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-12T03:33:21.444Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Program.cs",
-              "DocumentMoniker": "H:\\Tecnicas2025\\UPE-Libre\\Sistema-Libreria\\Program.cs",
-              "RelativeDocumentMoniker": "Program.cs",
-              "ToolTip": "H:\\Tecnicas2025\\UPE-Libre\\Sistema-Libreria\\Program.cs",
-              "RelativeToolTip": "Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAlAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-10T23:10:17.743Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Inicio.cs [Dise\u00F1o]",
-              "DocumentMoniker": "H:\\Tecnicas2025\\UPE-Libre\\Sistema-Libreria\\Inicio.cs",
-              "RelativeDocumentMoniker": "Inicio.cs",
-              "ToolTip": "H:\\Tecnicas2025\\UPE-Libre\\Sistema-Libreria\\Inicio.cs [Dise\u00F1o]",
-              "RelativeToolTip": "Inicio.cs [Dise\u00F1o]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-10T23:26:15.957Z",
-              "EditorCaption": " [Dise\u00F1o]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "frmCompras.cs [Dise\u00F1o]",
-              "DocumentMoniker": "H:\\Tecnicas2025\\UPE-Libre\\Sistema-Libreria\\frmCompras.cs",
-              "RelativeDocumentMoniker": "frmCompras.cs",
-              "ToolTip": "H:\\Tecnicas2025\\Parcial\\Sistema-Libreria\\frmCompras.cs [Dise\u00F1o]",
-              "RelativeToolTip": "..\\..\\Parcial\\Sistema-Libreria\\frmCompras.cs [Dise\u00F1o]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-12T03:29:53.02Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 22,
               "Title": "frmUsuarios.cs [Dise\u00F1o]",
-              "DocumentMoniker": "H:\\Tecnicas2025\\UPE-Libre\\Sistema-Libreria\\frmUsuarios.cs",
+              "DocumentMoniker": "C:\\xampp2\\htdocs\\libreriaUniversitaria\\LibreriaUniversitaria2.0\\Sistema-Libreria\\frmUsuarios.cs",
               "RelativeDocumentMoniker": "frmUsuarios.cs",
-              "ToolTip": "H:\\Tecnicas2025\\Parcial\\Sistema-Libreria\\frmUsuarios.cs [Dise\u00F1o]",
-              "RelativeToolTip": "..\\..\\Parcial\\Sistema-Libreria\\frmUsuarios.cs [Dise\u00F1o]",
+              "ToolTip": "C:\\xampp2\\htdocs\\libreriaUniversitaria\\LibreriaUniversitaria2.0\\Sistema-Libreria\\frmUsuarios.cs [Dise\u00F1o]",
+              "RelativeToolTip": "frmUsuarios.cs [Dise\u00F1o]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-06-12T03:18:19.363Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "Inicio.cs",
-              "DocumentMoniker": "H:\\Tecnicas2025\\UPE-Libre\\Sistema-Libreria\\Inicio.cs",
+              "DocumentIndex": 23,
+              "Title": "Inicio.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\xampp2\\htdocs\\libreriaUniversitaria\\LibreriaUniversitaria2.0\\Sistema-Libreria\\Inicio.cs",
               "RelativeDocumentMoniker": "Inicio.cs",
-              "ToolTip": "H:\\Tecnicas2025\\UPE-Libre\\Sistema-Libreria\\Inicio.cs",
+              "ToolTip": "C:\\xampp2\\htdocs\\libreriaUniversitaria\\LibreriaUniversitaria2.0\\Sistema-Libreria\\Inicio.cs [Dise\u00F1o]",
+              "RelativeToolTip": "Inicio.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-10T23:26:15.957Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "frmProveedores.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\xampp2\\htdocs\\libreriaUniversitaria\\LibreriaUniversitaria2.0\\Sistema-Libreria\\frmProveedores.cs",
+              "RelativeDocumentMoniker": "frmProveedores.cs",
+              "ToolTip": "H:\\Tecnicas2025\\Parcial\\Sistema-Libreria\\frmProveedores.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-12T03:33:21.444Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 40,
+              "Title": "Class1.cs",
+              "DocumentMoniker": "H:\\Tecnicas2025\\Parcial\\BLL-Libreria\\Class1.cs",
+              "ToolTip": "H:\\Tecnicas2025\\Parcial\\BLL-Libreria\\Class1.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-13T23:17:09.006Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "Class1.cs",
+              "DocumentMoniker": "H:\\Tecnicas2025\\Parcial\\ENT-Libreria\\Class1.cs",
+              "ToolTip": "H:\\Tecnicas2025\\Parcial\\ENT-Libreria\\Class1.cs",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-13T23:17:32.788Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "frmCompras.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\xampp2\\htdocs\\libreriaUniversitaria\\LibreriaUniversitaria2.0\\Sistema-Libreria\\frmCompras.cs",
+              "RelativeDocumentMoniker": "frmCompras.cs",
+              "ToolTip": "H:\\Tecnicas2025\\Parcial\\Sistema-Libreria\\frmCompras.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-12T03:29:53.02Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "Inicio.cs",
+              "DocumentMoniker": "C:\\xampp2\\htdocs\\libreriaUniversitaria\\LibreriaUniversitaria2.0\\Sistema-Libreria\\Inicio.cs",
+              "RelativeDocumentMoniker": "Inicio.cs",
+              "ToolTip": "C:\\xampp2\\htdocs\\libreriaUniversitaria\\LibreriaUniversitaria2.0\\Sistema-Libreria\\Inicio.cs",
               "RelativeToolTip": "Inicio.cs",
               "ViewState": "AgIAAAYAAAAAAAAAAAAAABMAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -222,11 +581,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 26,
               "Title": "Login.cs",
-              "DocumentMoniker": "H:\\Tecnicas2025\\UPE-Libre\\Sistema-Libreria\\Login.cs",
+              "DocumentMoniker": "C:\\xampp2\\htdocs\\libreriaUniversitaria\\LibreriaUniversitaria2.0\\Sistema-Libreria\\Login.cs",
               "RelativeDocumentMoniker": "Login.cs",
-              "ToolTip": "H:\\Tecnicas2025\\UPE-Libre\\Sistema-Libreria\\Login.cs",
+              "ToolTip": "C:\\xampp2\\htdocs\\libreriaUniversitaria\\LibreriaUniversitaria2.0\\Sistema-Libreria\\Login.cs",
               "RelativeToolTip": "Login.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAACMAAAAYAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -234,22 +593,21 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 31,
               "Title": "frmProveedor.cs [Dise\u00F1o]",
-              "DocumentMoniker": "H:\\Tecnicas2025\\UPE-Libre\\Sistema-Libreria\\frmProveedor.cs",
+              "DocumentMoniker": "C:\\xampp2\\htdocs\\libreriaUniversitaria\\LibreriaUniversitaria2.0\\Sistema-Libreria\\frmProveedor.cs",
               "RelativeDocumentMoniker": "frmProveedor.cs",
               "ToolTip": "H:\\Tecnicas2025\\Parcial\\Sistema-Libreria\\frmProveedor.cs [Dise\u00F1o]",
-              "RelativeToolTip": "..\\..\\Parcial\\Sistema-Libreria\\frmProveedor.cs [Dise\u00F1o]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-06-12T03:30:52.143Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 28,
               "Title": "frmUsuarios.cs",
-              "DocumentMoniker": "H:\\Tecnicas2025\\UPE-Libre\\Sistema-Libreria\\frmUsuarios.cs",
+              "DocumentMoniker": "C:\\xampp2\\htdocs\\libreriaUniversitaria\\LibreriaUniversitaria2.0\\Sistema-Libreria\\frmUsuarios.cs",
               "RelativeDocumentMoniker": "frmUsuarios.cs",
-              "ToolTip": "H:\\Tecnicas2025\\UPE-Libre\\Sistema-Libreria\\frmUsuarios.cs",
+              "ToolTip": "C:\\xampp2\\htdocs\\libreriaUniversitaria\\LibreriaUniversitaria2.0\\Sistema-Libreria\\frmUsuarios.cs",
               "RelativeToolTip": "frmUsuarios.cs",
               "ViewState": "AgIAAAUAAAAAAAAAAAAawBUAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -257,22 +615,21 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 32,
               "Title": "frmVentas.cs [Dise\u00F1o]",
-              "DocumentMoniker": "H:\\Tecnicas2025\\UPE-Libre\\Sistema-Libreria\\frmVentas.cs",
+              "DocumentMoniker": "C:\\xampp2\\htdocs\\libreriaUniversitaria\\LibreriaUniversitaria2.0\\Sistema-Libreria\\frmVentas.cs",
               "RelativeDocumentMoniker": "frmVentas.cs",
               "ToolTip": "H:\\Tecnicas2025\\Parcial\\Sistema-Libreria\\frmVentas.cs [Dise\u00F1o]",
-              "RelativeToolTip": "..\\..\\Parcial\\Sistema-Libreria\\frmVentas.cs [Dise\u00F1o]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-06-12T03:27:09.573Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 33,
               "Title": "frmUsuarios.Designer.cs",
-              "DocumentMoniker": "H:\\Tecnicas2025\\UPE-Libre\\Sistema-Libreria\\frmUsuarios.Designer.cs",
+              "DocumentMoniker": "C:\\xampp2\\htdocs\\libreriaUniversitaria\\LibreriaUniversitaria2.0\\Sistema-Libreria\\frmUsuarios.Designer.cs",
               "RelativeDocumentMoniker": "frmUsuarios.Designer.cs",
-              "ToolTip": "H:\\Tecnicas2025\\UPE-Libre\\Sistema-Libreria\\frmUsuarios.Designer.cs",
+              "ToolTip": "C:\\xampp2\\htdocs\\libreriaUniversitaria\\LibreriaUniversitaria2.0\\Sistema-Libreria\\frmUsuarios.Designer.cs",
               "RelativeToolTip": "frmUsuarios.Designer.cs",
               "ViewState": "AgIAAA4AAAAAAAAAAAAQwAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -280,11 +637,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 34,
               "Title": "Inicio.Designer.cs",
-              "DocumentMoniker": "H:\\Tecnicas2025\\UPE-Libre\\Sistema-Libreria\\Inicio.Designer.cs",
+              "DocumentMoniker": "C:\\xampp2\\htdocs\\libreriaUniversitaria\\LibreriaUniversitaria2.0\\Sistema-Libreria\\Inicio.Designer.cs",
               "RelativeDocumentMoniker": "Inicio.Designer.cs",
-              "ToolTip": "H:\\Tecnicas2025\\UPE-Libre\\Sistema-Libreria\\Inicio.Designer.cs",
+              "ToolTip": "C:\\xampp2\\htdocs\\libreriaUniversitaria\\LibreriaUniversitaria2.0\\Sistema-Libreria\\Inicio.Designer.cs",
               "RelativeToolTip": "Inicio.Designer.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -292,56 +649,53 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 35,
               "Title": "Inicio.resx",
-              "DocumentMoniker": "H:\\Tecnicas2025\\UPE-Libre\\Sistema-Libreria\\Inicio.resx",
+              "DocumentMoniker": "C:\\xampp2\\htdocs\\libreriaUniversitaria\\LibreriaUniversitaria2.0\\Sistema-Libreria\\Inicio.resx",
               "RelativeDocumentMoniker": "Inicio.resx",
-              "ToolTip": "H:\\Tecnicas2025\\UPE-Libre\\Sistema-Libreria\\Inicio.resx",
+              "ToolTip": "C:\\xampp2\\htdocs\\libreriaUniversitaria\\LibreriaUniversitaria2.0\\Sistema-Libreria\\Inicio.resx",
               "RelativeToolTip": "Inicio.resx",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001005|",
               "WhenOpened": "2025-06-12T12:46:34.442Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 37,
               "Title": "frmClientes.cs [Dise\u00F1o]",
-              "DocumentMoniker": "H:\\Tecnicas2025\\UPE-Libre\\Sistema-Libreria\\frmClientes.cs",
+              "DocumentMoniker": "C:\\xampp2\\htdocs\\libreriaUniversitaria\\LibreriaUniversitaria2.0\\Sistema-Libreria\\frmClientes.cs",
               "RelativeDocumentMoniker": "frmClientes.cs",
               "ToolTip": "H:\\Tecnicas2025\\Parcial\\Sistema-Libreria\\frmClientes.cs [Dise\u00F1o]",
-              "RelativeToolTip": "..\\..\\Parcial\\Sistema-Libreria\\frmClientes.cs [Dise\u00F1o]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-06-12T03:32:42.964Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 39,
               "Title": "frmReportes.cs [Dise\u00F1o]",
-              "DocumentMoniker": "H:\\Tecnicas2025\\UPE-Libre\\Sistema-Libreria\\frmReportes.cs",
+              "DocumentMoniker": "C:\\xampp2\\htdocs\\libreriaUniversitaria\\LibreriaUniversitaria2.0\\Sistema-Libreria\\frmReportes.cs",
               "RelativeDocumentMoniker": "frmReportes.cs",
               "ToolTip": "H:\\Tecnicas2025\\Parcial\\Sistema-Libreria\\frmReportes.cs [Dise\u00F1o]",
-              "RelativeToolTip": "..\\..\\Parcial\\Sistema-Libreria\\frmReportes.cs [Dise\u00F1o]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-06-12T03:33:43.171Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 36,
               "Title": "frmUsuarios.resx",
-              "DocumentMoniker": "H:\\Tecnicas2025\\UPE-Libre\\Sistema-Libreria\\frmUsuarios.resx",
+              "DocumentMoniker": "C:\\xampp2\\htdocs\\libreriaUniversitaria\\LibreriaUniversitaria2.0\\Sistema-Libreria\\frmUsuarios.resx",
               "RelativeDocumentMoniker": "frmUsuarios.resx",
-              "ToolTip": "H:\\Tecnicas2025\\UPE-Libre\\Sistema-Libreria\\frmUsuarios.resx",
+              "ToolTip": "C:\\xampp2\\htdocs\\libreriaUniversitaria\\LibreriaUniversitaria2.0\\Sistema-Libreria\\frmUsuarios.resx",
               "RelativeToolTip": "frmUsuarios.resx",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001005|",
               "WhenOpened": "2025-06-12T12:46:34.552Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 38,
               "Title": "frmAcercade.cs [Dise\u00F1o]",
-              "DocumentMoniker": "H:\\Tecnicas2025\\UPE-Libre\\Sistema-Libreria\\frmAcercade.cs",
+              "DocumentMoniker": "C:\\xampp2\\htdocs\\libreriaUniversitaria\\LibreriaUniversitaria2.0\\Sistema-Libreria\\frmAcercade.cs",
               "RelativeDocumentMoniker": "frmAcercade.cs",
               "ToolTip": "H:\\Tecnicas2025\\Parcial\\Sistema-Libreria\\frmAcercade.cs [Dise\u00F1o]",
-              "RelativeToolTip": "..\\..\\Parcial\\Sistema-Libreria\\frmAcercade.cs [Dise\u00F1o]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-06-12T03:34:09.997Z"
             }
