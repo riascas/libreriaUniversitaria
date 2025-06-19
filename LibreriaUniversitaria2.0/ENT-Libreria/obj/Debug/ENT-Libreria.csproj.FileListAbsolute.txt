@@ -4,9 +4,3 @@ H:\Tecnicas2025\Parcial\ENT-Libreria\obj\Debug\ENT-Libreria.csproj.AssemblyRefer
 H:\Tecnicas2025\Parcial\ENT-Libreria\obj\Debug\ENT-Libreria.csproj.CoreCompileInputs.cache
 H:\Tecnicas2025\Parcial\ENT-Libreria\obj\Debug\ENT-Libreria.dll
 H:\Tecnicas2025\Parcial\ENT-Libreria\obj\Debug\ENT-Libreria.pdb
-C:\xampp2\htdocs\libreriaUniversitaria\LibreriaUniversitaria2.0\ENT-Libreria\bin\Debug\ENT-Libreria.dll
-C:\xampp2\htdocs\libreriaUniversitaria\LibreriaUniversitaria2.0\ENT-Libreria\bin\Debug\ENT-Libreria.pdb
-C:\xampp2\htdocs\libreriaUniversitaria\LibreriaUniversitaria2.0\ENT-Libreria\obj\Debug\ENT-Libreria.csproj.AssemblyReference.cache
-C:\xampp2\htdocs\libreriaUniversitaria\LibreriaUniversitaria2.0\ENT-Libreria\obj\Debug\ENT-Libreria.csproj.CoreCompileInputs.cache
-C:\xampp2\htdocs\libreriaUniversitaria\LibreriaUniversitaria2.0\ENT-Libreria\obj\Debug\ENT-Libreria.dll
-C:\xampp2\htdocs\libreriaUniversitaria\LibreriaUniversitaria2.0\ENT-Libreria\obj\Debug\ENT-Libreria.pdb
