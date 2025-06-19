@@ -1,0 +1,24 @@
+# Archivos de compilación
+bin/
+obj/
+
+# Configuración de VS
+.vs/
+*.user
+*.suo
+
+# NuGet y dependencias
+packages/
+*.nupkg
+
+# Archivos temporales
+*.log
+*.tmp
+*.dbmdl
+
+# Publicaciones
+publish/
+
+# Carpetas locales
+*.vscode/
+.env

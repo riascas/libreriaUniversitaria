@@ -135,10 +135,6 @@
       <Project>{31f5ca1b-7408-42a2-a7b2-878d92af0bc8}</Project>
       <Name>BLL-Libreria</Name>
     </ProjectReference>
-    <ProjectReference Include="..\ENT-Libreria\ENT-Libreria.csproj">
-      <Project>{e1ecc4c6-9c3c-4129-95da-9b59ad2eede8}</Project>
-      <Name>ENT-Libreria</Name>
-    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

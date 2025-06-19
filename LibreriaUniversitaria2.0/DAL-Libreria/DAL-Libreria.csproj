@@ -49,6 +49,7 @@
     <Reference Include="WindowsBase" />
   </ItemGroup>
   <ItemGroup>
+<<<<<<< HEAD
     <Compile Include="DAL-BaseDetalle.cs" />
     <Compile Include="DAL-CategoriaLibro.cs" />
     <Compile Include="DAL-Cliente.cs" />
@@ -81,5 +82,9 @@
   <ItemGroup>
     <None Include="packages.config" />
   </ItemGroup>
+=======
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+>>>>>>> d0ab94d5905fd349f0d62a0b4165a5a68be76207
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
