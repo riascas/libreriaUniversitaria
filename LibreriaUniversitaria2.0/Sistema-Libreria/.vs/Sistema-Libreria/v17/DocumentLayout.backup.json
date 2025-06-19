@@ -4,6 +4,7 @@
   "Documents": [
     {
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
       "AbsoluteMoniker": "D:0:0:{E1ECC4C6-9C3C-4129-95DA-9B59AD2EEDE8}|..\\ENT-Libreria\\ENT-Libreria.csproj|c:\\xampp2\\htdocs\\libreriauniversitaria\\libreriauniversitaria2.0\\ent-libreria\\detalleordencompra.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -71,10 +72,36 @@
       "RelativeMoniker": "D:0:0:{90AD7DBD-C19E-4618-847F-D2CEE12686BE}|Sistema-Libreria.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+=======
+      "AbsoluteMoniker": "D:0:0:{90AD7DBD-C19E-4618-847F-D2CEE12686BE}|Sistema-Libreria.csproj|c:\\xampp2\\htdocs\\libreriauniversitaria\\libreriauniversitaria2.0\\sistema-libreria\\inicio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{90AD7DBD-C19E-4618-847F-D2CEE12686BE}|Sistema-Libreria.csproj|solutionrelative:inicio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{90AD7DBD-C19E-4618-847F-D2CEE12686BE}|Sistema-Libreria.csproj|C:\\xampp2\\htdocs\\libreriaUniversitaria\\LibreriaUniversitaria2.0\\Sistema-Libreria\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{90AD7DBD-C19E-4618-847F-D2CEE12686BE}|Sistema-Libreria.csproj|solutionrelative:login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{90AD7DBD-C19E-4618-847F-D2CEE12686BE}|Sistema-Libreria.csproj|C:\\xampp2\\htdocs\\libreriaUniversitaria\\LibreriaUniversitaria2.0\\Sistema-Libreria\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{90AD7DBD-C19E-4618-847F-D2CEE12686BE}|Sistema-Libreria.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|H:\\Tecnicas2025\\Parcial\\ENT-Libreria\\Class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{90AD7DBD-C19E-4618-847F-D2CEE12686BE}|Sistema-Libreria.csproj|C:\\xampp2\\htdocs\\libreriaUniversitaria\\LibreriaUniversitaria2.0\\Sistema-Libreria\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{90AD7DBD-C19E-4618-847F-D2CEE12686BE}|Sistema-Libreria.csproj|solutionrelative:login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{90AD7DBD-C19E-4618-847F-D2CEE12686BE}|Sistema-Libreria.csproj|C:\\xampp2\\htdocs\\libreriaUniversitaria\\LibreriaUniversitaria2.0\\Sistema-Libreria\\inicio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{90AD7DBD-C19E-4618-847F-D2CEE12686BE}|Sistema-Libreria.csproj|solutionrelative:inicio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+>>>>>>> Stashed changes
       "AbsoluteMoniker": "D:0:0:{90AD7DBD-C19E-4618-847F-D2CEE12686BE}|Sistema-Libreria.csproj|C:\\xampp2\\htdocs\\libreriaUniversitaria\\LibreriaUniversitaria2.0\\Sistema-Libreria\\frmusuarios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{90AD7DBD-C19E-4618-847F-D2CEE12686BE}|Sistema-Libreria.csproj|solutionrelative:frmusuarios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
+<<<<<<< Updated upstream
       "AbsoluteMoniker": "D:0:0:{90AD7DBD-C19E-4618-847F-D2CEE12686BE}|Sistema-Libreria.csproj|C:\\xampp2\\htdocs\\libreriaUniversitaria\\LibreriaUniversitaria2.0\\Sistema-Libreria\\inicio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
 =======
       "AbsoluteMoniker": "D:0:0:{90AD7DBD-C19E-4618-847F-D2CEE12686BE}|Sistema-Libreria.csproj|c:\\xampp2\\htdocs\\libreriauniversitaria\\libreriauniversitaria2.0\\sistema-libreria\\inicio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
@@ -110,6 +137,8 @@
       "RelativeMoniker": "D:0:0:{90AD7DBD-C19E-4618-847F-D2CEE12686BE}|Sistema-Libreria.csproj|solutionrelative:frmusuarios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
       "AbsoluteMoniker": "D:0:0:{90AD7DBD-C19E-4618-847F-D2CEE12686BE}|Sistema-Libreria.csproj|C:\\xampp2\\htdocs\\libreriaUniversitaria\\LibreriaUniversitaria2.0\\Sistema-Libreria\\frmusuarios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{90AD7DBD-C19E-4618-847F-D2CEE12686BE}|Sistema-Libreria.csproj|solutionrelative:frmusuarios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
@@ -173,7 +202,11 @@
         {
           "DockedWidth": 200,
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
           "SelectedChildIndex": 15,
+=======
+          "SelectedChildIndex": 10,
+>>>>>>> Stashed changes
 =======
           "SelectedChildIndex": 10,
 >>>>>>> Stashed changes
@@ -220,6 +253,7 @@
             },
             {
               "$type": "Document",
+<<<<<<< Updated upstream
 <<<<<<< Updated upstream
               "DocumentIndex": 2,
               "Title": "RolEmpleado.cs",
@@ -310,6 +344,8 @@
               "WhenOpened": "2025-06-16T15:50:42.025Z",
               "EditorCaption": ""
 =======
+=======
+>>>>>>> Stashed changes
               "DocumentIndex": 0,
               "Title": "Inicio.cs [Dise\u00F1o]",
               "DocumentMoniker": "C:\\xampp2\\htdocs\\libreriaUniversitaria\\LibreriaUniversitaria2.0\\Sistema-Libreria\\Inicio.cs",
@@ -327,6 +363,9 @@
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{56df62a4-05a3-4e5b-aa1a-99371ccfb997}"
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
             },
             {
@@ -343,6 +382,9 @@
               "Title": "Class1.cs",
               "DocumentMoniker": "H:\\Tecnicas2025\\Parcial\\ENT-Libreria\\Class1.cs",
               "ToolTip": "H:\\Tecnicas2025\\Parcial\\ENT-Libreria\\Class1.cs",
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-06-16T15:40:41.548Z",
@@ -608,6 +650,9 @@
               "DocumentMoniker": "C:\\xampp2\\htdocs\\libreriaUniversitaria\\LibreriaUniversitaria2.0\\Sistema-Libreria\\frmUsuarios.cs",
               "RelativeDocumentMoniker": "frmUsuarios.cs",
               "ToolTip": "H:\\Tecnicas2025\\Parcial\\Sistema-Libreria\\frmUsuarios.cs [Dise\u00F1o]",
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-06-12T03:18:19.363Z"
@@ -674,6 +719,9 @@
               "Title": "Inicio.cs",
               "DocumentMoniker": "C:\\xampp2\\htdocs\\libreriaUniversitaria\\LibreriaUniversitaria2.0\\Sistema-Libreria\\Inicio.cs",
               "RelativeDocumentMoniker": "Inicio.cs",
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
               "ToolTip": "C:\\xampp2\\htdocs\\libreriaUniversitaria\\LibreriaUniversitaria2.0\\Sistema-Libreria\\Inicio.cs",
               "RelativeToolTip": "Inicio.cs",
