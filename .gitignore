@@ -1,0 +1,13 @@
+# Visual Studio ignores
+bin/
+obj/
+.vs/
+*.user
+*.suo
+*.pdb
+*.dll
+*.exe
+*.cache
+*.vsidx
+*.db-shm
+*.db-wal
