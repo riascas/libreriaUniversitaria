@@ -3,10 +3,10 @@
   "WorkspaceRootPath": "C:\\xampp2\\htdocs\\libreriaUniversitaria\\LibreriaUniversitaria2.0\\Sistema-Libreria\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{E1ECC4C6-9C3C-4129-95DA-9B59AD2EEDE8}|..\\ENT-Libreria\\ENT-Libreria.csproj|c:\\xampp2\\htdocs\\libreriauniversitaria\\libreriauniversitaria2.0\\ent-libreria\\venta.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{E1ECC4C6-9C3C-4129-95DA-9B59AD2EEDE8}|..\\ENT-Libreria\\ENT-Libreria.csproj|c:\\xampp2\\htdocs\\libreriauniversitaria\\libreriauniversitaria2.0\\ent-libreria\\detalleordencompra.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E1ECC4C6-9C3C-4129-95DA-9B59AD2EEDE8}|..\\ENT-Libreria\\ENT-Libreria.csproj|c:\\xampp2\\htdocs\\libreriauniversitaria\\libreriauniversitaria2.0\\ent-libreria\\detalleordencompra.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{E1ECC4C6-9C3C-4129-95DA-9B59AD2EEDE8}|..\\ENT-Libreria\\ENT-Libreria.csproj|c:\\xampp2\\htdocs\\libreriauniversitaria\\libreriauniversitaria2.0\\ent-libreria\\venta.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{E1ECC4C6-9C3C-4129-95DA-9B59AD2EEDE8}|..\\ENT-Libreria\\ENT-Libreria.csproj|c:\\xampp2\\htdocs\\libreriauniversitaria\\libreriauniversitaria2.0\\ent-libreria\\rolempleado.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
@@ -154,7 +154,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 13,
+          "SelectedChildIndex": 15,
           "Children": [
             {
               "$type": "Bookmark",
@@ -237,7 +237,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "Venta.cs",
               "DocumentMoniker": "C:\\xampp2\\htdocs\\libreriaUniversitaria\\LibreriaUniversitaria2.0\\ENT-Libreria\\Venta.cs",
               "RelativeDocumentMoniker": "..\\ENT-Libreria\\Venta.cs",
@@ -263,13 +263,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "DetalleOrdenCompra.cs",
               "DocumentMoniker": "C:\\xampp2\\htdocs\\libreriaUniversitaria\\LibreriaUniversitaria2.0\\ENT-Libreria\\DetalleOrdenCompra.cs",
               "RelativeDocumentMoniker": "..\\ENT-Libreria\\DetalleOrdenCompra.cs",
               "ToolTip": "C:\\xampp2\\htdocs\\libreriaUniversitaria\\LibreriaUniversitaria2.0\\ENT-Libreria\\DetalleOrdenCompra.cs",
               "RelativeToolTip": "..\\ENT-Libreria\\DetalleOrdenCompra.cs",
-              "ViewState": "AgIAAA0AAAAAAAAAAAAgwBYAAAAXAAAAAAAAAA==",
+              "ViewState": "AgIAAAwAAAAAAAAAAAA9wBYAAAApAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-06-16T15:49:39.675Z",
               "EditorCaption": ""

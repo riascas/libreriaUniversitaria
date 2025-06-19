@@ -3,6 +3,9 @@
   "WorkspaceRootPath": "C:\\xampp2\\htdocs\\libreriaUniversitaria\\LibreriaUniversitaria2.0\\Sistema-Libreria\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{E1ECC4C6-9C3C-4129-95DA-9B59AD2EEDE8}|..\\ENT-Libreria\\ENT-Libreria.csproj|c:\\xampp2\\htdocs\\libreriauniversitaria\\libreriauniversitaria2.0\\ent-libreria\\reserva.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{E1ECC4C6-9C3C-4129-95DA-9B59AD2EEDE8}|..\\ENT-Libreria\\ENT-Libreria.csproj|c:\\xampp2\\htdocs\\libreriauniversitaria\\libreriauniversitaria2.0\\ent-libreria\\detalleordencompra.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -13,9 +16,6 @@
     },
     {
       "AbsoluteMoniker": "D:0:0:{E1ECC4C6-9C3C-4129-95DA-9B59AD2EEDE8}|..\\ENT-Libreria\\ENT-Libreria.csproj|c:\\xampp2\\htdocs\\libreriauniversitaria\\libreriauniversitaria2.0\\ent-libreria\\empleado.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E1ECC4C6-9C3C-4129-95DA-9B59AD2EEDE8}|..\\ENT-Libreria\\ENT-Libreria.csproj|c:\\xampp2\\htdocs\\libreriauniversitaria\\libreriauniversitaria2.0\\ent-libreria\\reserva.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{E1ECC4C6-9C3C-4129-95DA-9B59AD2EEDE8}|..\\ENT-Libreria\\ENT-Libreria.csproj|c:\\xampp2\\htdocs\\libreriauniversitaria\\libreriauniversitaria2.0\\ent-libreria\\ordencompra.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
@@ -66,7 +66,7 @@
       "AbsoluteMoniker": "D:0:0:{E1ECC4C6-9C3C-4129-95DA-9B59AD2EEDE8}|..\\ENT-Libreria\\ENT-Libreria.csproj|c:\\xampp2\\htdocs\\libreriauniversitaria\\libreriauniversitaria2.0\\ent-libreria\\persona.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{90AD7DBD-C19E-4618-847F-D2CEE12686BE}|Sistema-Libreria.csproj|c:\\xampp2\\htdocs\\libreriauniversitaria\\libreriauniversitaria2.0\\sistema-libreria\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{90AD7DBD-C19E-4618-847F-D2CEE12686BE}|Sistema-Libreria.csproj|C:\\xampp2\\htdocs\\libreriaUniversitaria\\LibreriaUniversitaria2.0\\Sistema-Libreria\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{90AD7DBD-C19E-4618-847F-D2CEE12686BE}|Sistema-Libreria.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -154,7 +154,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 15,
+          "SelectedChildIndex": 14,
           "Children": [
             {
               "$type": "Bookmark",
@@ -198,7 +198,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "RolEmpleado.cs",
               "DocumentMoniker": "C:\\xampp2\\htdocs\\libreriaUniversitaria\\LibreriaUniversitaria2.0\\ENT-Libreria\\RolEmpleado.cs",
               "RelativeDocumentMoniker": "..\\ENT-Libreria\\RolEmpleado.cs",
@@ -206,8 +206,7 @@
               "RelativeToolTip": "..\\ENT-Libreria\\RolEmpleado.cs",
               "ViewState": "AgIAAAwAAAAAAAAAAAAYwB8AAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-16T16:22:37.961Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-16T16:22:37.961Z"
             },
             {
               "$type": "Document",
@@ -219,8 +218,7 @@
               "RelativeToolTip": "..\\ENT-Libreria\\DetalleReserva.cs",
               "ViewState": "AgIAAA0AAACAmZmZmZkVwBIAAABEAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-16T15:51:36.672Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-16T15:51:36.672Z"
             },
             {
               "$type": "Document",
@@ -232,12 +230,11 @@
               "RelativeToolTip": "..\\ENT-Libreria\\OrdenCompra.cs",
               "ViewState": "AgIAAAgAAADQzMzMzEwxwAwAAAAxAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-16T15:52:40.35Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-16T15:52:40.35Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "Venta.cs",
               "DocumentMoniker": "C:\\xampp2\\htdocs\\libreriaUniversitaria\\LibreriaUniversitaria2.0\\ENT-Libreria\\Venta.cs",
               "RelativeDocumentMoniker": "..\\ENT-Libreria\\Venta.cs",
@@ -245,34 +242,37 @@
               "RelativeToolTip": "..\\ENT-Libreria\\Venta.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAC4AAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-16T15:53:39.505Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-16T15:53:39.505Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 0,
               "Title": "Reserva.cs",
               "DocumentMoniker": "C:\\xampp2\\htdocs\\libreriaUniversitaria\\LibreriaUniversitaria2.0\\ENT-Libreria\\Reserva.cs",
               "RelativeDocumentMoniker": "..\\ENT-Libreria\\Reserva.cs",
               "ToolTip": "C:\\xampp2\\htdocs\\libreriaUniversitaria\\LibreriaUniversitaria2.0\\ENT-Libreria\\Reserva.cs",
               "RelativeToolTip": "..\\ENT-Libreria\\Reserva.cs",
-              "ViewState": "AgIAACMAAADAzMzMzMwiwC8AAAAJAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAC8AAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-06-16T15:55:01.908Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "DetalleOrdenCompra.cs",
               "DocumentMoniker": "C:\\xampp2\\htdocs\\libreriaUniversitaria\\LibreriaUniversitaria2.0\\ENT-Libreria\\DetalleOrdenCompra.cs",
               "RelativeDocumentMoniker": "..\\ENT-Libreria\\DetalleOrdenCompra.cs",
               "ToolTip": "C:\\xampp2\\htdocs\\libreriaUniversitaria\\LibreriaUniversitaria2.0\\ENT-Libreria\\DetalleOrdenCompra.cs",
               "RelativeToolTip": "..\\ENT-Libreria\\DetalleOrdenCompra.cs",
-              "ViewState": "AgIAAAwAAAAAAAAAAAA9wBYAAAApAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAACgmZmZmZknwBgAAAALAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-06-16T15:49:39.675Z",
               "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
             },
             {
               "$type": "Document",
@@ -284,12 +284,11 @@
               "RelativeToolTip": "..\\ENT-Libreria\\DetalleVenta.cs",
               "ViewState": "AgIAAAoAAADQzMzMzMwowBIAAABBAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-16T15:50:42.025Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-16T15:50:42.025Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "Empleado.cs",
               "DocumentMoniker": "C:\\xampp2\\htdocs\\libreriaUniversitaria\\LibreriaUniversitaria2.0\\ENT-Libreria\\Empleado.cs",
               "RelativeDocumentMoniker": "..\\ENT-Libreria\\Empleado.cs",
@@ -297,8 +296,7 @@
               "RelativeToolTip": "..\\ENT-Libreria\\Empleado.cs",
               "ViewState": "AgIAAAEAAAAAAAAAAAAwwAsAAAAQAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-16T15:40:41.548Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-16T15:40:41.548Z"
             },
             {
               "$type": "Document",
@@ -310,8 +308,7 @@
               "RelativeToolTip": "..\\ENT-Libreria\\BaseDetalle.cs",
               "ViewState": "AgIAABMAAAAgMzMzMzM0wBkAAABtAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-16T15:48:43.69Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-16T15:48:43.69Z"
             },
             {
               "$type": "Document",
@@ -323,8 +320,7 @@
               "RelativeToolTip": "..\\ENT-Libreria\\Libro.cs",
               "ViewState": "AgIAADUAAAAAZmZmZmYawDwAAAAOAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-16T15:46:11.079Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-16T15:46:11.079Z"
             },
             {
               "$type": "Document",
@@ -336,8 +332,7 @@
               "RelativeToolTip": "..\\ENT-Libreria\\SistemaLibreria.cs",
               "ViewState": "AgIAACYAAAAAAAAAAAAIwC0AAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-16T15:56:46.505Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-16T15:56:46.505Z"
             },
             {
               "$type": "Document",
@@ -349,8 +344,7 @@
               "RelativeToolTip": "..\\ENT-Libreria\\MovimientoStock.cs",
               "ViewState": "AgIAABAAAAAAAAAAAAAkwBgAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-16T15:56:14.965Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-16T15:56:14.965Z"
             },
             {
               "$type": "Document",
@@ -362,8 +356,7 @@
               "RelativeToolTip": "..\\ENT-Libreria\\EstadoReserva.cs",
               "ViewState": "AgIAAA0AAAAAAAAAAAAgwBEAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-16T15:55:49.643Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-16T15:55:49.643Z"
             },
             {
               "$type": "Document",
@@ -375,8 +368,7 @@
               "RelativeToolTip": "..\\ENT-Libreria\\EstadoLibro.cs",
               "ViewState": "AgIAAAgAAAAAAAAAAAAxwBEAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-16T15:48:15.692Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-16T15:48:15.692Z"
             },
             {
               "$type": "Document",
@@ -388,8 +380,7 @@
               "RelativeToolTip": "..\\ENT-Libreria\\CategoriaLibro.cs",
               "ViewState": "AgIAAAgAAABAMzMzMzMbwBEAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-16T15:47:35.747Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-16T15:47:35.747Z"
             },
             {
               "$type": "Document",
@@ -401,8 +392,7 @@
               "RelativeToolTip": "..\\ENT-Libreria\\Editorial.cs",
               "ViewState": "AgIAAA4AAABgZmZmZmYswB8AAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-16T15:45:44.338Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-16T15:45:44.338Z"
             },
             {
               "$type": "Document",
@@ -414,8 +404,7 @@
               "RelativeToolTip": "..\\ENT-Libreria\\Municipio.cs",
               "ViewState": "AgIAAAQAAABAMzMzMzMLwBEAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-16T15:45:07.067Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-16T15:45:07.067Z"
             },
             {
               "$type": "Document",
@@ -427,8 +416,7 @@
               "RelativeToolTip": "..\\ENT-Libreria\\Localidad.cs",
               "ViewState": "AgIAABAAAAAAAAAAAAAkwBgAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-16T15:44:40.516Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-16T15:44:40.516Z"
             },
             {
               "$type": "Document",
@@ -440,8 +428,7 @@
               "RelativeToolTip": "..\\ENT-Libreria\\Domicilio.cs",
               "ViewState": "AgIAAAMAAACgmZmZmZkhwB8AAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-16T15:44:07.651Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-16T15:44:07.651Z"
             },
             {
               "$type": "Document",
@@ -453,8 +440,7 @@
               "RelativeToolTip": "..\\ENT-Libreria\\Cliente.cs",
               "ViewState": "AgIAAAYAAAAAAAAAAAAgPREAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-16T15:43:10.964Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-16T15:43:10.964Z"
             },
             {
               "$type": "Document",
@@ -466,12 +452,7 @@
               "RelativeToolTip": "..\\ENT-Libreria\\Persona.cs",
               "ViewState": "AgIAABsAAAAgMzMzMzM2wCYAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-16T15:39:51.915Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
+              "WhenOpened": "2025-06-16T15:39:51.915Z"
             },
             {
               "$type": "Document",
@@ -483,8 +464,7 @@
               "RelativeToolTip": "Program.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAArAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-10T23:10:17.743Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-10T23:10:17.743Z"
             },
             {
               "$type": "Document",
