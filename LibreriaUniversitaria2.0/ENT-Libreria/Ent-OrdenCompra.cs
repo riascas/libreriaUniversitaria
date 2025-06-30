@@ -8,9 +8,29 @@ namespace ENT_Libreria
 {
     public class OrdenCompra
     {
+        private int _idCompra;
+        private decimal _totalCompra;
+        private string _estadoCompra;
         private DateTime _fechaCompra;
         private Editorial _unaEditorial;
+        private Empleado _unEmpleado;
 
+        public int IdCompra
+        {
+            get { return _idCompra; }
+            set { _idCompra = value; }
+        }
+        public decimal TotalCompra
+        {
+            get { return _totalCompra; }
+            set { _totalCompra = value; }
+        }
+
+        public string EstadoCompra
+        {
+            get { return _estadoCompra; }
+            set { _estadoCompra = value; }
+        }
         public DateTime FechaCompra
         {
             get { return _fechaCompra; }
@@ -22,6 +42,12 @@ namespace ENT_Libreria
             get { return _unaEditorial; }
             set { _unaEditorial = value; }
         }
+        public Empleado UnEmpleado
+        {
+            get { return _unEmpleado; }
+            set { _unEmpleado = value; }
+        }
+
         /* me falta  hacer este metodo
         private decimal DetalleVenta;
         

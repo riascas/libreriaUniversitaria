@@ -8,10 +8,26 @@ namespace ENT_Libreria
 {
     public class Reserva
     {
+        private int _idReserva;
+        private DateTime _fechaRetiro;
         private List<DetalleReserva> _detalleReservas;
         private DateTime _fechaReserva;
         private EstadoReserva _unEstadoReserva;
+        private Empleado _unEmpleado;
+        private Cliente _unCliente;
 
+
+        public int IdReserva
+        {
+            get { return _idReserva; }
+            set { _idReserva = value; }
+        }
+
+        public DateTime FechaRetiro
+        {
+            get { return _fechaRetiro; }
+            set { _fechaRetiro = value; }
+        }
         public List<DetalleReserva> DetalleReservas
         {
             get { return _detalleReservas; }
@@ -28,6 +44,18 @@ namespace ENT_Libreria
         {
             get { return _unEstadoReserva; }
             set { _unEstadoReserva = value; }
+        }
+
+        public Empleado UnEmpleado
+        {
+            get { return _unEmpleado; }
+            set { _unEmpleado = value; }
+        }
+
+        public Cliente UnCliente
+        {
+            get { return _unCliente; }
+            set { _unCliente = value; }
         }
 
         public decimal CalcularTotal()

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{036BB4F5-8E33-46B1-A2BA-81BB1DBD1D7C}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>DAT_Libreria</RootNamespace>
+    <AssemblyName>DAT-Libreria</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CategoriaLibroDAO.cs" />
+    <Compile Include="ClienteDAO.cs" />
+    <Compile Include="Conexion.cs" />
+    <Compile Include="DetalleCompraDAO.cs" />
+    <Compile Include="DetalleReservaDAO.cs" />
+    <Compile Include="DetalleVentaDAO.cs" />
+    <Compile Include="DomicilioDAO.cs" />
+    <Compile Include="EditorialDAO.cs" />
+    <Compile Include="EmpleadoDAO.cs" />
+    <Compile Include="EstadoLibroDAO.cs" />
+    <Compile Include="EstadoReservaDAO.cs" />
+    <Compile Include="LibroDAO.cs" />
+    <Compile Include="LocalidadDAO.cs" />
+    <Compile Include="MovimientoStockDAO.cs" />
+    <Compile Include="MunicipioDAO.cs" />
+    <Compile Include="OrdenCompraDAO.cs" />
+    <Compile Include="PersonaDAO.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ReservaDAO.cs" />
+    <Compile Include="RolEmpleadoDAO.cs" />
+    <Compile Include="VentaDAO.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BLL-Libreria\BLL-Libreria.csproj">
+      <Project>{31f5ca1b-7408-42a2-a7b2-878d92af0bc8}</Project>
+      <Name>BLL-Libreria</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ENT-Libreria\ENT-Libreria.csproj">
+      <Project>{95945913-f801-4820-a2fa-536e1816a6e5}</Project>
+      <Name>ENT-Libreria</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

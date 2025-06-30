@@ -9,8 +9,14 @@ namespace ENT_Libreria
 {
     public class CategoriaLibro
     {
+        private int _idCategoriaLibro;
         private string _descripcionCategoriaLibro;
 
+        public int IdCategoriaLibro
+        {
+            get { return _idCategoriaLibro; }
+            set { _idCategoriaLibro = value; }
+        }
         public string DescripcionCategoriaLibro
         {
             get { return _descripcionCategoriaLibro; }

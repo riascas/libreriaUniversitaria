@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BLL-Libreria", "..\BLL-Libr
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ENT-Libreria", "..\ENT-Libreria\ENT-Libreria.csproj", "{95945913-F801-4820-A2FA-536E1816A6E5}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DAT-Libreria", "..\DAT-Libreria\DAT-Libreria.csproj", "{036BB4F5-8E33-46B1-A2BA-81BB1DBD1D7C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,10 @@ Global
 		{95945913-F801-4820-A2FA-536E1816A6E5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{95945913-F801-4820-A2FA-536E1816A6E5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{95945913-F801-4820-A2FA-536E1816A6E5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{036BB4F5-8E33-46B1-A2BA-81BB1DBD1D7C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{036BB4F5-8E33-46B1-A2BA-81BB1DBD1D7C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{036BB4F5-8E33-46B1-A2BA-81BB1DBD1D7C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{036BB4F5-8E33-46B1-A2BA-81BB1DBD1D7C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

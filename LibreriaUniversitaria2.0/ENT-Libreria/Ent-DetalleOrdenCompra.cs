@@ -8,22 +8,33 @@ namespace ENT_Libreria
 {
     public class DetalleOrdenCompra : BaseDetalle
     {
+        private int _idDetalleCompra;
+        private int _cantidadCompra;
         private decimal _precioCosto;
+        private OrdenCompra _unaOrdendeCompra;
 
+        public int IdDetalleCompra
+        {
+            get { return _idDetalleCompra; }
+            set { _idDetalleCompra = value; }
+        }
+
+        public OrdenCompra UnaOrdendeCompra
+        {
+            get { return _unaOrdendeCompra; }
+            set { _unaOrdendeCompra = value; }
+        }
         public decimal PrecioCosto
         {
             get { return _precioCosto; }
             set { _precioCosto = value; }
         }
 
-        private decimal DetalleVenta;
-
-        public decimal _detalleventa
+        public int CantidadCompra
         {
-            get { return DetalleVenta; }
-            set { DetalleVenta = value; }
+            get { return _cantidadCompra; }
+            set { _cantidadCompra = value; }
         }
-
 
         public decimal CalcularSubTotal()
         {

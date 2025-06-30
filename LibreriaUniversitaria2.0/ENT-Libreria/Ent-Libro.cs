@@ -8,14 +8,21 @@ namespace ENT_Libreria
 {
     public class Libro
     {
+        private int _idLibro;
         private string _autor;
         private bool _disponible;
         private string _isbn;
         private decimal _precioLibro;
         private string _titulo;
-        private CategoriaLibro _categoriaLibro;
-        private EstadoLibro _estadoLibro;
+        private CategoriaLibro _unaCategoriaLibro;
+        private EstadoLibro _unEstadoLibro;
 
+
+        public int IdLibro
+        {
+            get { return _idLibro; }
+            set { _idLibro = value; }
+        }
         public string Autor
         {
             get { return _autor; }
@@ -46,16 +53,16 @@ namespace ENT_Libreria
             set { _titulo = value; }
         }
 
-        public CategoriaLibro CategoriaLibro
+        public CategoriaLibro UnaCategoriaLibro
         {
-            get { return _categoriaLibro; }
-            set { _categoriaLibro = value; }
+            get { return _unaCategoriaLibro; }
+            set { _unaCategoriaLibro = value; }
         }
 
-        public EstadoLibro EstadoLibro
+        public EstadoLibro UnEstadoLibro
         {
-            get { return _estadoLibro; }
-            set { _estadoLibro = value; }
+            get { return _unEstadoLibro; }
+            set { _unEstadoLibro = value; }
         }
 
         public bool CalculaDisponibilidad()

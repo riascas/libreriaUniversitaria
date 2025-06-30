@@ -9,13 +9,20 @@ namespace ENT_Libreria
     public class Localidad
 
     {
-        private string _codigoPostal;
+        private int _idLocalidad;
+        private string _nombreLocalidad;
         private Municipio _unMunicipio;
 
-        public string CodigoPostal
+        public int IdLocalidad
         {
-            get { return _codigoPostal; }
-            set { _codigoPostal = value; }
+            get { return _idLocalidad; }
+            set { _idLocalidad = value; }
+        }
+
+        public string NombreLocalidad
+        {
+            get { return _nombreLocalidad; }
+            set { _nombreLocalidad = value; }
         }
 
         public Municipio UnMunicipio

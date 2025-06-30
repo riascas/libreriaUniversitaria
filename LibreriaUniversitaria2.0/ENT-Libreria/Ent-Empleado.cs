@@ -11,6 +11,8 @@ namespace ENT_Libreria
         private string _clave;
         private RolEmpleado _unRol;
         private string _usuario;
+        private int _idEmpleado;
+        private Persona _unaPersona;
 
         public string Clave
         {
@@ -28,6 +30,17 @@ namespace ENT_Libreria
         {
             get { return _usuario; }
             set { _usuario = value; }
+        }
+        public int IdEmpleado
+        {
+            get { return _idEmpleado; }
+            set { _idEmpleado = value; }
+        }
+        
+        public Persona UnaPersona
+        {
+            get { return _unaPersona; }
+            set { _unaPersona = value; }
         }
         /// <summary>
         /// validamos que no fuera vacio el usuario y la clave

@@ -1,13 +1,50 @@
-# Visual Studio ignores
-bin/
-obj/
+# Archivos de Visual Studio
 .vs/
 *.user
 *.suo
-*.pdb
+*.userosscache
+*.sln.docstates
+
+# Archivos de compilación
+bin/
+obj/
 *.dll
 *.exe
+*.pdb
 *.cache
-*.vsidx
-*.db-shm
-*.db-wal
+*.log
+*.csproj.user
+
+# Archivos temporales
+*.tmp
+*.bak
+*.swp
+*.htm
+*.dbmdl
+
+# Archivos de publicación
+.publish/
+
+# Archivos generados por VS Code (si usás también)
+.vscode/
+
+# Archivos de sistema
+Thumbs.db
+Desktop.ini
+
+# Archivos de paquetes NuGet
+*.nupkg
+packages/
+project.lock.json
+project.fragment.lock.json
+artifacts/
+
+# Configuración de Rider
+.idea/
+
+# Logs
+*.log
+
+# Archivos de actualización
+UpgradeLog*.XML
+UpgradeLog*.htm

@@ -9,20 +9,26 @@ namespace ENT_Libreria
     public class Editorial
 
     {
-        private string _contactoEditorial;
-        private string _cuitEditorial;
+        private int _idEditorial;
+        private string _contacto;
+        private string _cuit;
         private string _nombreEditorial;
 
-        public string ContactoEditorial
+        public int IdEditorial
         {
-            get { return _contactoEditorial; }
-            set { _contactoEditorial = value; }
+            get { return _idEditorial; }
+            set { _idEditorial = value; }
+        }
+        public string Contacto
+        {
+            get { return _contacto; }
+            set { _contacto = value; }
         }
 
-        public string CuitEditorial
+        public string CUIT
         {
-            get { return _cuitEditorial; }
-            set { _cuitEditorial = value; }
+            get { return _cuit; }
+            set { _cuit = value; }
         }
 
         public string NombreEditorial

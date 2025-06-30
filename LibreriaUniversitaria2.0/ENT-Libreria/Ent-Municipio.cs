@@ -8,9 +8,15 @@ namespace ENT_Libreria
 {
     public class Municipio
     {
+        private int _idMunicipio;
         private string _nombreMunicipio;
 
 
+        public int IdMunicipio
+        {
+            get { return _idMunicipio; }
+            set { _idMunicipio = value; }
+        }
         public string NombreMunicipio
         {
             get { return _nombreMunicipio; }

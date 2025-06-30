@@ -9,10 +9,16 @@ namespace ENT_Libreria
 {
     public class Domicilio
     {
+        private int _idDomicilio;
         private int _altura;
         private string _calle;
         private Localidad _unaLocalidad;
 
+        public int IdDomicilio
+        {
+            get { return _idDomicilio; }
+            set { _idDomicilio = value; }
+        }
         public int Altura
         {
             get { return _altura; }

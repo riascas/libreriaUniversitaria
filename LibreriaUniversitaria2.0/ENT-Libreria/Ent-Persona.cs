@@ -8,12 +8,18 @@ namespace ENT_Libreria
 {
     public class Persona
     {
+        private int _idPersona;
 
         private string _apellido;
         private string _dni;
         private string _email;
         private string _nombre;
 
+        public int IdPersona
+        {
+            get { return _idPersona; }
+            set { _idPersona = value; }
+        }
         public string Apellido
         {
             get { return _apellido; }

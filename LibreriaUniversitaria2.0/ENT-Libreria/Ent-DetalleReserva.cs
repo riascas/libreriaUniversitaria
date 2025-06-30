@@ -8,17 +8,37 @@ namespace ENT_Libreria
 {
     public class DetalleReserva : BaseDetalle
     {
-        private decimal _precioEstimado;
+        private int _idDetalleReserva;
+        private int _cantidadReserva;
+        private decimal _precioReserva;
+        private Reserva _unaReserva;
 
-        public decimal PrecioEstimado
+        public decimal PrecioReserva
         {
-            get { return _precioEstimado; }
-            set { _precioEstimado = value; }
+            get { return _precioReserva; }
+            set { _precioReserva = value; }
+        }
+        
+        public int IdDetalleReserva
+        {
+            get { return _idDetalleReserva; }
+            set { _idDetalleReserva = value; }
+        }
+        public int CantidadReserva
+        {
+            get { return _cantidadReserva; }
+            set { _cantidadReserva = value; }
+        }
+
+        public Reserva UnaReserva
+        {
+            get { return _unaReserva; }
+            set { _unaReserva = value; }
         }
 
         public decimal CalcularSubTotal()
         {
-            return Cantidad * PrecioEstimado;
+            return CantidadReserva * PrecioReserva;
         }
     }
 }

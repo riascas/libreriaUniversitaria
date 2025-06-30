@@ -9,26 +9,21 @@ namespace ENT_Libreria
     public class RolEmpleado
 
     {
-        private int _id;
-        private string _nombre;
-        private string _descripcion;
+        private int _idRolEmpleado;
+        private string _rol;
 
-        public int Id
+        public int IdRolEmpleado
         {
-            get { return _id; }
-            set { _id = value; }
+            get { return _idRolEmpleado; }
+            set { _idRolEmpleado = value; }
         }
 
-        public string Nombre
-        {
-            get { return _nombre; }
-            set { _nombre = value; }
-        }
 
-        public string Descripcion
+        public string Rol
         {
-            get { return _descripcion; }
-            set { _descripcion = value; }
+            get { return _rol; }
+            set { _rol = value; }
         }
+        
     }
 }
