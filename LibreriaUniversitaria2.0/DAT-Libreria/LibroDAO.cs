@@ -52,9 +52,9 @@ namespace DAT_Libreria
         public int Insertar(Libro libro)
         {
             string query = $@"
-                INSERT INTO Libro (ISBN, Titulo, Autor, PrecioLibro, Disponible, idEstadoLibro, idCategoriaLibro)
-                VALUES ('{libro.ISBN}', '{libro.Titulo}', '{libro.Autor}', {libro.PrecioLibro}, 
-                        '{(libro.Disponible ? 1 : 0)}', {libro.UnEstadoLibro}, {libro.UnaCategoriaLibro})";
+        INSERT INTO Libro (ISBN, Titulo, Autor, PrecioLibro, Disponible, FK_EstadoLibro, FK_CategoriaLibro)
+        VALUES ('{libro.ISBN}', '{libro.Titulo}', '{libro.Autor}', {libro.PrecioLibro.ToString(System.Globalization.CultureInfo.InvariantCulture)}, 
+                '{(libro.Disponible ? 1 : 0)}', {libro.UnEstadoLibro.IdEstadoLibro}, {libro.UnaCategoriaLibro.IdCategoriaLibro})";
 
             return conexion.EscribirPorComando(query);
         }

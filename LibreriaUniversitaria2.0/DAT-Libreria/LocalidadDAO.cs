@@ -16,22 +16,44 @@ namespace DAT_Libreria
         public List<Localidad> ObtenerTodos()
         {
             List<Localidad> lista = new List<Localidad>();
-            DataTable tabla = conexion.LeerPorComando("SELECT * FROM Localidad");
+            string consulta = @"
+            SELECT l.idLocalidad, l.Descripcion AS NombreLocalidad, 
+                   m.idMunicipio, m.NombreMunicipio
+            FROM Localidad l
+            INNER JOIN Municipio m ON l.FK_Municipio = m.idMunicipio";
 
-            foreach (DataRow fila in tabla.Rows)
+            DataTable tabla = conexion.LeerPorComando(consulta);
+
+            if (tabla != null)
             {
-                lista.Add(new Localidad
+                foreach (DataRow fila in tabla.Rows)
                 {
-                    IdLocalidad = Convert.ToInt32(fila["idLocalidad"]),
-                    NombreLocalidad = fila["Descripcion"].ToString(),
-                    UnMunicipio = new Municipio
+                    Localidad localidad = new Localidad
                     {
-                        IdMunicipio = Convert.ToInt32(fila["idMunicipio"]),
-                        NombreMunicipio = fila["NombreMunicipio"].ToString()
-                    }
-                });
+                        IdLocalidad = Convert.ToInt32(fila["idLocalidad"]),
+                        NombreLocalidad = fila["NombreLocalidad"].ToString(),
+                        UnMunicipio = new Municipio
+                        {
+                            IdMunicipio = Convert.ToInt32(fila["idMunicipio"]),
+                            NombreMunicipio = fila["NombreMunicipio"].ToString()
+                        }
+                    };
+
+                    lista.Add(localidad);
+                }
             }
+
             return lista;
         }
+
+        public int InsertarLocalidad(Localidad localidad)
+        {
+            string query = $"INSERT INTO Localidad (Descripcion, FK_Municipio) " +
+                           $"VALUES ('{localidad.NombreLocalidad}', {localidad.UnMunicipio.IdMunicipio})";
+
+            return conexion.EscribirPorComando(query);
+        }
     }
+
+
 }

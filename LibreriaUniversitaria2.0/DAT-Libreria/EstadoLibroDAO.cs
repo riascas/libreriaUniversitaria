@@ -18,15 +18,25 @@ namespace DAT_Libreria
             List<EstadoLibro> lista = new List<EstadoLibro>();
             DataTable tabla = conexion.LeerPorComando("SELECT * FROM EstadoLibro");
 
-            foreach (DataRow fila in tabla.Rows)
+            if (tabla != null)
             {
-                lista.Add(new EstadoLibro
+                foreach (DataRow fila in tabla.Rows)
                 {
-                    IdEstadoLibro = Convert.ToInt32(fila["idEstadoLibro"]),
-                    DescripcionEstadoLibro = fila["DescripcionEstadoLibro"].ToString()
-                });
+                    lista.Add(new EstadoLibro
+                    {
+                        IdEstadoLibro = Convert.ToInt32(fila["idEstadoLibro"]),
+                        DescripcionEstadoLibro = fila["DescripcionEstadoLibro"].ToString()
+                    });
+                }
             }
+
             return lista;
+        }
+
+        public int InsertarEstado(EstadoLibro estado)
+        {
+            string query = $"INSERT INTO EstadoLibro (DescripcionEstadoLibro) VALUES ('{estado.DescripcionEstadoLibro}')";
+            return conexion.EscribirPorComando(query);
         }
     }
 }

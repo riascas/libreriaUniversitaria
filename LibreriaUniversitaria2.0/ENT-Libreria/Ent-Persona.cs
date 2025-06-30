@@ -9,11 +9,11 @@ namespace ENT_Libreria
     public class Persona
     {
         private int _idPersona;
-
+        private string _nombre;
         private string _apellido;
         private string _dni;
         private string _email;
-        private string _nombre;
+        private Domicilio _unDomicilio;
 
         public int IdPersona
         {
@@ -42,6 +42,12 @@ namespace ENT_Libreria
         {
             get { return _nombre; }
             set { _nombre = value; }
+        }
+
+        public Domicilio UnDomicilio
+        {
+            get { return _unDomicilio; }
+            set { _unDomicilio = value; }
         }
     }
 }

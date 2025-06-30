@@ -18,15 +18,25 @@ namespace DAT_Libreria
             List<RolEmpleado> lista = new List<RolEmpleado>();
             DataTable tabla = conexion.LeerPorComando("SELECT * FROM RolEmpleado");
 
-            foreach (DataRow fila in tabla.Rows)
+            if (tabla != null)
             {
-                lista.Add(new RolEmpleado
+                foreach (DataRow fila in tabla.Rows)
                 {
-                    IdRolEmpleado = Convert.ToInt32(fila["idRolEmpleado"]),
-                    Rol = fila["Rol"].ToString()
-                });
+                    lista.Add(new RolEmpleado
+                    {
+                        IdRolEmpleado = Convert.ToInt32(fila["idRolEmpleado"]),
+                        Rol = fila["Rol"].ToString()
+                    });
+                }
             }
+
             return lista;
+        }
+
+        public int InsertarRol(RolEmpleado rol)
+        {
+            string query = $"INSERT INTO RolEmpleado (Rol) VALUES ('{rol.Rol}')";
+            return conexion.EscribirPorComando(query);
         }
     }
 }

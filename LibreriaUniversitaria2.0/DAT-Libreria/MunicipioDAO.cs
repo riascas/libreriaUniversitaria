@@ -18,15 +18,25 @@ namespace DAT_Libreria
             List<Municipio> lista = new List<Municipio>();
             DataTable tabla = conexion.LeerPorComando("SELECT * FROM Municipio");
 
-            foreach (DataRow fila in tabla.Rows)
+            if (tabla != null)
             {
-                lista.Add(new Municipio
+                foreach (DataRow fila in tabla.Rows)
                 {
-                    IdMunicipio = Convert.ToInt32(fila["idMunicipio"]),
-                    NombreMunicipio = fila["NombreMunicipio"].ToString()
-                });
+                    lista.Add(new Municipio
+                    {
+                        IdMunicipio = Convert.ToInt32(fila["idMunicipio"]),
+                        NombreMunicipio = fila["NombreMunicipio"].ToString()
+                    });
+                }
             }
+
             return lista;
+        }
+
+        public int InsertarMunicipio(Municipio municipio)
+        {
+            string query = $"INSERT INTO Municipio (NombreMunicipio) VALUES ('{municipio.NombreMunicipio}')";
+            return conexion.EscribirPorComando(query);
         }
     }
 }

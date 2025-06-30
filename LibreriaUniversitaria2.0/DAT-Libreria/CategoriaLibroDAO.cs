@@ -18,15 +18,25 @@ namespace DAT_Libreria
             List<CategoriaLibro> lista = new List<CategoriaLibro>();
             DataTable tabla = conexion.LeerPorComando("SELECT * FROM CategoriaLibro");
 
-            foreach (DataRow fila in tabla.Rows)
+            if (tabla != null)
             {
-                lista.Add(new CategoriaLibro
+                foreach (DataRow fila in tabla.Rows)
                 {
-                    IdCategoriaLibro = Convert.ToInt32(fila["idCategoriaLibro"]),
-                    DescripcionCategoriaLibro = fila["DescripcionCategoriaLibro"].ToString()
-                });
+                    lista.Add(new CategoriaLibro
+                    {
+                        IdCategoriaLibro = Convert.ToInt32(fila["idCategoriaLibro"]),
+                        DescripcionCategoriaLibro = fila["DescripcionCategoriaLibro"].ToString()
+                    });
+                }
             }
+
             return lista;
+        }
+
+        public int InsertarCategoria(CategoriaLibro categoria)
+        {
+            string query = $"INSERT INTO CategoriaLibro (DescripcionCategoriaLibro) VALUES ('{categoria.DescripcionCategoriaLibro}')";
+            return conexion.EscribirPorComando(query);
         }
     }
 }

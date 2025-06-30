@@ -16,20 +16,64 @@ namespace DAT_Libreria
         public List<Persona> ObtenerTodos()
         {
             List<Persona> lista = new List<Persona>();
-            DataTable tabla = conexion.LeerPorComando("SELECT * FROM Persona");
 
-            foreach (DataRow fila in tabla.Rows)
+            string consulta = @"
+            SELECT p.idPersona, p.Nombre, p.Apellido, p.DNI, p.Email,
+                   d.idDomicilio, d.Calle, d.Altura,
+                   l.idLocalidad, l.Descripcion AS NombreLocalidad,
+                   m.idMunicipio, m.NombreMunicipio
+            FROM Persona p
+            INNER JOIN Domicilio d ON p.FK_Domicilio = d.idDomicilio
+            INNER JOIN Localidad l ON d.FK_Localidad = l.idLocalidad
+            INNER JOIN Municipio m ON l.FK_Municipio = m.idMunicipio";
+
+            DataTable tabla = conexion.LeerPorComando(consulta);
+
+            if (tabla != null)
             {
-                lista.Add(new Persona
+                foreach (DataRow fila in tabla.Rows)
                 {
-                    IdPersona = Convert.ToInt32(fila["idPersona"]),
-                    Nombre = fila["Nombre"].ToString(),
-                    Apellido = fila["Apellido"].ToString(),
-                    DNI = fila["DNI"].ToString(),
-                    Email = fila["Email"].ToString()
-                });
+                    Persona persona = new Persona
+                    {
+                        IdPersona = Convert.ToInt32(fila["idPersona"]),
+                        Nombre = fila["Nombre"].ToString(),
+                        Apellido = fila["Apellido"].ToString(),
+                        DNI = fila["DNI"].ToString(),
+                        Email = fila["Email"].ToString(),
+                        UnDomicilio = new Domicilio
+                        {
+                            IdDomicilio = Convert.ToInt32(fila["idDomicilio"]),
+                            Calle = fila["Calle"].ToString(),
+                            Altura = Convert.ToInt32(fila["Altura"]),
+                            UnaLocalidad = new Localidad
+                            {
+                                IdLocalidad = Convert.ToInt32(fila["idLocalidad"]),
+                                NombreLocalidad = fila["NombreLocalidad"].ToString(),
+                                UnMunicipio = new Municipio
+                                {
+                                    IdMunicipio = Convert.ToInt32(fila["idMunicipio"]),
+                                    NombreMunicipio = fila["NombreMunicipio"].ToString()
+                                }
+                            }
+                        }
+                    };
+
+                    lista.Add(persona);
+                }
             }
+
             return lista;
         }
+
+        public int InsertarPersona(Persona persona)
+        {
+            string query = $@"
+            INSERT INTO Persona (Nombre, Apellido, DNI, Email, FK_Domicilio)
+            VALUES ('{persona.Nombre}', '{persona.Apellido}', '{persona.DNI}', 
+                    '{persona.Email}', {persona.UnDomicilio.IdDomicilio})";
+
+            return conexion.EscribirPorComando(query);
+        }
     }
+
 }
