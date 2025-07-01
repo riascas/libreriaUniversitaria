@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using LibreriaUniversitaria.DAL;
+
 
 namespace LibreriaUniversitaria.UI
 {
@@ -16,7 +18,16 @@ namespace LibreriaUniversitaria.UI
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form1());
+
+            // PRUEBA TEMPORAL - Eliminar esto cuando tengas frmLogin
+            ConexionDAL conexion = new ConexionDAL();
+            conexion.ProbarConexion();
+            MessageBox.Show("Test de conexión exitoso. Ahora podés eliminar este código y levantar tu formulario.");
+
+            // CUANDO TENGAS FORMULARIOS:
+            // Application.Run(new frmLogin());
         }
+
+
     }
 }

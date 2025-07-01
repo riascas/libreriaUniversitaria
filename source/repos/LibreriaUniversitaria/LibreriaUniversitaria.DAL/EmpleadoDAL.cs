@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace LibreriaUniversitaria.DAL
 {
-    public class Class1
+    internal class EmpleadoDAL
     {
     }
 }

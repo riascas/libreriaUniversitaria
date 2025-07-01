@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace LibreriaUniversitaria.BLL
 {
-    public class Class1
+    internal class EmpleadoBLL
     {
     }
 }

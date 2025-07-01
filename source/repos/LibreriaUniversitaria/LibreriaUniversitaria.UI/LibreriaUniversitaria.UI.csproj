@@ -81,6 +81,10 @@
       <Project>{0025d726-8413-4f1d-8ff3-51a055e41220}</Project>
       <Name>LibreriaUniversitaria.BLL</Name>
     </ProjectReference>
+    <ProjectReference Include="..\LibreriaUniversitaria.DAL\LibreriaUniversitaria.DAL.csproj">
+      <Project>{29be3d17-cd81-4816-a694-cd2863b0ac0b}</Project>
+      <Name>LibreriaUniversitaria.DAL</Name>
+    </ProjectReference>
     <ProjectReference Include="..\LibreriaUniversitaria.Entidades\LibreriaUniversitaria.Entidades.csproj">
       <Project>{ed03ae6e-fce8-4e62-8500-cf056de34440}</Project>
       <Name>LibreriaUniversitaria.Entidades</Name>
