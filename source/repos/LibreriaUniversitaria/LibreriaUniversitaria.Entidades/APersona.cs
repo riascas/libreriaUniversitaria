@@ -7,24 +7,22 @@ using System.Threading.Tasks;
 namespace LibreriaUniversitaria.Entidades
 {
     /// <summary>
-    /// Representa a una persona dentro del sistema.
+    /// Clase abstracta base para representar una persona en el sistema.
     /// </summary>
-    public class Persona
+    public abstract class APersona
     {
         public int IdPersona { get; set; }
         public string Nombre { get; set; }
         public string Apellido { get; set; }
         public string Dni { get; set; }
         public string Email { get; set; }
-
-        // Relación uno a uno con Domicilio
         public Domicilio Domicilio { get; set; }
 
         // Constructor por defecto
-        public Persona() { }
+        public APersona() { }
 
         // Constructor completo
-        public Persona(int idPersona, string nombre, string apellido, string dni, string email, Domicilio domicilio)
+        public APersona(int idPersona, string nombre, string apellido, string dni, string email, Domicilio domicilio)
         {
             IdPersona = idPersona;
             Nombre = nombre;
@@ -35,4 +33,5 @@ namespace LibreriaUniversitaria.Entidades
         }
     }
 }
+
 

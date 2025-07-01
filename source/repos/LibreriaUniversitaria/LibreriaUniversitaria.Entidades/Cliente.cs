@@ -9,7 +9,7 @@ namespace LibreriaUniversitaria.Entidades
     /// <summary>
     /// Representa un cliente del sistema, que hereda de Persona.
     /// </summary>
-    public class Cliente : Persona
+    public class Cliente : APersona
     {
         public int IdCliente { get; set; }
 

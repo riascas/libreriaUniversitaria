@@ -9,7 +9,7 @@ namespace LibreriaUniversitaria.Entidades
     /// <summary>
     /// Representa un empleado de la librería.
     /// </summary>
-    public class Empleado : Persona
+    public class Empleado : APersona
     {
         // Clave foránea al Rol del empleado
         public int IdRol { get; set; }
