@@ -3,7 +3,42 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.9.34723.18
 MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LibreriaUniversitaria.Entidades", "LibreriaUniversitaria.Entidades\LibreriaUniversitaria.Entidades.csproj", "{ED03AE6E-FCE8-4E62-8500-CF056DE34440}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LibreriaUniversitaria.DAL", "LibreriaUniversitaria.DAL\LibreriaUniversitaria.DAL.csproj", "{29BE3D17-CD81-4816-A694-CD2863B0AC0B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LibreriaUniversitaria.BLL", "LibreriaUniversitaria.BLL\LibreriaUniversitaria.BLL.csproj", "{0025D726-8413-4F1D-8FF3-51A055E41220}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LibreriaUniversitaria.UI", "LibreriaUniversitaria.UI\LibreriaUniversitaria.UI.csproj", "{B819EBD4-D8B5-469D-A5AF-3DF05DBF0AF4}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Elementos de la solución", "Elementos de la solución", "{E361F5A4-E240-46B8-A5CA-90CA3FEFD575}"
+	ProjectSection(SolutionItems) = preProject
+		.gitignore = .gitignore
+	EndProjectSection
+EndProject
 Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{ED03AE6E-FCE8-4E62-8500-CF056DE34440}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ED03AE6E-FCE8-4E62-8500-CF056DE34440}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ED03AE6E-FCE8-4E62-8500-CF056DE34440}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ED03AE6E-FCE8-4E62-8500-CF056DE34440}.Release|Any CPU.Build.0 = Release|Any CPU
+		{29BE3D17-CD81-4816-A694-CD2863B0AC0B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{29BE3D17-CD81-4816-A694-CD2863B0AC0B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{29BE3D17-CD81-4816-A694-CD2863B0AC0B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{29BE3D17-CD81-4816-A694-CD2863B0AC0B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0025D726-8413-4F1D-8FF3-51A055E41220}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0025D726-8413-4F1D-8FF3-51A055E41220}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0025D726-8413-4F1D-8FF3-51A055E41220}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0025D726-8413-4F1D-8FF3-51A055E41220}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B819EBD4-D8B5-469D-A5AF-3DF05DBF0AF4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B819EBD4-D8B5-469D-A5AF-3DF05DBF0AF4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B819EBD4-D8B5-469D-A5AF-3DF05DBF0AF4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B819EBD4-D8B5-469D-A5AF-3DF05DBF0AF4}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
