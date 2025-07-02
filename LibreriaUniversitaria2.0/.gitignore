@@ -1,0 +1,99 @@
+# Build Results
+bin/
+obj/
+
+# User-specific files
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# VS Code workspace settings
+.vscode/
+
+# Visual Studio system files
+.vs/
+
+# Backup & cache files
+*.bak
+*.cache
+*.log
+
+# NuGet packages
+*.nupkg
+packages/
+# If using PackageReference, don't ignore .csproj or .sln
+
+# ReSharper and Rider
+.idea/
+*.DotSettings.user
+
+# Others
+TestResults/
+*.dbmdl
+*.dbproj.schemaview
+*.pdb
+*.tmp
+
+# OS-generated files
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# Rider
+.idea/
+*.sln.iml
+
+# Compiled DLLs/EXEs (optional, depending on use case)
+*.dll
+*.exe
+
+# Build results
+[Bb]in/
+[Oo]bj/
+*.dll
+*.exe
+*.pdb
+*.cache
+*.log
+
+# Backup & autosave
+*.bak
+*.backup
+*.tmp
+
+# NuGet
+*.nupkg
+*.snupkg
+packages/
+project.lock.json
+project.assets.json
+
+
+# ReSharper
+_ReSharper*/
+*.DotSettings.user
+
+# VS Code
+.vscode/
+
+# Test results
+TestResults/
+*.coverage
+*.coveragexml
+
+# Others
+*.dbmdl
+*.db
+*.vsp
+*.vspscc
+*.vssscc
+*.vsidx
+*.sdf
+*.ipch
+
+# Publish
+*.publishsettings
+
+# JetBrains Rider
+.idea/

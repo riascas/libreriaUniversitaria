@@ -15,15 +15,50 @@ namespace Sistema_Libreria
         public Inicio()
         {
             InitializeComponent();
+           // indexUsuario.Click += indexUsuario_click;
+
+            this.IsMdiContainer = true; // Esto convierte al formulario en un contenedor MDI
+  
+
         }
 
 
-        private void iconMenuItem1_Click(object sender, EventArgs e)
+        
+        private void menuUsuarios_Click(object sender, EventArgs e)
+        {
+            // Cerrar formularios hijos abiertos, si querés evitar duplicados
+            foreach (Form frm in this.MdiChildren)
+            {
+                frm.Close();
+            }
+
+            // Crear y mostrar frmUsuarios dentro de inicio.cs
+            frmUsuarios usuariosForm = new frmUsuarios();
+            usuariosForm.MdiParent = this; // asignar como hijo del formulario principal
+            usuariosForm.FormBorderStyle = FormBorderStyle.None; // Opcional: sin bordes
+            usuariosForm.Dock = DockStyle.Fill; // Opcional: ocupa todo el espacio disponible
+            usuariosForm.Show();
+        }
+
+
+
+        private void prueba(object sender, EventArgs e)
+        {
+            
+
+        }
+
+        private void contenedor_Paint(object sender, PaintEventArgs e)
         {
 
         }
 
-        private void iconMenuItem2_Click(object sender, EventArgs e)
+        private void menusuarios_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void librToolStripMenuItem_Click(object sender, EventArgs e)
         {
 
         }
