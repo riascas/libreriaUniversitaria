@@ -47,3 +47,55 @@ Desktop.ini
 # Compiled DLLs/EXEs (optional, depending on use case)
 *.dll
 *.exe
+
+# Build results
+[Bb]in/
+[Oo]bj/
+*.dll
+*.exe
+*.pdb
+*.cache
+*.log
+
+# Backup & autosave
+*.bak
+*.backup
+*.tmp
+
+# NuGet
+*.nupkg
+*.snupkg
+packages/
+project.lock.json
+project.assets.json
+
+# Resx designer
+*.Designer.cs
+
+# ReSharper
+_ReSharper*/
+*.DotSettings.user
+
+# VS Code
+.vscode/
+
+# Test results
+TestResults/
+*.coverage
+*.coveragexml
+
+# Others
+*.dbmdl
+*.db
+*.vsp
+*.vspscc
+*.vssscc
+*.vsidx
+*.sdf
+*.ipch
+
+# Publish
+*.publishsettings
+
+# JetBrains Rider
+.idea/
