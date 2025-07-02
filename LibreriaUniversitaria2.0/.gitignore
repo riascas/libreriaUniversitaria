@@ -97,3 +97,5 @@ TestResults/
 
 # JetBrains Rider
 .idea/
+obj/
+*.cache
