@@ -16,5 +16,15 @@ namespace Sistema_Libreria
         {
             InitializeComponent();
         }
+
+        private void label8_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtdocumento_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

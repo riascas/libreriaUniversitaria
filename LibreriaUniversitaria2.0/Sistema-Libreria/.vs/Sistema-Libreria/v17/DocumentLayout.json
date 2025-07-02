@@ -1,87 +1,54 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "H:\\Tecnicas2025\\UPE-Libre\\Sistema-Libreria\\",
+  "WorkspaceRootPath": "C:\\Users\\Ruthy\\Desktop\\Libro\\libreriaUniversitaria\\LibreriaUniversitaria2.0\\Sistema-Libreria\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{90AD7DBD-C19E-4618-847F-D2CEE12686BE}|Sistema-Libreria.csproj|h:\\tecnicas2025\\upe-libre\\sistema-libreria\\inicio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{90AD7DBD-C19E-4618-847F-D2CEE12686BE}|Sistema-Libreria.csproj|solutionrelative:inicio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{90AD7DBD-C19E-4618-847F-D2CEE12686BE}|Sistema-Libreria.csproj|H:\\Tecnicas2025\\UPE-Libre\\Sistema-Libreria\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{90AD7DBD-C19E-4618-847F-D2CEE12686BE}|Sistema-Libreria.csproj|solutionrelative:login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{90AD7DBD-C19E-4618-847F-D2CEE12686BE}|Sistema-Libreria.csproj|H:\\Tecnicas2025\\UPE-Libre\\Sistema-Libreria\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{90AD7DBD-C19E-4618-847F-D2CEE12686BE}|Sistema-Libreria.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|H:\\Tecnicas2025\\Parcial\\ENT-Libreria\\Class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{90AD7DBD-C19E-4618-847F-D2CEE12686BE}|Sistema-Libreria.csproj|H:\\Tecnicas2025\\UPE-Libre\\Sistema-Libreria\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{90AD7DBD-C19E-4618-847F-D2CEE12686BE}|Sistema-Libreria.csproj|solutionrelative:login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{90AD7DBD-C19E-4618-847F-D2CEE12686BE}|Sistema-Libreria.csproj|H:\\Tecnicas2025\\UPE-Libre\\Sistema-Libreria\\inicio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{90AD7DBD-C19E-4618-847F-D2CEE12686BE}|Sistema-Libreria.csproj|solutionrelative:inicio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{90AD7DBD-C19E-4618-847F-D2CEE12686BE}|Sistema-Libreria.csproj|H:\\Tecnicas2025\\UPE-Libre\\Sistema-Libreria\\frmusuarios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{90AD7DBD-C19E-4618-847F-D2CEE12686BE}|Sistema-Libreria.csproj|C:\\Users\\Ruthy\\Desktop\\Libro\\libreriaUniversitaria\\LibreriaUniversitaria2.0\\Sistema-Libreria\\frmusuarios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{90AD7DBD-C19E-4618-847F-D2CEE12686BE}|Sistema-Libreria.csproj|solutionrelative:frmusuarios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{90AD7DBD-C19E-4618-847F-D2CEE12686BE}|Sistema-Libreria.csproj|H:\\Tecnicas2025\\UPE-Libre\\Sistema-Libreria\\frmusuarios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{90AD7DBD-C19E-4618-847F-D2CEE12686BE}|Sistema-Libreria.csproj|solutionrelative:frmusuarios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{90AD7DBD-C19E-4618-847F-D2CEE12686BE}|Sistema-Libreria.csproj|H:\\Tecnicas2025\\UPE-Libre\\Sistema-Libreria\\frmcompras.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{90AD7DBD-C19E-4618-847F-D2CEE12686BE}|Sistema-Libreria.csproj|solutionrelative:frmcompras.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{90AD7DBD-C19E-4618-847F-D2CEE12686BE}|Sistema-Libreria.csproj|H:\\Tecnicas2025\\UPE-Libre\\Sistema-Libreria\\frmproveedores.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{90AD7DBD-C19E-4618-847F-D2CEE12686BE}|Sistema-Libreria.csproj|solutionrelative:frmproveedores.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{90AD7DBD-C19E-4618-847F-D2CEE12686BE}|Sistema-Libreria.csproj|H:\\Tecnicas2025\\UPE-Libre\\Sistema-Libreria\\frmproveedor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{90AD7DBD-C19E-4618-847F-D2CEE12686BE}|Sistema-Libreria.csproj|solutionrelative:frmproveedor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{90AD7DBD-C19E-4618-847F-D2CEE12686BE}|Sistema-Libreria.csproj|H:\\Tecnicas2025\\UPE-Libre\\Sistema-Libreria\\frmventas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{90AD7DBD-C19E-4618-847F-D2CEE12686BE}|Sistema-Libreria.csproj|solutionrelative:frmventas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{90AD7DBD-C19E-4618-847F-D2CEE12686BE}|Sistema-Libreria.csproj|H:\\Tecnicas2025\\UPE-Libre\\Sistema-Libreria\\frmusuarios.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{90AD7DBD-C19E-4618-847F-D2CEE12686BE}|Sistema-Libreria.csproj|solutionrelative:frmusuarios.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{90AD7DBD-C19E-4618-847F-D2CEE12686BE}|Sistema-Libreria.csproj|H:\\Tecnicas2025\\UPE-Libre\\Sistema-Libreria\\inicio.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{90AD7DBD-C19E-4618-847F-D2CEE12686BE}|Sistema-Libreria.csproj|solutionrelative:inicio.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{90AD7DBD-C19E-4618-847F-D2CEE12686BE}|Sistema-Libreria.csproj|H:\\Tecnicas2025\\UPE-Libre\\Sistema-Libreria\\inicio.resx||{81828910-B8B3-4D2B-99A3-067027C180C1}",
-      "RelativeMoniker": "D:0:0:{90AD7DBD-C19E-4618-847F-D2CEE12686BE}|Sistema-Libreria.csproj|solutionrelative:inicio.resx||{81828910-B8B3-4D2B-99A3-067027C180C1}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{90AD7DBD-C19E-4618-847F-D2CEE12686BE}|Sistema-Libreria.csproj|H:\\Tecnicas2025\\UPE-Libre\\Sistema-Libreria\\frmusuarios.resx||{81828910-B8B3-4D2B-99A3-067027C180C1}",
-      "RelativeMoniker": "D:0:0:{90AD7DBD-C19E-4618-847F-D2CEE12686BE}|Sistema-Libreria.csproj|solutionrelative:frmusuarios.resx||{81828910-B8B3-4D2B-99A3-067027C180C1}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{90AD7DBD-C19E-4618-847F-D2CEE12686BE}|Sistema-Libreria.csproj|H:\\Tecnicas2025\\UPE-Libre\\Sistema-Libreria\\frmclientes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{90AD7DBD-C19E-4618-847F-D2CEE12686BE}|Sistema-Libreria.csproj|solutionrelative:frmclientes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{90AD7DBD-C19E-4618-847F-D2CEE12686BE}|Sistema-Libreria.csproj|H:\\Tecnicas2025\\UPE-Libre\\Sistema-Libreria\\frmacercade.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{90AD7DBD-C19E-4618-847F-D2CEE12686BE}|Sistema-Libreria.csproj|solutionrelative:frmacercade.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{90AD7DBD-C19E-4618-847F-D2CEE12686BE}|Sistema-Libreria.csproj|H:\\Tecnicas2025\\UPE-Libre\\Sistema-Libreria\\frmreportes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{90AD7DBD-C19E-4618-847F-D2CEE12686BE}|Sistema-Libreria.csproj|C:\\Users\\Ruthy\\Desktop\\Libro\\libreriaUniversitaria\\LibreriaUniversitaria2.0\\Sistema-Libreria\\frmreportes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{90AD7DBD-C19E-4618-847F-D2CEE12686BE}|Sistema-Libreria.csproj|solutionrelative:frmreportes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|H:\\Tecnicas2025\\Parcial\\BLL-Libreria\\Class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{90AD7DBD-C19E-4618-847F-D2CEE12686BE}|Sistema-Libreria.csproj|C:\\Users\\Ruthy\\Desktop\\Libro\\libreriaUniversitaria\\LibreriaUniversitaria2.0\\Sistema-Libreria\\frmproveedores.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{90AD7DBD-C19E-4618-847F-D2CEE12686BE}|Sistema-Libreria.csproj|solutionrelative:frmproveedores.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|H:\\Tecnicas2025\\Parcial\\DAL-Libreria\\Class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{90AD7DBD-C19E-4618-847F-D2CEE12686BE}|Sistema-Libreria.csproj|C:\\Users\\Ruthy\\Desktop\\Libro\\libreriaUniversitaria\\LibreriaUniversitaria2.0\\Sistema-Libreria\\frmproveedor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{90AD7DBD-C19E-4618-847F-D2CEE12686BE}|Sistema-Libreria.csproj|solutionrelative:frmproveedor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{90AD7DBD-C19E-4618-847F-D2CEE12686BE}|Sistema-Libreria.csproj|C:\\Users\\Ruthy\\Desktop\\Libro\\libreriaUniversitaria\\LibreriaUniversitaria2.0\\Sistema-Libreria\\frmcompras.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{90AD7DBD-C19E-4618-847F-D2CEE12686BE}|Sistema-Libreria.csproj|solutionrelative:frmcompras.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{90AD7DBD-C19E-4618-847F-D2CEE12686BE}|Sistema-Libreria.csproj|C:\\Users\\Ruthy\\Desktop\\Libro\\libreriaUniversitaria\\LibreriaUniversitaria2.0\\Sistema-Libreria\\frmclientes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{90AD7DBD-C19E-4618-847F-D2CEE12686BE}|Sistema-Libreria.csproj|solutionrelative:frmclientes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{90AD7DBD-C19E-4618-847F-D2CEE12686BE}|Sistema-Libreria.csproj|c:\\users\\ruthy\\desktop\\libro\\libreriauniversitaria\\libreriauniversitaria2.0\\sistema-libreria\\inicio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{90AD7DBD-C19E-4618-847F-D2CEE12686BE}|Sistema-Libreria.csproj|solutionrelative:inicio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{90AD7DBD-C19E-4618-847F-D2CEE12686BE}|Sistema-Libreria.csproj|C:\\Users\\Ruthy\\Desktop\\Libro\\libreriaUniversitaria\\LibreriaUniversitaria2.0\\Sistema-Libreria\\frmventas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{90AD7DBD-C19E-4618-847F-D2CEE12686BE}|Sistema-Libreria.csproj|solutionrelative:frmventas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{90AD7DBD-C19E-4618-847F-D2CEE12686BE}|Sistema-Libreria.csproj|C:\\Users\\Ruthy\\Desktop\\Libro\\libreriaUniversitaria\\LibreriaUniversitaria2.0\\Sistema-Libreria\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{90AD7DBD-C19E-4618-847F-D2CEE12686BE}|Sistema-Libreria.csproj|solutionrelative:login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{90AD7DBD-C19E-4618-847F-D2CEE12686BE}|Sistema-Libreria.csproj|C:\\Users\\Ruthy\\Desktop\\Libro\\libreriaUniversitaria\\LibreriaUniversitaria2.0\\Sistema-Libreria\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{90AD7DBD-C19E-4618-847F-D2CEE12686BE}|Sistema-Libreria.csproj|solutionrelative:login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{90AD7DBD-C19E-4618-847F-D2CEE12686BE}|Sistema-Libreria.csproj|C:\\Users\\Ruthy\\Desktop\\Libro\\libreriaUniversitaria\\LibreriaUniversitaria2.0\\Sistema-Libreria\\inicio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{90AD7DBD-C19E-4618-847F-D2CEE12686BE}|Sistema-Libreria.csproj|solutionrelative:inicio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{90AD7DBD-C19E-4618-847F-D2CEE12686BE}|Sistema-Libreria.csproj|C:\\Users\\Ruthy\\Desktop\\Libro\\libreriaUniversitaria\\LibreriaUniversitaria2.0\\Sistema-Libreria\\frmventas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{90AD7DBD-C19E-4618-847F-D2CEE12686BE}|Sistema-Libreria.csproj|solutionrelative:frmventas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -91,7 +58,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 11,
+          "SelectedChildIndex": 8,
           "Children": [
             {
               "$type": "Bookmark",
@@ -102,12 +69,102 @@
               "Name": "ST:128:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
             },
             {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{56df62a4-05a3-4e5b-aa1a-99371ccfb997}"
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "frmClientes.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\Ruthy\\Desktop\\Libro\\libreriaUniversitaria\\LibreriaUniversitaria2.0\\Sistema-Libreria\\frmClientes.cs",
+              "RelativeDocumentMoniker": "frmClientes.cs",
+              "ToolTip": "C:\\Users\\Ruthy\\Desktop\\Libro\\libreriaUniversitaria\\LibreriaUniversitaria2.0\\Sistema-Libreria\\frmClientes.cs [Dise\u00F1o]",
+              "RelativeToolTip": "frmClientes.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-17T02:57:50.651Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "frmProveedores.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\Ruthy\\Desktop\\Libro\\libreriaUniversitaria\\LibreriaUniversitaria2.0\\Sistema-Libreria\\frmProveedores.cs",
+              "RelativeDocumentMoniker": "frmProveedores.cs",
+              "ToolTip": "C:\\Users\\Ruthy\\Desktop\\Libro\\libreriaUniversitaria\\LibreriaUniversitaria2.0\\Sistema-Libreria\\frmProveedores.cs [Dise\u00F1o]",
+              "RelativeToolTip": "frmProveedores.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-17T18:17:17.645Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "frmProveedor.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\Ruthy\\Desktop\\Libro\\libreriaUniversitaria\\LibreriaUniversitaria2.0\\Sistema-Libreria\\frmProveedor.cs",
+              "RelativeDocumentMoniker": "frmProveedor.cs",
+              "ToolTip": "C:\\Users\\Ruthy\\Desktop\\Libro\\libreriaUniversitaria\\LibreriaUniversitaria2.0\\Sistema-Libreria\\frmProveedor.cs [Dise\u00F1o]",
+              "RelativeToolTip": "frmProveedor.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-17T18:17:18.677Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Inicio.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\Ruthy\\Desktop\\Libro\\libreriaUniversitaria\\LibreriaUniversitaria2.0\\Sistema-Libreria\\Inicio.cs",
+              "RelativeDocumentMoniker": "Inicio.cs",
+              "ToolTip": "C:\\Users\\Ruthy\\Desktop\\Libro\\libreriaUniversitaria\\LibreriaUniversitaria2.0\\Sistema-Libreria\\Inicio.cs [Dise\u00F1o]",
+              "RelativeToolTip": "Inicio.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-17T18:17:31.867Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "frmCompras.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\Ruthy\\Desktop\\Libro\\libreriaUniversitaria\\LibreriaUniversitaria2.0\\Sistema-Libreria\\frmCompras.cs",
+              "RelativeDocumentMoniker": "frmCompras.cs",
+              "ToolTip": "C:\\Users\\Ruthy\\Desktop\\Libro\\libreriaUniversitaria\\LibreriaUniversitaria2.0\\Sistema-Libreria\\frmCompras.cs [Dise\u00F1o]",
+              "RelativeToolTip": "frmCompras.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-17T18:17:13.263Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "frmReportes.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\Ruthy\\Desktop\\Libro\\libreriaUniversitaria\\LibreriaUniversitaria2.0\\Sistema-Libreria\\frmReportes.cs",
+              "RelativeDocumentMoniker": "frmReportes.cs",
+              "ToolTip": "C:\\Users\\Ruthy\\Desktop\\Libro\\libreriaUniversitaria\\LibreriaUniversitaria2.0\\Sistema-Libreria\\frmReportes.cs [Dise\u00F1o]",
+              "RelativeToolTip": "frmReportes.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-17T18:51:24.962Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "frmUsuarios.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\Ruthy\\Desktop\\Libro\\libreriaUniversitaria\\LibreriaUniversitaria2.0\\Sistema-Libreria\\frmUsuarios.cs",
+              "RelativeDocumentMoniker": "frmUsuarios.cs",
+              "ToolTip": "C:\\Users\\Ruthy\\Desktop\\Libro\\libreriaUniversitaria\\LibreriaUniversitaria2.0\\Sistema-Libreria\\frmUsuarios.cs [Dise\u00F1o]",
+              "RelativeToolTip": "frmUsuarios.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-17T18:17:24.976Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "frmVentas.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\Ruthy\\Desktop\\Libro\\libreriaUniversitaria\\LibreriaUniversitaria2.0\\Sistema-Libreria\\frmVentas.cs",
+              "RelativeDocumentMoniker": "frmVentas.cs",
+              "ToolTip": "H:\\Tecnicas2025\\Repo\\UPE-Libre\\Sistema-Libreria\\frmVentas.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-17T18:17:30.135Z"
             },
             {
               "$type": "Bookmark",
-              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+              "Name": "ST:0:0:{56df62a4-05a3-4e5b-aa1a-99371ccfb997}"
             },
             {
               "$type": "Bookmark",
@@ -115,243 +172,49 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Class1.cs",
-              "DocumentMoniker": "H:\\Tecnicas2025\\Parcial\\ENT-Libreria\\Class1.cs",
-              "RelativeDocumentMoniker": "..\\..\\Parcial\\ENT-Libreria\\Class1.cs",
-              "ToolTip": "H:\\Tecnicas2025\\Parcial\\ENT-Libreria\\Class1.cs",
-              "RelativeToolTip": "..\\..\\Parcial\\ENT-Libreria\\Class1.cs",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-13T23:17:32.788Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 19,
-              "Title": "Class1.cs",
-              "DocumentMoniker": "H:\\Tecnicas2025\\Parcial\\BLL-Libreria\\Class1.cs",
-              "RelativeDocumentMoniker": "..\\..\\Parcial\\BLL-Libreria\\Class1.cs",
-              "ToolTip": "H:\\Tecnicas2025\\Parcial\\BLL-Libreria\\Class1.cs",
-              "RelativeToolTip": "..\\..\\Parcial\\BLL-Libreria\\Class1.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-13T23:17:09.006Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 20,
-              "Title": "Class1.cs",
-              "DocumentMoniker": "H:\\Tecnicas2025\\Parcial\\DAL-Libreria\\Class1.cs",
-              "RelativeDocumentMoniker": "..\\..\\Parcial\\DAL-Libreria\\Class1.cs",
-              "ToolTip": "H:\\Tecnicas2025\\Parcial\\DAL-Libreria\\Class1.cs",
-              "RelativeToolTip": "..\\..\\Parcial\\DAL-Libreria\\Class1.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-13T23:16:40.555Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 8,
               "Title": "Login.cs [Dise\u00F1o]",
-              "DocumentMoniker": "H:\\Tecnicas2025\\UPE-Libre\\Sistema-Libreria\\Login.cs",
+              "DocumentMoniker": "C:\\Users\\Ruthy\\Desktop\\Libro\\libreriaUniversitaria\\LibreriaUniversitaria2.0\\Sistema-Libreria\\Login.cs",
               "RelativeDocumentMoniker": "Login.cs",
-              "ToolTip": "H:\\Tecnicas2025\\UPE-Libre\\Sistema-Libreria\\Login.cs [Dise\u00F1o]",
-              "RelativeToolTip": "Login.cs [Dise\u00F1o]",
+              "ToolTip": "H:\\Tecnicas2025\\Repo\\UPE-Libre\\Sistema-Libreria\\Login.cs [Dise\u00F1o]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-11T23:27:26.105Z"
+              "WhenOpened": "2025-06-17T18:17:33.61Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 9,
-              "Title": "frmProveedores.cs [Dise\u00F1o]",
-              "DocumentMoniker": "H:\\Tecnicas2025\\UPE-Libre\\Sistema-Libreria\\frmProveedores.cs",
-              "RelativeDocumentMoniker": "frmProveedores.cs",
-              "ToolTip": "H:\\Tecnicas2025\\Parcial\\Sistema-Libreria\\frmProveedores.cs [Dise\u00F1o]",
-              "RelativeToolTip": "..\\..\\Parcial\\Sistema-Libreria\\frmProveedores.cs [Dise\u00F1o]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-12T03:33:21.444Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Program.cs",
-              "DocumentMoniker": "H:\\Tecnicas2025\\UPE-Libre\\Sistema-Libreria\\Program.cs",
-              "RelativeDocumentMoniker": "Program.cs",
-              "ToolTip": "H:\\Tecnicas2025\\UPE-Libre\\Sistema-Libreria\\Program.cs",
-              "RelativeToolTip": "Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAlAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-10T23:10:17.743Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Inicio.cs [Dise\u00F1o]",
-              "DocumentMoniker": "H:\\Tecnicas2025\\UPE-Libre\\Sistema-Libreria\\Inicio.cs",
-              "RelativeDocumentMoniker": "Inicio.cs",
-              "ToolTip": "H:\\Tecnicas2025\\UPE-Libre\\Sistema-Libreria\\Inicio.cs [Dise\u00F1o]",
-              "RelativeToolTip": "Inicio.cs [Dise\u00F1o]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-10T23:26:15.957Z",
-              "EditorCaption": " [Dise\u00F1o]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "frmCompras.cs [Dise\u00F1o]",
-              "DocumentMoniker": "H:\\Tecnicas2025\\UPE-Libre\\Sistema-Libreria\\frmCompras.cs",
-              "RelativeDocumentMoniker": "frmCompras.cs",
-              "ToolTip": "H:\\Tecnicas2025\\Parcial\\Sistema-Libreria\\frmCompras.cs [Dise\u00F1o]",
-              "RelativeToolTip": "..\\..\\Parcial\\Sistema-Libreria\\frmCompras.cs [Dise\u00F1o]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-12T03:29:53.02Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "frmUsuarios.cs [Dise\u00F1o]",
-              "DocumentMoniker": "H:\\Tecnicas2025\\UPE-Libre\\Sistema-Libreria\\frmUsuarios.cs",
-              "RelativeDocumentMoniker": "frmUsuarios.cs",
-              "ToolTip": "H:\\Tecnicas2025\\Parcial\\Sistema-Libreria\\frmUsuarios.cs [Dise\u00F1o]",
-              "RelativeToolTip": "..\\..\\Parcial\\Sistema-Libreria\\frmUsuarios.cs [Dise\u00F1o]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-12T03:18:19.363Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "Inicio.cs",
-              "DocumentMoniker": "H:\\Tecnicas2025\\UPE-Libre\\Sistema-Libreria\\Inicio.cs",
-              "RelativeDocumentMoniker": "Inicio.cs",
-              "ToolTip": "H:\\Tecnicas2025\\UPE-Libre\\Sistema-Libreria\\Inicio.cs",
-              "RelativeToolTip": "Inicio.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAABMAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-10T23:33:38.836Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
               "Title": "Login.cs",
-              "DocumentMoniker": "H:\\Tecnicas2025\\UPE-Libre\\Sistema-Libreria\\Login.cs",
+              "DocumentMoniker": "C:\\Users\\Ruthy\\Desktop\\Libro\\libreriaUniversitaria\\LibreriaUniversitaria2.0\\Sistema-Libreria\\Login.cs",
               "RelativeDocumentMoniker": "Login.cs",
-              "ToolTip": "H:\\Tecnicas2025\\UPE-Libre\\Sistema-Libreria\\Login.cs",
+              "ToolTip": "C:\\Users\\Ruthy\\Desktop\\Libro\\libreriaUniversitaria\\LibreriaUniversitaria2.0\\Sistema-Libreria\\Login.cs",
               "RelativeToolTip": "Login.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACMAAAAYAAAAAAAAAA==",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAABoAAAAVAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-12T01:13:36.909Z"
+              "WhenOpened": "2025-06-19T02:06:56.527Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 10,
-              "Title": "frmProveedor.cs [Dise\u00F1o]",
-              "DocumentMoniker": "H:\\Tecnicas2025\\UPE-Libre\\Sistema-Libreria\\frmProveedor.cs",
-              "RelativeDocumentMoniker": "frmProveedor.cs",
-              "ToolTip": "H:\\Tecnicas2025\\Parcial\\Sistema-Libreria\\frmProveedor.cs [Dise\u00F1o]",
-              "RelativeToolTip": "..\\..\\Parcial\\Sistema-Libreria\\frmProveedor.cs [Dise\u00F1o]",
+              "Title": "Inicio.cs",
+              "DocumentMoniker": "C:\\Users\\Ruthy\\Desktop\\Libro\\libreriaUniversitaria\\LibreriaUniversitaria2.0\\Sistema-Libreria\\Inicio.cs",
+              "RelativeDocumentMoniker": "Inicio.cs",
+              "ToolTip": "C:\\Users\\Ruthy\\Desktop\\Libro\\libreriaUniversitaria\\LibreriaUniversitaria2.0\\Sistema-Libreria\\Inicio.cs",
+              "RelativeToolTip": "Inicio.cs",
+              "ViewState": "AgIAACsAAAAAAAAAAAAawDUAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-12T03:30:52.143Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "frmUsuarios.cs",
-              "DocumentMoniker": "H:\\Tecnicas2025\\UPE-Libre\\Sistema-Libreria\\frmUsuarios.cs",
-              "RelativeDocumentMoniker": "frmUsuarios.cs",
-              "ToolTip": "H:\\Tecnicas2025\\UPE-Libre\\Sistema-Libreria\\frmUsuarios.cs",
-              "RelativeToolTip": "frmUsuarios.cs",
-              "ViewState": "AgIAAAUAAAAAAAAAAAAawBUAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-13T00:19:54.646Z"
+              "WhenOpened": "2025-06-19T00:17:52.631Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 11,
-              "Title": "frmVentas.cs [Dise\u00F1o]",
-              "DocumentMoniker": "H:\\Tecnicas2025\\UPE-Libre\\Sistema-Libreria\\frmVentas.cs",
+              "Title": "frmVentas.cs",
+              "DocumentMoniker": "C:\\Users\\Ruthy\\Desktop\\Libro\\libreriaUniversitaria\\LibreriaUniversitaria2.0\\Sistema-Libreria\\frmVentas.cs",
               "RelativeDocumentMoniker": "frmVentas.cs",
-              "ToolTip": "H:\\Tecnicas2025\\Parcial\\Sistema-Libreria\\frmVentas.cs [Dise\u00F1o]",
-              "RelativeToolTip": "..\\..\\Parcial\\Sistema-Libreria\\frmVentas.cs [Dise\u00F1o]",
+              "ToolTip": "C:\\Users\\Ruthy\\Desktop\\Libro\\libreriaUniversitaria\\LibreriaUniversitaria2.0\\Sistema-Libreria\\frmVentas.cs",
+              "RelativeToolTip": "frmVentas.cs",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAnwBoAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-12T03:27:09.573Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "frmUsuarios.Designer.cs",
-              "DocumentMoniker": "H:\\Tecnicas2025\\UPE-Libre\\Sistema-Libreria\\frmUsuarios.Designer.cs",
-              "RelativeDocumentMoniker": "frmUsuarios.Designer.cs",
-              "ToolTip": "H:\\Tecnicas2025\\UPE-Libre\\Sistema-Libreria\\frmUsuarios.Designer.cs",
-              "RelativeToolTip": "frmUsuarios.Designer.cs",
-              "ViewState": "AgIAAA4AAAAAAAAAAAAQwAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-12T12:46:34.911Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "Inicio.Designer.cs",
-              "DocumentMoniker": "H:\\Tecnicas2025\\UPE-Libre\\Sistema-Libreria\\Inicio.Designer.cs",
-              "RelativeDocumentMoniker": "Inicio.Designer.cs",
-              "ToolTip": "H:\\Tecnicas2025\\UPE-Libre\\Sistema-Libreria\\Inicio.Designer.cs",
-              "RelativeToolTip": "Inicio.Designer.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAIAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-11T23:07:16.088Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "Inicio.resx",
-              "DocumentMoniker": "H:\\Tecnicas2025\\UPE-Libre\\Sistema-Libreria\\Inicio.resx",
-              "RelativeDocumentMoniker": "Inicio.resx",
-              "ToolTip": "H:\\Tecnicas2025\\UPE-Libre\\Sistema-Libreria\\Inicio.resx",
-              "RelativeToolTip": "Inicio.resx",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001005|",
-              "WhenOpened": "2025-06-12T12:46:34.442Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 16,
-              "Title": "frmClientes.cs [Dise\u00F1o]",
-              "DocumentMoniker": "H:\\Tecnicas2025\\UPE-Libre\\Sistema-Libreria\\frmClientes.cs",
-              "RelativeDocumentMoniker": "frmClientes.cs",
-              "ToolTip": "H:\\Tecnicas2025\\Parcial\\Sistema-Libreria\\frmClientes.cs [Dise\u00F1o]",
-              "RelativeToolTip": "..\\..\\Parcial\\Sistema-Libreria\\frmClientes.cs [Dise\u00F1o]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-12T03:32:42.964Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 18,
-              "Title": "frmReportes.cs [Dise\u00F1o]",
-              "DocumentMoniker": "H:\\Tecnicas2025\\UPE-Libre\\Sistema-Libreria\\frmReportes.cs",
-              "RelativeDocumentMoniker": "frmReportes.cs",
-              "ToolTip": "H:\\Tecnicas2025\\Parcial\\Sistema-Libreria\\frmReportes.cs [Dise\u00F1o]",
-              "RelativeToolTip": "..\\..\\Parcial\\Sistema-Libreria\\frmReportes.cs [Dise\u00F1o]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-12T03:33:43.171Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "frmUsuarios.resx",
-              "DocumentMoniker": "H:\\Tecnicas2025\\UPE-Libre\\Sistema-Libreria\\frmUsuarios.resx",
-              "RelativeDocumentMoniker": "frmUsuarios.resx",
-              "ToolTip": "H:\\Tecnicas2025\\UPE-Libre\\Sistema-Libreria\\frmUsuarios.resx",
-              "RelativeToolTip": "frmUsuarios.resx",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001005|",
-              "WhenOpened": "2025-06-12T12:46:34.552Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 17,
-              "Title": "frmAcercade.cs [Dise\u00F1o]",
-              "DocumentMoniker": "H:\\Tecnicas2025\\UPE-Libre\\Sistema-Libreria\\frmAcercade.cs",
-              "RelativeDocumentMoniker": "frmAcercade.cs",
-              "ToolTip": "H:\\Tecnicas2025\\Parcial\\Sistema-Libreria\\frmAcercade.cs [Dise\u00F1o]",
-              "RelativeToolTip": "..\\..\\Parcial\\Sistema-Libreria\\frmAcercade.cs [Dise\u00F1o]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-12T03:34:09.997Z"
+              "WhenOpened": "2025-06-18T01:11:28.665Z"
             }
           ]
         }
