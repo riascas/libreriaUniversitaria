@@ -24,7 +24,7 @@ namespace Sistema_Libreria
 
         private void btningresar_Click(object sender, EventArgs e)
         {
-            frmVentas form = new frmVentas();
+            Inicio form = new Inicio();
             form.Show();
             this.Hide();
 

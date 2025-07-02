@@ -16,5 +16,25 @@ namespace Sistema_Libreria
         {
             InitializeComponent();
         }
+
+        private void label11_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label9_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void dtgtablaclientes_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void frmClientes_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

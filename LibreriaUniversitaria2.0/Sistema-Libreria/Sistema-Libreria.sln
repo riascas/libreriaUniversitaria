@@ -5,8 +5,6 @@ VisualStudioVersion = 17.14.36127.28
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sistema-Libreria", "Sistema-Libreria.csproj", "{90AD7DBD-C19E-4618-847F-D2CEE12686BE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DAL-Libreria", "..\DAL-Libreria\DAL-Libreria.csproj", "{1F654B32-6361-4153-BACC-0819270824FE}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BLL-Libreria", "..\BLL-Libreria\BLL-Libreria.csproj", "{31F5CA1B-7408-42A2-A7B2-878D92AF0BC8}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ENT-Libreria", "..\ENT-Libreria\ENT-Libreria.csproj", "{95945913-F801-4820-A2FA-536E1816A6E5}"
@@ -23,10 +21,6 @@ Global
 		{90AD7DBD-C19E-4618-847F-D2CEE12686BE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{90AD7DBD-C19E-4618-847F-D2CEE12686BE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{90AD7DBD-C19E-4618-847F-D2CEE12686BE}.Release|Any CPU.Build.0 = Release|Any CPU
-		{1F654B32-6361-4153-BACC-0819270824FE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{1F654B32-6361-4153-BACC-0819270824FE}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{1F654B32-6361-4153-BACC-0819270824FE}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{1F654B32-6361-4153-BACC-0819270824FE}.Release|Any CPU.Build.0 = Release|Any CPU
 		{31F5CA1B-7408-42A2-A7B2-878D92AF0BC8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{31F5CA1B-7408-42A2-A7B2-878D92AF0BC8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{31F5CA1B-7408-42A2-A7B2-878D92AF0BC8}.Release|Any CPU.ActiveCfg = Release|Any CPU
