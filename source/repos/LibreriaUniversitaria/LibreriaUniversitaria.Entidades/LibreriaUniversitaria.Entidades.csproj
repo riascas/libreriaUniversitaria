@@ -52,6 +52,7 @@
     <Compile Include="Excepciones\ExcepcionPersonalizada.cs.cs" />
     <Compile Include="Libro.cs" />
     <Compile Include="Localidad.cs" />
+    <Compile Include="MovimientoStock.cs" />
     <Compile Include="Municipio.cs" />
     <Compile Include="APersona.cs" />
     <Compile Include="OrdenDeCompra.cs" />

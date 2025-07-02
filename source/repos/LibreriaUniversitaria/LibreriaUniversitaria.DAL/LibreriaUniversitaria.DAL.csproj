@@ -44,10 +44,15 @@
   <ItemGroup>
     <Compile Include="ClienteDAL.cs" />
     <Compile Include="ConexionDAL.cs" />
+    <Compile Include="DetalleVentaDAL.cs" />
     <Compile Include="EditorialDAL.cs" />
     <Compile Include="EmpleadoDAL.cs" />
+    <Compile Include="EstadoReservaDAL.cs" />
     <Compile Include="LibroDAL.cs" />
+    <Compile Include="MovimientoStockDAL.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ReservaDAL.cs" />
+    <Compile Include="VentaDAL.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\LibreriaUniversitaria.Entidades\LibreriaUniversitaria.Entidades.csproj">

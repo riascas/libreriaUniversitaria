@@ -42,10 +42,15 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ClienteBLL.cs" />
+    <Compile Include="DescuentoEstudiante.cs" />
     <Compile Include="EditorialBLL.cs" />
     <Compile Include="EmpleadoBLL.cs" />
+    <Compile Include="IDescuento.cs" />
     <Compile Include="LibroBLL.cs" />
+    <Compile Include="MovimientoStockBLL.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ReservaBLL.cs" />
+    <Compile Include="VentaBLL.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\LibreriaUniversitaria.DAL\LibreriaUniversitaria.DAL.csproj">

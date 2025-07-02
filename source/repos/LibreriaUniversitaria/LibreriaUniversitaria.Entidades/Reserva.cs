@@ -1,4 +1,5 @@
-﻿using System;
+﻿using LibreriaUniversitaria.Entidades;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -26,7 +27,7 @@ namespace LibreriaUniversitaria.Entidades
         // Propiedad de navegación para acceder al Cliente
         public Cliente Cliente { get; set; }
 
-        // Propiedad de navegación al estado (Pendiente, Vendida, etc.)
+        // Propiedad de navegación al estado textual (Pendiente, Vendida, etc.)
         public EstadoReserva Estado { get; set; }
 
         // Lista de detalles asociados a la reserva (uno por cada libro reservado)
