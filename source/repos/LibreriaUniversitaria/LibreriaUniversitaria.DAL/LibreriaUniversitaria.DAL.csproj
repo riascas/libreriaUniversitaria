@@ -44,7 +44,9 @@
   <ItemGroup>
     <Compile Include="ClienteDAL.cs" />
     <Compile Include="ConexionDAL.cs" />
+    <Compile Include="EditorialDAL.cs" />
     <Compile Include="EmpleadoDAL.cs" />
+    <Compile Include="LibroDAL.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

@@ -38,7 +38,7 @@ $RECYCLE.BIN/
 *.pidb
 
 ############################################
-# Otros
+# Archivos de configuración y herramientas
 ############################################
 *.ncrunch*
 _ReSharper*/
@@ -46,8 +46,13 @@ _ReSharper*/
 *.sln.ide
 *.cache
 *.tmp
-# Evitar que Git incluya archivos fuera del proyecto
-../*
-../../*
-../../../*
-../../../../*
+
+############################################
+# Archivos que no pertenecen a este proyecto
+############################################
+*.exe
+*.c
+*.h
+*.o
+*.out
+*.sh
