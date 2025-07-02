@@ -46,3 +46,8 @@ _ReSharper*/
 *.sln.ide
 *.cache
 *.tmp
+# Evitar que Git incluya archivos fuera del proyecto
+../*
+../../*
+../../../*
+../../../../*

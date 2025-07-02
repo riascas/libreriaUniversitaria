@@ -14,7 +14,7 @@ namespace LibreriaUniversitaria.Entidades
         public int IdPersona { get; set; }
         public string Nombre { get; set; }
         public string Apellido { get; set; }
-        public string Dni { get; set; }
+        public int  Dni { get; set; }
         public string Email { get; set; }
         public Domicilio Domicilio { get; set; }
 
@@ -22,7 +22,7 @@ namespace LibreriaUniversitaria.Entidades
         public APersona() { }
 
         // Constructor completo
-        public APersona(int idPersona, string nombre, string apellido, string dni, string email, Domicilio domicilio)
+        public APersona(int idPersona, string nombre, string apellido, int dni, string email, Domicilio domicilio)
         {
             IdPersona = idPersona;
             Nombre = nombre;

@@ -8,30 +8,46 @@ namespace LibreriaUniversitaria.Entidades
 {
     /// <summary>
     /// Representa un empleado de la librería.
+    /// Hereda de APersona e incluye datos adicionales para login y rol.
     /// </summary>
     public class Empleado : APersona
     {
-        // Clave foránea al Rol del empleado
+        /// <summary>
+        /// Identificador único del empleado (clave primaria en la BD).
+        /// </summary>
+        public int IdEmpleado { get; set; }
+
+        /// <summary>
+        /// Clave foránea al rol del empleado.
+        /// </summary>
         public int IdRol { get; set; }
 
-        // Nombre de usuario para login
+        /// <summary>
+        /// Nombre de usuario del empleado (puede ser su DNI).
+        /// </summary>
         public string Usuario { get; set; }
 
-        // Contraseña para login
+        /// <summary>
+        /// Contraseña del empleado para el login.
+        /// </summary>
         public string Clave { get; set; }
 
-        // Constructor por defecto
+        /// <summary>
+        /// Constructor por defecto.
+        /// </summary>
         public Empleado() { }
 
-        // Constructor completo
-        public Empleado(int idPersona, string nombre, string apellido, string dni, string email, Domicilio domicilio, int idRol, string usuario, string clave)
+        /// <summary>
+        /// Constructor completo para inicializar todos los campos del empleado.
+        /// </summary>
+        public Empleado(int idEmpleado, int idPersona, string nombre, string apellido, int dni, string email, Domicilio domicilio, int idRol, string usuario, string clave)
             : base(idPersona, nombre, apellido, dni, email, domicilio)
         {
+            IdEmpleado = idEmpleado;
             IdRol = idRol;
             Usuario = usuario;
             Clave = clave;
         }
     }
 }
-
 
