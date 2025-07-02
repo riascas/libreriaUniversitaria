@@ -38,6 +38,15 @@
             this.label9 = new System.Windows.Forms.Label();
             this.btnlimpiar = new FontAwesome.Sharp.IconButton();
             this.dtgtablaclientes = new System.Windows.Forms.DataGridView();
+            this.IdCliente = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.nombrecliente = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.apellidocliente = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dnicliente = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.emailcliente = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.municipio = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.localidad = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.calle = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.estudiantecliente = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.label8 = new System.Windows.Forms.Label();
             this.btneliminar = new FontAwesome.Sharp.IconButton();
             this.btneditar = new FontAwesome.Sharp.IconButton();
@@ -62,15 +71,6 @@
             this.label7 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
-            this.IdCliente = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.nombrecliente = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.apellidocliente = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dnicliente = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.emailcliente = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.municipio = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.localidad = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.calle = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.estudiantecliente = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dtgtablaclientes)).BeginInit();
             this.SuspendLayout();
             // 
@@ -187,6 +187,52 @@
             this.dtgtablaclientes.RowTemplate.ReadOnly = true;
             this.dtgtablaclientes.Size = new System.Drawing.Size(842, 109);
             this.dtgtablaclientes.TabIndex = 43;
+            // 
+            // IdCliente
+            // 
+            this.IdCliente.HeaderText = "Idcliente";
+            this.IdCliente.Name = "IdCliente";
+            this.IdCliente.Visible = false;
+            // 
+            // nombrecliente
+            // 
+            this.nombrecliente.HeaderText = "Nombre";
+            this.nombrecliente.Name = "nombrecliente";
+            // 
+            // apellidocliente
+            // 
+            this.apellidocliente.HeaderText = "Apellido";
+            this.apellidocliente.Name = "apellidocliente";
+            // 
+            // dnicliente
+            // 
+            this.dnicliente.HeaderText = "DNI";
+            this.dnicliente.Name = "dnicliente";
+            // 
+            // emailcliente
+            // 
+            this.emailcliente.HeaderText = "Email";
+            this.emailcliente.Name = "emailcliente";
+            // 
+            // municipio
+            // 
+            this.municipio.HeaderText = "Municipio";
+            this.municipio.Name = "municipio";
+            // 
+            // localidad
+            // 
+            this.localidad.HeaderText = "Localidad";
+            this.localidad.Name = "localidad";
+            // 
+            // calle
+            // 
+            this.calle.HeaderText = "Calle";
+            this.calle.Name = "calle";
+            // 
+            // estudiantecliente
+            // 
+            this.estudiantecliente.HeaderText = "Estudiante";
+            this.estudiantecliente.Name = "estudiantecliente";
             // 
             // label8
             // 
@@ -448,52 +494,6 @@
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(174, 20);
             this.textBox1.TabIndex = 59;
-            // 
-            // IdCliente
-            // 
-            this.IdCliente.HeaderText = "Idcliente";
-            this.IdCliente.Name = "IdCliente";
-            this.IdCliente.Visible = false;
-            // 
-            // nombrecliente
-            // 
-            this.nombrecliente.HeaderText = "Nombre";
-            this.nombrecliente.Name = "nombrecliente";
-            // 
-            // apellidocliente
-            // 
-            this.apellidocliente.HeaderText = "Apellido";
-            this.apellidocliente.Name = "apellidocliente";
-            // 
-            // dnicliente
-            // 
-            this.dnicliente.HeaderText = "DNI";
-            this.dnicliente.Name = "dnicliente";
-            // 
-            // emailcliente
-            // 
-            this.emailcliente.HeaderText = "Email";
-            this.emailcliente.Name = "emailcliente";
-            // 
-            // municipio
-            // 
-            this.municipio.HeaderText = "Municipio";
-            this.municipio.Name = "municipio";
-            // 
-            // localidad
-            // 
-            this.localidad.HeaderText = "Localidad";
-            this.localidad.Name = "localidad";
-            // 
-            // calle
-            // 
-            this.calle.HeaderText = "Calle";
-            this.calle.Name = "calle";
-            // 
-            // estudiantecliente
-            // 
-            this.estudiantecliente.HeaderText = "Estudiante";
-            this.estudiantecliente.Name = "estudiantecliente";
             // 
             // frmClientes
             // 

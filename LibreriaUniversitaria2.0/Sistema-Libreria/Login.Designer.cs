@@ -133,7 +133,7 @@
             this.btncancelar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btncancelar.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this.btncancelar.ForeColor = System.Drawing.Color.White;
-            this.btncancelar.IconChar = FontAwesome.Sharp.IconChar.SignOut;
+            this.btncancelar.IconChar = FontAwesome.Sharp.IconChar.SignOutAlt;
             this.btncancelar.IconColor = System.Drawing.Color.White;
             this.btncancelar.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btncancelar.IconSize = 21;

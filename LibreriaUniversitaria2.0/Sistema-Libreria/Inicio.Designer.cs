@@ -122,7 +122,7 @@
             this.menusuarios.AutoSize = false;
             this.menusuarios.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.indexUsuario});
-            this.menusuarios.IconChar = FontAwesome.Sharp.IconChar.UsersGear;
+            this.menusuarios.IconChar = FontAwesome.Sharp.IconChar.Users;
             this.menusuarios.IconColor = System.Drawing.Color.Black;
             this.menusuarios.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.menusuarios.IconSize = 50;
@@ -192,7 +192,7 @@
             // menuclientes
             // 
             this.menuclientes.AutoSize = false;
-            this.menuclientes.IconChar = FontAwesome.Sharp.IconChar.UserGroup;
+            this.menuclientes.IconChar = FontAwesome.Sharp.IconChar.Cogs;
             this.menuclientes.IconColor = System.Drawing.Color.Black;
             this.menuclientes.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.menuclientes.IconSize = 50;
