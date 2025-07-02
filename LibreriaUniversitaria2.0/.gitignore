@@ -69,8 +69,6 @@ packages/
 project.lock.json
 project.assets.json
 
-# Resx designer
-*.Designer.cs
 
 # ReSharper
 _ReSharper*/
