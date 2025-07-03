@@ -10,11 +10,25 @@ using System.Windows.Forms;
 
 namespace LibreriaUniversitaria.UI
 {
-    public partial class Form1 : Form
+    public partial class frmVentas : Form
     {
-        public Form1()
+
+
+        private void label9_Click(object sender, EventArgs e)
         {
-            InitializeComponent();
+
+        }
+
+        private void btneliminar_Click(object sender, EventArgs e)
+        {
+
+        }
+
+
+
+        private void frmVentas_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }
