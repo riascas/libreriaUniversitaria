@@ -17,5 +17,16 @@ namespace BLL_Libreria
         {
             return empleadoDAO.BuscarPorUsuarioYClave(usuario, clave);
         }
+
+        public List<Empleado> ObtenerTodos()
+        {
+            return empleadoDAO.ObtenerTodos();
+        }
+
+        public int AltaEmpleado(Empleado emp)
+        {
+            return empleadoDAO.AltaEmpleado(emp);
+        }
     }
+
 }

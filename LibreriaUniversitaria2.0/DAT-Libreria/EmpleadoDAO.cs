@@ -21,15 +21,15 @@ namespace DAT_Libreria
             SELECT e.idEmpleado, e.Usuario, e.Clave,
                    p.idPersona, p.Nombre, p.Apellido, p.DNI, p.Email,
                    d.idDomicilio, d.Calle, d.Altura,
-                   l.idLocalidad, l.Descripcion AS NombreLocalidad,
+                   l.idLocalidad, l.NombreLocalidad,
                    m.idMunicipio, m.NombreMunicipio,
                    r.idRolEmpleado, r.Rol
             FROM Empleado e
             INNER JOIN Persona p ON e.FK_Persona = p.idPersona
-            INNER JOIN Domicilio d ON p.FK_Domicilio = d.idDomicilio
+            INNER JOIN Domicilio d ON d.FK_Persona = p.idPersona
             INNER JOIN Localidad l ON d.FK_Localidad = l.idLocalidad
             INNER JOIN Municipio m ON l.FK_Municipio = m.idMunicipio
-            INNER JOIN RolEmpleado r ON e.FK_RolEmpleado = r.idRolEmpleado";
+            INNER JOIN RolEmpledo r ON e.FK_RolEmpleado = r.idRolEmpleado";
 
             DataTable tabla = conexion.LeerPorComando(consulta);
 
@@ -77,13 +77,22 @@ namespace DAT_Libreria
             return lista;
         }
 
-        public int InsertarEmpleado(Empleado emp)
+        public int AltaEmpleado(Empleado emp)
         {
-            string query = $@"
-            INSERT INTO Empleado (Usuario, Clave, FK_Persona, FK_RolEmpleado)
-            VALUES ('{emp.Usuario}', '{emp.Clave}', {emp.UnaPersona.IdPersona}, {emp.UnRol.IdRolEmpleado})";
+            // 1. Insertar Persona
+            string queryPersona = $"INSERT INTO Persona (Nombre, Apellido, DNI, Email) VALUES ('{emp.UnaPersona.Nombre}', '{emp.UnaPersona.Apellido}', '{emp.UnaPersona.DNI}', '{emp.UnaPersona.Email}')";
+            conexion.EscribirPorComando(queryPersona);
 
-            return conexion.EscribirPorComando(query);
+            // 2. Obtener el último ID persona insertado
+            int idPersona = Convert.ToInt32(conexion.LeerPorComando("SELECT MAX(idPersona) AS id FROM Persona").Rows[0]["id"]);
+
+            // 3. Insertar Empleado
+            string queryEmpleado = $"INSERT INTO Empleado (Usuario, Clave, FK_Persona, FK_RolEmpleado) VALUES ('{emp.Usuario}', '{emp.Clave}', {idPersona}, {emp.UnRol.IdRolEmpleado})";
+            conexion.EscribirPorComando(queryEmpleado);
+
+            // 4. Insertar Domicilio
+            string queryDomicilio = $"INSERT INTO Domicilio (Calle, Altura, FK_Persona, FK_Localidad) VALUES ('{emp.UnaPersona.UnDomicilio.Calle}', {emp.UnaPersona.UnDomicilio.Altura}, {idPersona}, {emp.UnaPersona.UnDomicilio.UnaLocalidad.IdLocalidad})";
+            return conexion.EscribirPorComando(queryDomicilio);
         }
 
         public Empleado BuscarPorUsuarioYClave(string usuario, string clave)

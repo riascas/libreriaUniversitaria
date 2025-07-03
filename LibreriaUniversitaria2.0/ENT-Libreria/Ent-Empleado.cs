@@ -42,15 +42,6 @@ namespace ENT_Libreria
             get { return _unaPersona; }
             set { _unaPersona = value; }
         }
-        /// <summary>
-        /// validamos que no fuera vacio el usuario y la clave
-        /// </summary>
-        /// <returns></returns>
-        public bool IniciarSesion()
-        {
-
-            return !string.IsNullOrEmpty(Usuario) && !string.IsNullOrEmpty(Clave);
-
-        }
+        
     }
 }

@@ -23,7 +23,8 @@ namespace Sistema_Libreria
 
             _empleado = empleado;
 
-            this.Text = $"Inicio - Rol: {_empleado.UnRol.Rol}";
+            lblUsuario.Text = $"Usuario: {_empleado.UnaPersona.Nombre} {_empleado.UnaPersona.Apellido} ({_empleado.UnRol.Rol})";
+
 
             ConfigurarPorRol();
 
@@ -37,15 +38,35 @@ namespace Sistema_Libreria
             }
             else if (_empleado.UnRol.Rol == "Vendedor")
             {
-                btnGestionUsuarios.Visible = false;
+                menuUsuario.Visible = false;
+                menuEditorial.Visible = false;
+                menuCompras.Visible = false;
                 // ocultar otras funciones
+            }
+            else if (_empleado.UnRol.Rol == "Gerente")
+            {
+                menuCompras.Visible = false;
+                menuVentaReserva.Visible = false;
+                // ocultar otras funciones
+            }
+            else if (_empleado.UnRol.Rol == "Bibliotecario")
+            {
+                menuUsuario.Visible = false;
+                menuClientes.Visible = false;
+                menuVentaReserva.Visible = false;
+                // ocultar otras funciones
+            }
+            else
+            {
+                // Manejar caso de rol desconocido si es necesario
+                MessageBox.Show("Rol desconocido. No se pueden mostrar las opciones del menú.");
             }
         }
 
 
         private void menuUsuarios_Click(object sender, EventArgs e)
         {
-            // Cerrar formularios hijos abiertos, si querés evitar duplicados
+            
             foreach (Form frm in this.MdiChildren)
             {
                 frm.Close();
@@ -90,6 +111,41 @@ namespace Sistema_Libreria
         private void label1_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void btnGestionUsuarios_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void menuListarEmpleados_Click(object sender, EventArgs e)
+        {
+            frmListarEmpleados form = new frmListarEmpleados();
+            form.ShowDialog();
+        }
+
+        private void menuAltaEmpleado_Click(object sender, EventArgs e)
+        {
+            frmAltaEmpleado form = new frmAltaEmpleado();
+            form.ShowDialog();
+        }
+
+        private void btnExit_Click(object sender, EventArgs e)
+        {
+            this.Close();
+
+        }
+
+        private void listarClientesToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmListarClientes form = new frmListarClientes();
+            form.ShowDialog();
+        }
+
+        private void menuAltaCliente_Click(object sender, EventArgs e)
+        {
+            frmAltaCliente form = new frmAltaCliente();
+            form.ShowDialog();
         }
     }
 }

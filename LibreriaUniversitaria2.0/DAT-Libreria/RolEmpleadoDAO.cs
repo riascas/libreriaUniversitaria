@@ -16,7 +16,7 @@ namespace DAT_Libreria
         public List<RolEmpleado> ObtenerTodos()
         {
             List<RolEmpleado> lista = new List<RolEmpleado>();
-            DataTable tabla = conexion.LeerPorComando("SELECT * FROM RolEmpleado");
+            DataTable tabla = conexion.LeerPorComando("SELECT * FROM RolEmpledo");
 
             if (tabla != null)
             {

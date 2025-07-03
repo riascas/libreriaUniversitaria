@@ -41,8 +41,6 @@ namespace Sistema_Libreria
 
             if (empleadoLogueado != null)
             {
-                MessageBox.Show($"Bienvenido {empleadoLogueado.UnaPersona.Nombre} ({empleadoLogueado.UnRol.Rol})");
-
                 // Paso el empleado al form de Inicio
                 Inicio form = new Inicio(empleadoLogueado);
                 form.Show();

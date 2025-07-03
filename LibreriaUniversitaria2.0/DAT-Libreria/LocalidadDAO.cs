@@ -17,7 +17,7 @@ namespace DAT_Libreria
         {
             List<Localidad> lista = new List<Localidad>();
             string consulta = @"
-            SELECT l.idLocalidad, l.Descripcion AS NombreLocalidad, 
+            SELECT l.idLocalidad, l.NombreLocalidad, 
                    m.idMunicipio, m.NombreMunicipio
             FROM Localidad l
             INNER JOIN Municipio m ON l.FK_Municipio = m.idMunicipio";
