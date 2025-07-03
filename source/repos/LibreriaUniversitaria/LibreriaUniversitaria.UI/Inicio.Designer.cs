@@ -84,14 +84,16 @@
             // 
             // lblusuario
             // 
-            this.lblusuario.AutoSize = true;
+            this.lblusuario.AutoSize = false;
             this.lblusuario.BackColor = System.Drawing.Color.SteelBlue;
             this.lblusuario.ForeColor = System.Drawing.Color.White;
-            this.lblusuario.Location = new System.Drawing.Point(683, 17);
+            this.lblusuario.Location = new System.Drawing.Point(600, 15);
             this.lblusuario.Name = "lblusuario";
-            this.lblusuario.Size = new System.Drawing.Size(51, 13);
+            this.lblusuario.Size = new System.Drawing.Size(280, 20);
             this.lblusuario.TabIndex = 5;
             this.lblusuario.Text = "lblusuario";
+            this.lblusuario.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+
             // 
             // menu
             // 
