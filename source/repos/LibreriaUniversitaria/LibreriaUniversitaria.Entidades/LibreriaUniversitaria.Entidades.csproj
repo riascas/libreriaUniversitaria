@@ -49,7 +49,9 @@
     <Compile Include="Editorial.cs" />
     <Compile Include="Empleado.cs" />
     <Compile Include="EstadoReserva.cs" />
+    <Compile Include="Excepciones\ExcepcionLoginInvalido.cs" />
     <Compile Include="Excepciones\ExcepcionPersonalizada.cs.cs" />
+    <Compile Include="Excepciones\LoginException.cs" />
     <Compile Include="Libro.cs" />
     <Compile Include="Localidad.cs" />
     <Compile Include="MovimientoStock.cs" />

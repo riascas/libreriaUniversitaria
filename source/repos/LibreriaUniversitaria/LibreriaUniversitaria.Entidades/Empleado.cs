@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace LibreriaUniversitaria.Entidades
 {
@@ -12,42 +8,24 @@ namespace LibreriaUniversitaria.Entidades
     /// </summary>
     public class Empleado : APersona
     {
-        /// <summary>
-        /// Identificador único del empleado (clave primaria en la BD).
-        /// </summary>
         public int IdEmpleado { get; set; }
-
-        /// <summary>
-        /// Clave foránea al rol del empleado.
-        /// </summary>
         public int IdRol { get; set; }
-
-        /// <summary>
-        /// Nombre de usuario del empleado (puede ser su DNI).
-        /// </summary>
-        public string Usuario { get; set; }
-
-        /// <summary>
-        /// Contraseña del empleado para el login.
-        /// </summary>
+        public string Usuario { get; set; }  // Este campo podés dejarlo vacío si no se usa.
         public string Clave { get; set; }
 
-        /// <summary>
-        /// Constructor por defecto.
-        /// </summary>
+        // ✅ Nueva propiedad para mostrar el nombre del rol (Administrador, Vendedor, etc.)
+        public string NombreRol { get; set; }
+
         public Empleado() { }
 
-        /// <summary>
-        /// Constructor completo para inicializar todos los campos del empleado.
-        /// </summary>
-        public Empleado(int idEmpleado, int idPersona, string nombre, string apellido, int dni, string email, Domicilio domicilio, int idRol, string usuario, string clave)
+        public Empleado(int idEmpleado, int idPersona, string nombre, string apellido, int dni, string email, Domicilio domicilio, int idRol, string usuario, string clave, string nombreRol)
             : base(idPersona, nombre, apellido, dni, email, domicilio)
         {
             IdEmpleado = idEmpleado;
             IdRol = idRol;
             Usuario = usuario;
             Clave = clave;
+            NombreRol = nombreRol;
         }
     }
 }
-

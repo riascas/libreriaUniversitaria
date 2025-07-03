@@ -1,58 +1,133 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
+using LibreriaUniversitaria.Entidades;
 
 namespace LibreriaUniversitaria.UI
 {
     public partial class Inicio : Form
     {
+        private Empleado empleadoLogueado;
 
-        /// <summary>
-        /// Evento que se dispara al hacer clic en el menú de usuarios.
-        /// Cierra formularios hijos anteriores y abre frmUsuarios como MDI.
-        /// </summary>
+        public Inicio(Empleado empleado)
+        {
+            InitializeComponent();
+            empleadoLogueado = empleado;
+            lblusuario.Text = empleado.Nombre + " " + empleado.Apellido + " (" + ObtenerNombreRol(empleado.IdRol) + ")";
+            ConfigurarMenuPorRol(empleado.IdRol);
+        }
+
+        private string ObtenerNombreRol(int idRol)
+        {
+            switch (idRol)
+            {
+                case 1: return "Administrador";
+                case 2: return "Bibliotecario";
+                case 3: return "Vendedor";
+                case 4: return "Gerente";
+                default: return "Desconocido";
+            }
+        }
+
+        private void ConfigurarMenuPorRol(int idRol)
+        {
+            menusuarios.Visible = false;
+            menuproveedor.Visible = false;
+            menucompras.Visible = false;
+            menuclientes.Visible = false;
+            menuproveedores.Visible = false;
+            menureportes.Visible = false;
+
+            if (idRol == 1)
+            {
+                menusuarios.Visible = true;
+                menuproveedor.Visible = true;
+                menucompras.Visible = true;
+                menuclientes.Visible = true;
+                menuproveedores.Visible = true;
+                menureportes.Visible = true;
+            }
+            else if (idRol == 2)
+            {
+                menuproveedor.Visible = true;
+                menucompras.Visible = true;
+            }
+            else if (idRol == 3)
+            {
+                menuclientes.Visible = true;
+                menuproveedores.Visible = true;
+            }
+            else if (idRol == 4)
+            {
+                menureportes.Visible = true;
+            }
+        }
+
         private void menusuarios_Click(object sender, EventArgs e)
         {
-            foreach (Form frm in this.MdiChildren)
+            AbrirFormularioHijo(new frmUsuarios());
+        }
+
+        private void menuproveedor_Click(object sender, EventArgs e)
+        {
+            AbrirFormularioHijo(new frmProveedor());
+        }
+
+        private void menucompras_Click(object sender, EventArgs e)
+        {
+            AbrirFormularioHijo(new frmCompras());
+        }
+
+        private void menuclientes_Click(object sender, EventArgs e)
+        {
+            AbrirFormularioHijo(new frmClientes());
+        }
+
+        private void menuproveedores_Click(object sender, EventArgs e)
+        {
+            AbrirFormularioHijo(new frmVentas());
+        }
+
+        private void menureportes_Click(object sender, EventArgs e)
+        {
+            // Aquí puedes abrir formulario de reportes o dejar vacío
+        }
+
+        // Método para abrir formularios hijos en el panel MDI
+        private void AbrirFormularioHijo(Form frm)
+        {
+            foreach (Form child in this.MdiChildren)
             {
-                frm.Close(); // Evita formularios duplicados
+                child.Close();
             }
 
-            // Abrimos el formulario de usuarios
-            frmUsuarios usuariosForm = new frmUsuarios();
-            usuariosForm.MdiParent = this;
-            usuariosForm.FormBorderStyle = FormBorderStyle.None;
-            usuariosForm.Dock = DockStyle.Fill;
-            usuariosForm.Show();
+            frm.MdiParent = this;
+            frm.FormBorderStyle = FormBorderStyle.None;
+            frm.Dock = DockStyle.Fill;
+            frm.Show();
         }
 
-        /// <summary>
-        /// Evento de pintura del panel contenedor. Puede quedar vacío si no se usa.
-        /// </summary>
+        // Evento vacío para el Paint del panel contenedor, para evitar error
         private void contenedor_Paint(object sender, PaintEventArgs e)
         {
-            // No se requiere implementación específica por ahora
+            // No hay lógica por ahora
         }
 
-        /// <summary>
-        /// Evento al hacer clic en "Ventas por libro".
-        /// </summary>
+        // Evento para el clic del menú (vacío para evitar error)
+        private void menu_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
+        {
+            // No hay lógica por ahora
+        }
+
+        // Evento para el clic en "Ventas por libro" del submenú de reportes
         private void librToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            // Lógica para mostrar reporte de ventas por libro
+            // Implementar lógica para reporte de ventas por libro
         }
-         
 
-
+        // Evento Load vacío para evitar error
         private void Inicio_Load(object sender, EventArgs e)
         {
-
+            // Código opcional al cargar el formulario
         }
     }
 }
