@@ -49,11 +49,21 @@
     <Reference Include="WindowsBase" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Class1.cs" />
+    <Compile Include="EmpleadoService.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\DAT-Libreria\DAT-Libreria.csproj">
+      <Project>{036bb4f5-8e33-46b1-a2ba-81bb1dbd1d7c}</Project>
+      <Name>DAT-Libreria</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ENT-Libreria\ENT-Libreria.csproj">
+      <Project>{95945913-f801-4820-a2fa-536e1816a6e5}</Project>
+      <Name>ENT-Libreria</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -85,5 +85,41 @@ namespace DAT_Libreria
 
             return conexion.EscribirPorComando(query);
         }
+
+        public Empleado BuscarPorUsuarioYClave(string usuario, string clave)
+        {
+            string query = $@"SELECT e.idEmpleado, e.Usuario, e.Clave, r.idRolEmpleado, r.Rol, p.idPersona, p.Nombre, p.Apellido, p.DNI, p.Email
+                            FROM Empleado e
+                            INNER JOIN RolEmpledo r ON e.FK_RolEmpleado = r.idRolEmpleado
+                            INNER JOIN Persona p ON e.FK_Persona = p.idPersona
+                            WHERE e.Usuario = '{usuario}' AND e.Clave = '{clave}'";
+
+            DataTable tabla = conexion.LeerPorComando(query);
+
+            if (tabla.Rows.Count == 0)
+                return null;
+
+            DataRow fila = tabla.Rows[0];
+
+            return new Empleado
+            {
+                IdEmpleado = Convert.ToInt32(fila["idEmpleado"]),
+                Usuario = fila["Usuario"].ToString(),
+                Clave = fila["Clave"].ToString(),
+                UnRol = new RolEmpleado
+                {
+                    IdRolEmpleado = Convert.ToInt32(fila["idRolEmpleado"]),
+                    Rol = fila["Rol"].ToString()
+                },
+                UnaPersona = new Persona
+                {
+                    IdPersona = Convert.ToInt32(fila["idPersona"]),
+                    Nombre = fila["Nombre"].ToString(),
+                    Apellido = fila["Apellido"].ToString(),
+                    DNI = fila["DNI"].ToString(),
+                    Email = fila["Email"].ToString()
+                }
+            };
+        }
     }
 }

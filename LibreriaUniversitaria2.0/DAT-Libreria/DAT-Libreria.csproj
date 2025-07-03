@@ -72,10 +72,6 @@
     <Compile Include="VentaDAO.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\BLL-Libreria\BLL-Libreria.csproj">
-      <Project>{31f5ca1b-7408-42a2-a7b2-878d92af0bc8}</Project>
-      <Name>BLL-Libreria</Name>
-    </ProjectReference>
     <ProjectReference Include="..\ENT-Libreria\ENT-Libreria.csproj">
       <Project>{95945913-f801-4820-a2fa-536e1816a6e5}</Project>
       <Name>ENT-Libreria</Name>
