@@ -18,9 +18,9 @@ namespace DAT_Libreria
         {
             List<Libro> lista = new List<Libro>();
             DataTable tabla = conexion.LeerPorComando(@"SELECT l.*, c.DescripcionCategoria, e.DescripcionEstadoLibro
-                                                         FROM Libro l
-                                                         INNER JOIN CategoriaLibro c ON l.FK_CategoriaLibro = c.idCategoriaLibro
-                                                         INNER JOIN EstadoLibro e ON l.FK_EstadoLibro = e.idEstadoLibro");
+                                                     FROM Libro l
+                                                     INNER JOIN CategoriaLibro c ON l.FK_CategoriaLibro = c.idCategoriaLibro
+                                                     INNER JOIN EstadoLibro e ON l.FK_EstadoLibro = e.idEstadoLibro");
 
             foreach (DataRow fila in tabla.Rows)
             {
@@ -51,8 +51,14 @@ namespace DAT_Libreria
         {
             string query = $"INSERT INTO Libro (ISNB, Titulo, Autor, PrecioLibro, Disponible, FK_EstadoLibro, FK_CategoriaLibro) " +
                            $"VALUES ('{libro.ISNB}', '{libro.Titulo}', '{libro.Autor}', {libro.PrecioLibro}, '{(libro.Disponible ? 1 : 0)}', {libro.UnEstadoLibro.IdEstadoLibro}, {libro.UnaCategoriaLibro.IdCategoriaLibro})";
-            return conexion.EscribirPorComando(query);
+
+            conexion.EscribirPorComando(query);
+
+            // Obtener ID del libro insertado
+            DataTable tablaID = conexion.LeerPorComando("SELECT IDENT_CURRENT('Libro') AS UltimoID");
+            return Convert.ToInt32(tablaID.Rows[0]["UltimoID"]);
         }
     }
+
 
 }

@@ -165,5 +165,11 @@ namespace Sistema_Libreria
             frmListarLibros form = new frmListarLibros();
             form.ShowDialog();
         }
+
+        private void menuCompras_Click(object sender, EventArgs e)
+        {
+            frmCompra form = new frmCompra();
+            form.ShowDialog();
+        }
     }
 }
