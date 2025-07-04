@@ -248,6 +248,7 @@
             this.menuVentaReserva.Size = new System.Drawing.Size(120, 69);
             this.menuVentaReserva.Text = "Ventas/Reserva";
             this.menuVentaReserva.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.menuVentaReserva.Click += new System.EventHandler(this.menuVentaReserva_Click);
             // 
             // menuReportes
             // 

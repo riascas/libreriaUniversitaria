@@ -171,5 +171,11 @@ namespace Sistema_Libreria
             frmCompra form = new frmCompra();
             form.ShowDialog();
         }
+
+        private void menuVentaReserva_Click(object sender, EventArgs e)
+        {
+            frmVenta form = new frmVenta();
+            form.ShowDialog();
+        }
     }
 }

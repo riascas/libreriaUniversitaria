@@ -15,5 +15,14 @@ namespace BLL_Libreria
         {
             return libroDAO.ObtenerTodos();
         }
+
+        public Libro BuscarPorId(int id)
+        {
+            // Aquí deberías tener una lógica que consulte la base de datos o lista de libros
+            // y devuelva el objeto Libro con ese ID
+            // Ejemplo simple:
+            return ObtenerTodos().FirstOrDefault(l => l.IdLibro == id);
+        }
+
     }
 }

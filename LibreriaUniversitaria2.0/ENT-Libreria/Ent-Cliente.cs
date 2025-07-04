@@ -23,11 +23,18 @@ namespace ENT_Libreria
             get { return _idCliente; }
             set { _idCliente = value; }
         }
-        
+
         public Persona UnaPersona
         {
             get { return _unaPersona; }
             set { _unaPersona = value; }
+        }
+        public string NombreCompleto
+        {
+            get
+            {
+                return $"{UnaPersona?.Nombre} {UnaPersona?.Apellido}";
+            }
         }
     }
 }

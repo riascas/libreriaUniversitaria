@@ -49,28 +49,5 @@ namespace ENT_Libreria
             get { return _unCliente; }
             set { _unCliente = value; }
         }
-
-        public float AplicarDescuento()
-        {
-            decimal total = CalcularTotal();
-
-            if (total > 1000)
-                return 0.10f; // 10% de descuento
-
-            return 0; // Sin descuento
-
-        }
-
-        public decimal CalcularTotal()
-        {
-            decimal total = 0;
-
-            foreach (var detalle in DetalleVentas)
-            {
-                total += detalle.CalcularSubTotal();
-            }
-
-            return total;
-        }
     }
 }

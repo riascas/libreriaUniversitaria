@@ -6,11 +6,12 @@ using System.Threading.Tasks;
 
 namespace ENT_Libreria
 {
-    public class DetalleVenta : BaseDetalle
+    public class DetalleVenta
     {
         private int _idDetalleVenta;
         private int _cantidadVenta;
         private decimal _precioVenta;
+        private Libro _libroReferencia;
         private Venta _unaVenta;
 
         public int IdDetalleVenta
@@ -25,6 +26,13 @@ namespace ENT_Libreria
             set { _cantidadVenta = value; }
         }
 
+        
+        public Libro LibroReferencia
+        {
+            get { return _libroReferencia; }
+            set { _libroReferencia = value; }
+        }
+
         public Venta UnaVenta
         {
             get { return _unaVenta; }
@@ -36,9 +44,5 @@ namespace ENT_Libreria
             set { _precioVenta = value; }
         }
 
-        public decimal CalcularSubTotal()
-        {
-            return Cantidad * PrecioVenta;
-        }
     }
 }

@@ -13,38 +13,12 @@ namespace DAT_Libreria
     {
         private Conexion conexion = new Conexion();
 
-        public List<Venta> ObtenerTodos()
-        {
-            List<Venta> lista = new List<Venta>();
-            DataTable tabla = conexion.LeerPorComando("SELECT * FROM Venta");
-
-            foreach (DataRow fila in tabla.Rows)
-            {
-                lista.Add(new Venta
-                {
-                    IdVenta = Convert.ToInt32(fila["idVenta"]),
-                    FechaVenta = Convert.ToDateTime(fila["FechaVenta"]),
-                    TotalVenta = Convert.ToDecimal(fila["TotalVenta"]),
-                    UnEmpleado = new Empleado
-                    {
-                        IdEmpleado = Convert.ToInt32(fila["IdEmpleado"]),
-                        Usuario = fila["Usuario"].ToString(),
-                        Clave = fila["Clave"].ToString(),
-                    },
-                    UnCliente = new Cliente
-                    {
-                        IdCliente = Convert.ToInt32(fila["IdCliente"]),
-                        EsEstudiante = Convert.ToBoolean(fila["EsEstudiante"]),
-                    }
-                });
-            }
-            return lista;
-        }
-
         public int Insertar(Venta venta)
         {
-            string query = $"INSERT INTO Venta (FechaVenta, TotalVenta, UnEmpleado, UnCliente) VALUES ('{venta.FechaVenta:yyyy-MM-dd}', {venta.TotalVenta}, {venta.UnEmpleado}, {venta.UnCliente})";
-            return conexion.EscribirPorComando(query);
+            string query = $"INSERT INTO Venta (FechaVenta, TotalVenta, FK_Empleado, FK_Cliente) VALUES ('{venta.FechaVenta:yyyy-MM-dd HH:mm:ss}', {venta.TotalVenta}, {venta.UnEmpleado.IdEmpleado}, {venta.UnCliente.IdCliente})";
+            conexion.EscribirPorComando(query);
+            DataTable tablaID = conexion.LeerPorComando("SELECT IDENT_CURRENT('Venta') AS UltimoID");
+            return Convert.ToInt32(tablaID.Rows[0]["UltimoID"]);
         }
     }
 }

@@ -47,7 +47,7 @@ namespace Sistema_Libreria
             var service = new OrdenCompraService();
             service.RegistrarOrdenCompra(orden, librosConCantidad);
 
-            MessageBox.Show("Orden de compra registrada exitosamente.");
+            
             this.Close();
         }
 

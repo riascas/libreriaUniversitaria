@@ -13,31 +13,12 @@ namespace DAT_Libreria
     {
         private Conexion conexion = new Conexion();
 
-        public List<DetalleVenta> ObtenerTodos()
-        {
-            List<DetalleVenta> lista = new List<DetalleVenta>();
-            DataTable tabla = conexion.LeerPorComando("SELECT * FROM DetalleVenta");
-
-            foreach (DataRow fila in tabla.Rows)
-            {
-                lista.Add(new DetalleVenta
-                {
-                    IdDetalleVenta = Convert.ToInt32(fila["idDetalleVenta"]),
-                    CantidadVenta = Convert.ToInt32(fila["CantidadVenta"]),
-                    PrecioVenta = Convert.ToDecimal(fila["PrecioVenta"]),
-                    UnaVenta = new Venta
-                    {
-                        IdVenta = Convert.ToInt32(fila["idVenta"])
-                    }
-                });
-            }
-            return lista;
-        }
-
         public int Insertar(DetalleVenta detalle)
         {
-            string query = $"INSERT INTO DetalleVenta (CantidadVenta, PrecioVenta, idVenta) VALUES ({detalle.CantidadVenta}, {detalle.PrecioVenta}, {detalle.UnaVenta})";
-            return conexion.EscribirPorComando(query);
+            string query = $"INSERT INTO DetalleVenta (CantidadVenta, PrecioVenta, FK_Venta) VALUES ({detalle.CantidadVenta}, {detalle.PrecioVenta}, {detalle.UnaVenta.IdVenta})";
+            conexion.EscribirPorComando(query);
+            DataTable tablaID = conexion.LeerPorComando("SELECT IDENT_CURRENT('DetalleVenta') AS UltimoID");
+            return Convert.ToInt32(tablaID.Rows[0]["UltimoID"]);
         }
     }
 }
