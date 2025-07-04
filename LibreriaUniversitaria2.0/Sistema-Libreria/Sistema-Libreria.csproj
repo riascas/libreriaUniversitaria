@@ -153,6 +153,9 @@
     <EmbeddedResource Include="frmAltaCliente.resx">
       <DependentUpon>frmAltaCliente.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frmAltaEditorial.resx">
+      <DependentUpon>frmAltaEditorial.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmAltaEmpleado.resx">
       <DependentUpon>frmAltaEmpleado.cs</DependentUpon>
     </EmbeddedResource>

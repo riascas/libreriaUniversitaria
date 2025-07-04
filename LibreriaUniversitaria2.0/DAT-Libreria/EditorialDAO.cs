@@ -30,5 +30,11 @@ namespace DAT_Libreria
             }
             return lista;
         }
+
+        public int Insertar(Editorial editorial)
+        {
+            string queryEditorial = $"INSERT INTO Editorial (NombreEditorial, Contacto, CUIT) VALUES ('{editorial.NombreEditorial}', '{editorial.Contacto}', '{editorial.CUIT}')";
+            return conexion.EscribirPorComando(queryEditorial);
+        }
     }
-}
+}    

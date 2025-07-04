@@ -15,5 +15,10 @@ namespace BLL_Libreria
         {
             return editorialDAO.ObtenerTodos();
         }
+
+        public int Insertar(Editorial editorial)
+        {
+            return editorialDAO.Insertar(editorial);
+        }
     }
 }
