@@ -11,7 +11,7 @@ namespace ENT_Libreria
         private int _idLibro;
         private string _autor;
         private bool _disponible;
-        private string _isbn;
+        private string _isnb;
         private decimal _precioLibro;
         private string _titulo;
         private CategoriaLibro _unaCategoriaLibro;
@@ -35,10 +35,10 @@ namespace ENT_Libreria
             set { _disponible = value; }
         }
 
-        public string ISBN
+        public string ISNB
         {
-            get { return _isbn; }
-            set { _isbn = value; }
+            get { return _isnb; }
+            set { _isnb = value; }
         }
 
         public decimal PrecioLibro

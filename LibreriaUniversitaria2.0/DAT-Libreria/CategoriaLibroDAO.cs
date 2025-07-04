@@ -25,7 +25,7 @@ namespace DAT_Libreria
                     lista.Add(new CategoriaLibro
                     {
                         IdCategoriaLibro = Convert.ToInt32(fila["idCategoriaLibro"]),
-                        DescripcionCategoriaLibro = fila["DescripcionCategoriaLibro"].ToString()
+                        DescripcionCategoria = fila["DescripcionCategoria"].ToString()
                     });
                 }
             }
@@ -35,7 +35,7 @@ namespace DAT_Libreria
 
         public int InsertarCategoria(CategoriaLibro categoria)
         {
-            string query = $"INSERT INTO CategoriaLibro (DescripcionCategoriaLibro) VALUES ('{categoria.DescripcionCategoriaLibro}')";
+            string query = $"INSERT INTO CategoriaLibro (DescripcionCategoria) VALUES ('{categoria.DescripcionCategoria}')";
             return conexion.EscribirPorComando(query);
         }
     }

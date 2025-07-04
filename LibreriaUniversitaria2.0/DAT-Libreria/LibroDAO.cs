@@ -16,47 +16,43 @@ namespace DAT_Libreria
 
         public List<Libro> ObtenerTodos()
         {
-            List<Libro> listaLibros = new List<Libro>();
-            string consulta = "SELECT * FROM Libro";
-
-            DataTable tabla = conexion.LeerPorComando(consulta);
+            List<Libro> lista = new List<Libro>();
+            DataTable tabla = conexion.LeerPorComando(@"SELECT l.*, c.DescripcionCategoria, e.DescripcionEstadoLibro
+                                                         FROM Libro l
+                                                         INNER JOIN CategoriaLibro c ON l.FK_CategoriaLibro = c.idCategoriaLibro
+                                                         INNER JOIN EstadoLibro e ON l.FK_EstadoLibro = e.idEstadoLibro");
 
             foreach (DataRow fila in tabla.Rows)
             {
-                Libro libro = new Libro
+                lista.Add(new Libro
                 {
                     IdLibro = Convert.ToInt32(fila["idLibro"]),
-                    ISBN = fila["ISBN"].ToString(),
+                    ISNB = fila["ISNB"].ToString(),
                     Titulo = fila["Titulo"].ToString(),
                     Autor = fila["Autor"].ToString(),
                     PrecioLibro = Convert.ToDecimal(fila["PrecioLibro"]),
                     Disponible = Convert.ToBoolean(fila["Disponible"]),
                     UnaCategoriaLibro = new CategoriaLibro
                     {
-                        IdCategoriaLibro = Convert.ToInt32(fila["idCategoriaLibro"]),
-                        DescripcionCategoriaLibro = fila["DescripcionCategoriaLibro"].ToString()
+                        IdCategoriaLibro = Convert.ToInt32(fila["FK_CategoriaLibro"]),
+                        DescripcionCategoria = fila["DescripcionCategoria"].ToString()
                     },
                     UnEstadoLibro = new EstadoLibro
                     {
-                        IdEstadoLibro = Convert.ToInt32(fila["idEstadoLibro"]),
+                        IdEstadoLibro = Convert.ToInt32(fila["FK_EstadoLibro"]),
                         DescripcionEstadoLibro = fila["DescripcionEstadoLibro"].ToString()
                     }
-                };
-
-                listaLibros.Add(libro);
+                });
             }
-
-            return listaLibros;
+            return lista;
         }
 
         public int Insertar(Libro libro)
         {
-            string query = $@"
-        INSERT INTO Libro (ISBN, Titulo, Autor, PrecioLibro, Disponible, FK_EstadoLibro, FK_CategoriaLibro)
-        VALUES ('{libro.ISBN}', '{libro.Titulo}', '{libro.Autor}', {libro.PrecioLibro.ToString(System.Globalization.CultureInfo.InvariantCulture)}, 
-                '{(libro.Disponible ? 1 : 0)}', {libro.UnEstadoLibro.IdEstadoLibro}, {libro.UnaCategoriaLibro.IdCategoriaLibro})";
-
+            string query = $"INSERT INTO Libro (ISNB, Titulo, Autor, PrecioLibro, Disponible, FK_EstadoLibro, FK_CategoriaLibro) " +
+                           $"VALUES ('{libro.ISNB}', '{libro.Titulo}', '{libro.Autor}', {libro.PrecioLibro}, '{(libro.Disponible ? 1 : 0)}', {libro.UnEstadoLibro.IdEstadoLibro}, {libro.UnaCategoriaLibro.IdCategoriaLibro})";
             return conexion.EscribirPorComando(query);
         }
     }
+
 }

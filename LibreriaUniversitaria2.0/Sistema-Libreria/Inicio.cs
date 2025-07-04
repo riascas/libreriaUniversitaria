@@ -147,5 +147,23 @@ namespace Sistema_Libreria
             frmAltaCliente form = new frmAltaCliente();
             form.ShowDialog();
         }
+
+        private void menuListarEditoriales_Click(object sender, EventArgs e)
+        {
+            frmListarEditoriales form = new frmListarEditoriales();
+            form.ShowDialog();
+        }
+
+        private void menuAltaEditorial_Click(object sender, EventArgs e)
+        {
+            frmAltaEditorial form = new frmAltaEditorial();
+            form.ShowDialog();
+        }
+
+        private void menuListarLibro_Click(object sender, EventArgs e)
+        {
+            frmListarLibros form = new frmListarLibros();
+            form.ShowDialog();
+        }
     }
 }

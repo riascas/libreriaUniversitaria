@@ -34,19 +34,20 @@
             // 
             // dgvEmpleados
             // 
+            this.dgvEmpleados.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
             this.dgvEmpleados.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvEmpleados.Location = new System.Drawing.Point(23, 26);
+            this.dgvEmpleados.Location = new System.Drawing.Point(12, 12);
             this.dgvEmpleados.Name = "dgvEmpleados";
             this.dgvEmpleados.RowHeadersWidth = 51;
             this.dgvEmpleados.RowTemplate.Height = 24;
-            this.dgvEmpleados.Size = new System.Drawing.Size(1244, 493);
+            this.dgvEmpleados.Size = new System.Drawing.Size(1449, 586);
             this.dgvEmpleados.TabIndex = 0;
             // 
             // frmListarEmpleados
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1314, 562);
+            this.ClientSize = new System.Drawing.Size(1473, 610);
             this.Controls.Add(this.dgvEmpleados);
             this.Name = "frmListarEmpleados";
             this.Text = "frmListarEmpleados";

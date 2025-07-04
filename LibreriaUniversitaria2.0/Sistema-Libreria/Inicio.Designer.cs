@@ -37,8 +37,8 @@
             this.menuListarEmpleados = new FontAwesome.Sharp.IconMenuItem();
             this.menuAltaEmpleado = new System.Windows.Forms.ToolStripMenuItem();
             this.menuEditorial = new FontAwesome.Sharp.IconMenuItem();
-            this.iconMenuItem1 = new FontAwesome.Sharp.IconMenuItem();
-            this.iconMenuItem2 = new FontAwesome.Sharp.IconMenuItem();
+            this.menuListarEditoriales = new FontAwesome.Sharp.IconMenuItem();
+            this.menuAltaEditorial = new FontAwesome.Sharp.IconMenuItem();
             this.menuCompras = new FontAwesome.Sharp.IconMenuItem();
             this.menuClientes = new FontAwesome.Sharp.IconMenuItem();
             this.menuListarClientes = new System.Windows.Forms.ToolStripMenuItem();
@@ -50,6 +50,7 @@
             this.librToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menu = new System.Windows.Forms.MenuStrip();
             this.btnExit = new FontAwesome.Sharp.IconButton();
+            this.menuListarLibro = new System.Windows.Forms.ToolStripMenuItem();
             this.menu.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -136,14 +137,14 @@
             this.menuListarEmpleados.IconColor = System.Drawing.Color.Black;
             this.menuListarEmpleados.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.menuListarEmpleados.Name = "menuListarEmpleados";
-            this.menuListarEmpleados.Size = new System.Drawing.Size(212, 26);
+            this.menuListarEmpleados.Size = new System.Drawing.Size(224, 26);
             this.menuListarEmpleados.Text = "Lista usuarios";
             this.menuListarEmpleados.Click += new System.EventHandler(this.menuListarEmpleados_Click);
             // 
             // menuAltaEmpleado
             // 
             this.menuAltaEmpleado.Name = "menuAltaEmpleado";
-            this.menuAltaEmpleado.Size = new System.Drawing.Size(212, 26);
+            this.menuAltaEmpleado.Size = new System.Drawing.Size(224, 26);
             this.menuAltaEmpleado.Text = "Alta de Empleado";
             this.menuAltaEmpleado.Click += new System.EventHandler(this.menuAltaEmpleado_Click);
             // 
@@ -151,35 +152,38 @@
             // 
             this.menuEditorial.AutoSize = false;
             this.menuEditorial.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.iconMenuItem1,
-            this.iconMenuItem2});
+            this.menuListarEditoriales,
+            this.menuAltaEditorial,
+            this.menuListarLibro});
             this.menuEditorial.IconChar = FontAwesome.Sharp.IconChar.Truck;
             this.menuEditorial.IconColor = System.Drawing.Color.Black;
             this.menuEditorial.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.menuEditorial.IconSize = 50;
             this.menuEditorial.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this.menuEditorial.Name = "menuEditorial";
-            this.menuEditorial.Size = new System.Drawing.Size(120, 69);
+            this.menuEditorial.Size = new System.Drawing.Size(152, 69);
             this.menuEditorial.Text = "Editoriales";
             this.menuEditorial.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             // 
-            // iconMenuItem1
+            // menuListarEditoriales
             // 
-            this.iconMenuItem1.IconChar = FontAwesome.Sharp.IconChar.None;
-            this.iconMenuItem1.IconColor = System.Drawing.Color.Black;
-            this.iconMenuItem1.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconMenuItem1.Name = "iconMenuItem1";
-            this.iconMenuItem1.Size = new System.Drawing.Size(157, 26);
-            this.iconMenuItem1.Text = "Categoria";
+            this.menuListarEditoriales.IconChar = FontAwesome.Sharp.IconChar.None;
+            this.menuListarEditoriales.IconColor = System.Drawing.Color.Black;
+            this.menuListarEditoriales.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.menuListarEditoriales.Name = "menuListarEditoriales";
+            this.menuListarEditoriales.Size = new System.Drawing.Size(224, 26);
+            this.menuListarEditoriales.Text = "Listar Editoriales";
+            this.menuListarEditoriales.Click += new System.EventHandler(this.menuListarEditoriales_Click);
             // 
-            // iconMenuItem2
+            // menuAltaEditorial
             // 
-            this.iconMenuItem2.IconChar = FontAwesome.Sharp.IconChar.None;
-            this.iconMenuItem2.IconColor = System.Drawing.Color.Black;
-            this.iconMenuItem2.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconMenuItem2.Name = "iconMenuItem2";
-            this.iconMenuItem2.Size = new System.Drawing.Size(157, 26);
-            this.iconMenuItem2.Text = "Libro";
+            this.menuAltaEditorial.IconChar = FontAwesome.Sharp.IconChar.None;
+            this.menuAltaEditorial.IconColor = System.Drawing.Color.Black;
+            this.menuAltaEditorial.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.menuAltaEditorial.Name = "menuAltaEditorial";
+            this.menuAltaEditorial.Size = new System.Drawing.Size(224, 26);
+            this.menuAltaEditorial.Text = "Alta de Editorial";
+            this.menuAltaEditorial.Click += new System.EventHandler(this.menuAltaEditorial_Click);
             // 
             // menuCompras
             // 
@@ -213,14 +217,14 @@
             // menuListarClientes
             // 
             this.menuListarClientes.Name = "menuListarClientes";
-            this.menuListarClientes.Size = new System.Drawing.Size(224, 26);
+            this.menuListarClientes.Size = new System.Drawing.Size(178, 26);
             this.menuListarClientes.Text = "Lista Clientes";
             this.menuListarClientes.Click += new System.EventHandler(this.listarClientesToolStripMenuItem_Click);
             // 
             // menuAltaCliente
             // 
             this.menuAltaCliente.Name = "menuAltaCliente";
-            this.menuAltaCliente.Size = new System.Drawing.Size(224, 26);
+            this.menuAltaCliente.Size = new System.Drawing.Size(178, 26);
             this.menuAltaCliente.Text = "Alta Cliente";
             this.menuAltaCliente.Click += new System.EventHandler(this.menuAltaCliente_Click);
             // 
@@ -303,6 +307,13 @@
             this.btnExit.UseVisualStyleBackColor = false;
             this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
             // 
+            // menuListarLibro
+            // 
+            this.menuListarLibro.Name = "menuListarLibro";
+            this.menuListarLibro.Size = new System.Drawing.Size(224, 26);
+            this.menuListarLibro.Text = "Lista de Libros";
+            this.menuListarLibro.Click += new System.EventHandler(this.menuListarLibro_Click);
+            // 
             // Inicio
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -336,8 +347,8 @@
         private FontAwesome.Sharp.IconMenuItem menuUsuario;
         private FontAwesome.Sharp.IconMenuItem menuListarEmpleados;
         private FontAwesome.Sharp.IconMenuItem menuEditorial;
-        private FontAwesome.Sharp.IconMenuItem iconMenuItem1;
-        private FontAwesome.Sharp.IconMenuItem iconMenuItem2;
+        private FontAwesome.Sharp.IconMenuItem menuListarEditoriales;
+        private FontAwesome.Sharp.IconMenuItem menuAltaEditorial;
         private FontAwesome.Sharp.IconMenuItem menuCompras;
         private FontAwesome.Sharp.IconMenuItem menuClientes;
         private FontAwesome.Sharp.IconMenuItem menuVentaReserva;
@@ -350,5 +361,6 @@
         private FontAwesome.Sharp.IconButton btnExit;
         private System.Windows.Forms.ToolStripMenuItem menuListarClientes;
         private System.Windows.Forms.ToolStripMenuItem menuAltaCliente;
+        private System.Windows.Forms.ToolStripMenuItem menuListarLibro;
     }
 }

@@ -58,6 +58,12 @@
     <Compile Include="frmAltaCliente.Designer.cs">
       <DependentUpon>frmAltaCliente.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmAltaEditorial.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAltaEditorial.Designer.cs">
+      <DependentUpon>frmAltaEditorial.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmAltaEmpleado.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -82,11 +88,23 @@
     <Compile Include="frmListarClientes.Designer.cs">
       <DependentUpon>frmListarClientes.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmListarEditoriales.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmListarEditoriales.Designer.cs">
+      <DependentUpon>frmListarEditoriales.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmListarEmpleados.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="frmListarEmpleados.Designer.cs">
       <DependentUpon>frmListarEmpleados.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmListarLibros.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmListarLibros.Designer.cs">
+      <DependentUpon>frmListarLibros.cs</DependentUpon>
     </Compile>
     <Compile Include="frmProveedor.cs">
       <SubType>Form</SubType>
@@ -147,8 +165,14 @@
     <EmbeddedResource Include="frmListarClientes.resx">
       <DependentUpon>frmListarClientes.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frmListarEditoriales.resx">
+      <DependentUpon>frmListarEditoriales.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmListarEmpleados.resx">
       <DependentUpon>frmListarEmpleados.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmListarLibros.resx">
+      <DependentUpon>frmListarLibros.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmProveedor.resx">
       <DependentUpon>frmProveedor.cs</DependentUpon>
