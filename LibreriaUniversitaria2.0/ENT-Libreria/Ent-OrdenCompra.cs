@@ -47,27 +47,5 @@ namespace ENT_Libreria
             get { return _unEmpleado; }
             set { _unEmpleado = value; }
         }
-
-        /* me falta  hacer este metodo
-        private decimal DetalleVenta;
-        
-        public decimal detalleventa
-        {
-            get { return DetalleVenta; }
-            set { DetalleVenta = value; }
-        }
-
-        public decimal CalcularTotal()
-        {
-            decimal total = 0;
-
-            foreach (var detalle in DetalleVenta)
-            {
-                total += detalle.CalcularSubTotal();
-            }
-
-            return total;
-        }
-        */
     }
 }

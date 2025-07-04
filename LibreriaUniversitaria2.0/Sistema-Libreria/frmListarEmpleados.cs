@@ -43,5 +43,10 @@ namespace Sistema_Libreria
 
             dgvEmpleados.DataSource = listaMostrar;
         }
+
+        private void btnSalir_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

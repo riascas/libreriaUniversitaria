@@ -19,7 +19,7 @@ namespace DAT_Libreria
         {
             try
             {
-                // 1️⃣ Insertar OrdenCompra
+                
                 string queryOrden = $"INSERT INTO OrdenCompra (FechaCompra, TotalCompra, EstadoCompra, FK_Empleado, FK_Editorial) " +
                                     $"VALUES ('{orden.FechaCompra:yyyy-MM-dd HH:mm:ss}', {orden.TotalCompra}, '{orden.EstadoCompra}', {orden.UnEmpleado.IdEmpleado}, {orden.UnaEditorial.IdEditorial})";
 
@@ -33,7 +33,7 @@ namespace DAT_Libreria
 
                     int idLibro = libro.IdLibro;
 
-                    // 2️⃣ Insertar libro si es nuevo
+                    
                     if (idLibro == 0)
                     {
                         idLibro = libroDAO.Insertar(libro);
@@ -43,13 +43,13 @@ namespace DAT_Libreria
                     if (idLibro == 0)
                         throw new Exception("El idLibro sigue siendo 0 luego de la inserción. Verifica la tabla Libro.");
 
-                    // 3️⃣ Insertar DetalleOrdenCompra
+                    
                     string queryDetalle = $"INSERT INTO DetalleOrdenCompra (CantidadCompra, PrecioCosto, FK_OrdenCompra) " +
                                           $"VALUES ({cantidad}, {libro.PrecioLibro}, {orden.IdCompra})";
                     conexion.EscribirPorComando(queryDetalle);
                     int idDetalle = ObtenerUltimoId("DetalleOrdenCompra");
 
-                    // 4️⃣ Insertar MovimientoStock
+                    
                     string queryStock = $"INSERT INTO MovimientoStock (FechaStock, CantidadStock, FK_DetalleOrdenCompra, FK_Libro) " +
                                         $"VALUES ('{DateTime.Now:yyyy-MM-dd HH:mm:ss}', {cantidad}, {idDetalle}, {idLibro})";
                     conexion.EscribirPorComando(queryStock);

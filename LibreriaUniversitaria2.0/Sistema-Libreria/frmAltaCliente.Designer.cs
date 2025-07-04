@@ -46,6 +46,7 @@
             this.lbllocalidadCliente = new System.Windows.Forms.Label();
             this.chkEstudiante = new System.Windows.Forms.CheckBox();
             this.lblEstudiante = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // btnSalirAlta
@@ -53,7 +54,7 @@
             this.btnSalirAlta.BackColor = System.Drawing.Color.Red;
             this.btnSalirAlta.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSalirAlta.ForeColor = System.Drawing.Color.White;
-            this.btnSalirAlta.Location = new System.Drawing.Point(627, 481);
+            this.btnSalirAlta.Location = new System.Drawing.Point(398, 404);
             this.btnSalirAlta.Name = "btnSalirAlta";
             this.btnSalirAlta.Size = new System.Drawing.Size(84, 36);
             this.btnSalirAlta.TabIndex = 39;
@@ -63,18 +64,21 @@
             // 
             // btnGuardar
             // 
-            this.btnGuardar.Location = new System.Drawing.Point(315, 363);
+            this.btnGuardar.BackColor = System.Drawing.Color.ForestGreen;
+            this.btnGuardar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnGuardar.ForeColor = System.Drawing.Color.White;
+            this.btnGuardar.Location = new System.Drawing.Point(175, 318);
             this.btnGuardar.Name = "btnGuardar";
             this.btnGuardar.Size = new System.Drawing.Size(147, 58);
             this.btnGuardar.TabIndex = 38;
             this.btnGuardar.Text = "Agregar Cliente";
-            this.btnGuardar.UseVisualStyleBackColor = true;
+            this.btnGuardar.UseVisualStyleBackColor = false;
             this.btnGuardar.Click += new System.EventHandler(this.btnGuardar_Click);
             // 
             // cmbLocalidadCliente
             // 
             this.cmbLocalidadCliente.FormattingEnabled = true;
-            this.cmbLocalidadCliente.Location = new System.Drawing.Point(434, 218);
+            this.cmbLocalidadCliente.Location = new System.Drawing.Point(313, 201);
             this.cmbLocalidadCliente.Name = "cmbLocalidadCliente";
             this.cmbLocalidadCliente.Size = new System.Drawing.Size(169, 24);
             this.cmbLocalidadCliente.TabIndex = 37;
@@ -83,7 +87,7 @@
             // lblDNICliente
             // 
             this.lblDNICliente.AutoSize = true;
-            this.lblDNICliente.Location = new System.Drawing.Point(141, 199);
+            this.lblDNICliente.Location = new System.Drawing.Point(20, 182);
             this.lblDNICliente.Name = "lblDNICliente";
             this.lblDNICliente.Size = new System.Drawing.Size(33, 16);
             this.lblDNICliente.TabIndex = 35;
@@ -91,7 +95,7 @@
             // 
             // txtDNICliente
             // 
-            this.txtDNICliente.Location = new System.Drawing.Point(144, 218);
+            this.txtDNICliente.Location = new System.Drawing.Point(23, 201);
             this.txtDNICliente.Name = "txtDNICliente";
             this.txtDNICliente.Size = new System.Drawing.Size(169, 22);
             this.txtDNICliente.TabIndex = 34;
@@ -99,7 +103,7 @@
             // lblEmailCliente
             // 
             this.lblEmailCliente.AutoSize = true;
-            this.lblEmailCliente.Location = new System.Drawing.Point(141, 247);
+            this.lblEmailCliente.Location = new System.Drawing.Point(20, 230);
             this.lblEmailCliente.Name = "lblEmailCliente";
             this.lblEmailCliente.Size = new System.Drawing.Size(44, 16);
             this.lblEmailCliente.TabIndex = 33;
@@ -107,7 +111,7 @@
             // 
             // txtEmailCliente
             // 
-            this.txtEmailCliente.Location = new System.Drawing.Point(144, 266);
+            this.txtEmailCliente.Location = new System.Drawing.Point(23, 249);
             this.txtEmailCliente.Name = "txtEmailCliente";
             this.txtEmailCliente.Size = new System.Drawing.Size(169, 22);
             this.txtEmailCliente.TabIndex = 32;
@@ -115,7 +119,7 @@
             // lblAlturaCliente
             // 
             this.lblAlturaCliente.AutoSize = true;
-            this.lblAlturaCliente.Location = new System.Drawing.Point(431, 144);
+            this.lblAlturaCliente.Location = new System.Drawing.Point(310, 127);
             this.lblAlturaCliente.Name = "lblAlturaCliente";
             this.lblAlturaCliente.Size = new System.Drawing.Size(44, 16);
             this.lblAlturaCliente.TabIndex = 31;
@@ -123,7 +127,7 @@
             // 
             // txtAlturaCliente
             // 
-            this.txtAlturaCliente.Location = new System.Drawing.Point(434, 163);
+            this.txtAlturaCliente.Location = new System.Drawing.Point(313, 146);
             this.txtAlturaCliente.Name = "txtAlturaCliente";
             this.txtAlturaCliente.Size = new System.Drawing.Size(169, 22);
             this.txtAlturaCliente.TabIndex = 30;
@@ -131,7 +135,7 @@
             // lblCalleCliente
             // 
             this.lblCalleCliente.AutoSize = true;
-            this.lblCalleCliente.Location = new System.Drawing.Point(431, 91);
+            this.lblCalleCliente.Location = new System.Drawing.Point(310, 74);
             this.lblCalleCliente.Name = "lblCalleCliente";
             this.lblCalleCliente.Size = new System.Drawing.Size(41, 16);
             this.lblCalleCliente.TabIndex = 27;
@@ -139,7 +143,7 @@
             // 
             // txtCalleCliente
             // 
-            this.txtCalleCliente.Location = new System.Drawing.Point(434, 110);
+            this.txtCalleCliente.Location = new System.Drawing.Point(313, 93);
             this.txtCalleCliente.Name = "txtCalleCliente";
             this.txtCalleCliente.Size = new System.Drawing.Size(169, 22);
             this.txtCalleCliente.TabIndex = 26;
@@ -147,7 +151,7 @@
             // lblApellidoCliente
             // 
             this.lblApellidoCliente.AutoSize = true;
-            this.lblApellidoCliente.Location = new System.Drawing.Point(141, 145);
+            this.lblApellidoCliente.Location = new System.Drawing.Point(20, 128);
             this.lblApellidoCliente.Name = "lblApellidoCliente";
             this.lblApellidoCliente.Size = new System.Drawing.Size(60, 16);
             this.lblApellidoCliente.TabIndex = 25;
@@ -155,7 +159,7 @@
             // 
             // txtApellidoCliente
             // 
-            this.txtApellidoCliente.Location = new System.Drawing.Point(144, 164);
+            this.txtApellidoCliente.Location = new System.Drawing.Point(23, 147);
             this.txtApellidoCliente.Name = "txtApellidoCliente";
             this.txtApellidoCliente.Size = new System.Drawing.Size(169, 22);
             this.txtApellidoCliente.TabIndex = 24;
@@ -163,7 +167,7 @@
             // lblNombreCliente
             // 
             this.lblNombreCliente.AutoSize = true;
-            this.lblNombreCliente.Location = new System.Drawing.Point(141, 91);
+            this.lblNombreCliente.Location = new System.Drawing.Point(20, 74);
             this.lblNombreCliente.Name = "lblNombreCliente";
             this.lblNombreCliente.Size = new System.Drawing.Size(59, 16);
             this.lblNombreCliente.TabIndex = 21;
@@ -171,7 +175,7 @@
             // 
             // txtNombreCliente
             // 
-            this.txtNombreCliente.Location = new System.Drawing.Point(144, 110);
+            this.txtNombreCliente.Location = new System.Drawing.Point(23, 93);
             this.txtNombreCliente.Name = "txtNombreCliente";
             this.txtNombreCliente.Size = new System.Drawing.Size(169, 22);
             this.txtNombreCliente.TabIndex = 20;
@@ -179,7 +183,7 @@
             // lbllocalidadCliente
             // 
             this.lbllocalidadCliente.AutoSize = true;
-            this.lbllocalidadCliente.Location = new System.Drawing.Point(431, 199);
+            this.lbllocalidadCliente.Location = new System.Drawing.Point(310, 182);
             this.lbllocalidadCliente.Name = "lbllocalidadCliente";
             this.lbllocalidadCliente.Size = new System.Drawing.Size(70, 16);
             this.lbllocalidadCliente.TabIndex = 40;
@@ -189,7 +193,7 @@
             // chkEstudiante
             // 
             this.chkEstudiante.AutoSize = true;
-            this.chkEstudiante.Location = new System.Drawing.Point(563, 268);
+            this.chkEstudiante.Location = new System.Drawing.Point(433, 254);
             this.chkEstudiante.Name = "chkEstudiante";
             this.chkEstudiante.Size = new System.Drawing.Size(18, 17);
             this.chkEstudiante.TabIndex = 41;
@@ -199,17 +203,28 @@
             // 
             this.lblEstudiante.AutoSize = true;
             this.lblEstudiante.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblEstudiante.Location = new System.Drawing.Point(431, 268);
+            this.lblEstudiante.Location = new System.Drawing.Point(310, 251);
             this.lblEstudiante.Name = "lblEstudiante";
             this.lblEstudiante.Size = new System.Drawing.Size(117, 18);
             this.lblEstudiante.TabIndex = 42;
             this.lblEstudiante.Text = "Es Estudiante:";
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(157, 9);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(165, 25);
+            this.label1.TabIndex = 43;
+            this.label1.Text = "Alta de Clientes";
+            // 
             // frmAltaCliente
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(737, 530);
+            this.ClientSize = new System.Drawing.Size(526, 452);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.lblEstudiante);
             this.Controls.Add(this.chkEstudiante);
             this.Controls.Add(this.lbllocalidadCliente);
@@ -256,5 +271,6 @@
         private System.Windows.Forms.Label lbllocalidadCliente;
         private System.Windows.Forms.CheckBox chkEstudiante;
         private System.Windows.Forms.Label lblEstudiante;
+        private System.Windows.Forms.Label label1;
     }
 }

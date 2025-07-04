@@ -175,5 +175,10 @@ namespace Sistema_Libreria
         {
             
         }
+
+        private void btnCancelar_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

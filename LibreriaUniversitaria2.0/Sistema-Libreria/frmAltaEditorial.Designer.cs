@@ -91,28 +91,32 @@
             this.btnSalirAlta.BackColor = System.Drawing.Color.Red;
             this.btnSalirAlta.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSalirAlta.ForeColor = System.Drawing.Color.White;
-            this.btnSalirAlta.Location = new System.Drawing.Point(247, 351);
+            this.btnSalirAlta.Location = new System.Drawing.Point(171, 316);
             this.btnSalirAlta.Name = "btnSalirAlta";
             this.btnSalirAlta.Size = new System.Drawing.Size(84, 36);
             this.btnSalirAlta.TabIndex = 25;
             this.btnSalirAlta.Text = "Salir";
             this.btnSalirAlta.UseVisualStyleBackColor = false;
+            this.btnSalirAlta.Click += new System.EventHandler(this.btnSalirAlta_Click);
             // 
             // btnGuardar
             // 
+            this.btnGuardar.BackColor = System.Drawing.Color.ForestGreen;
+            this.btnGuardar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnGuardar.ForeColor = System.Drawing.Color.White;
             this.btnGuardar.Location = new System.Drawing.Point(58, 225);
             this.btnGuardar.Name = "btnGuardar";
             this.btnGuardar.Size = new System.Drawing.Size(147, 58);
             this.btnGuardar.TabIndex = 24;
             this.btnGuardar.Text = "Agregar Editorial";
-            this.btnGuardar.UseVisualStyleBackColor = true;
+            this.btnGuardar.UseVisualStyleBackColor = false;
             this.btnGuardar.Click += new System.EventHandler(this.btnGuardar_Click);
             // 
             // frmAltaEditorial
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(364, 417);
+            this.ClientSize = new System.Drawing.Size(265, 371);
             this.Controls.Add(this.btnSalirAlta);
             this.Controls.Add(this.btnGuardar);
             this.Controls.Add(this.lblCUIT);

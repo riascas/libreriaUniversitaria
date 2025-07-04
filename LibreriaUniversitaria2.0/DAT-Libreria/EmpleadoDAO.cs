@@ -79,18 +79,18 @@ namespace DAT_Libreria
 
         public int AltaEmpleado(Empleado emp)
         {
-            // 1. Insertar Persona
+            
             string queryPersona = $"INSERT INTO Persona (Nombre, Apellido, DNI, Email) VALUES ('{emp.UnaPersona.Nombre}', '{emp.UnaPersona.Apellido}', '{emp.UnaPersona.DNI}', '{emp.UnaPersona.Email}')";
             conexion.EscribirPorComando(queryPersona);
 
-            // 2. Obtener el último ID persona insertado
+            
             int idPersona = Convert.ToInt32(conexion.LeerPorComando("SELECT MAX(idPersona) AS id FROM Persona").Rows[0]["id"]);
 
-            // 3. Insertar Empleado
+            
             string queryEmpleado = $"INSERT INTO Empleado (Usuario, Clave, FK_Persona, FK_RolEmpleado) VALUES ('{emp.Usuario}', '{emp.Clave}', {idPersona}, {emp.UnRol.IdRolEmpleado})";
             conexion.EscribirPorComando(queryEmpleado);
 
-            // 4. Insertar Domicilio
+            
             string queryDomicilio = $"INSERT INTO Domicilio (Calle, Altura, FK_Persona, FK_Localidad) VALUES ('{emp.UnaPersona.UnDomicilio.Calle}', {emp.UnaPersona.UnDomicilio.Altura}, {idPersona}, {emp.UnaPersona.UnDomicilio.UnaLocalidad.IdLocalidad})";
             return conexion.EscribirPorComando(queryDomicilio);
         }

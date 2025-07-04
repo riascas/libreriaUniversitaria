@@ -42,8 +42,13 @@ namespace Sistema_Libreria
             else
             {
                 MessageBox.Show("Editorial guardada correctamente.");
-                this.Close(); // Cierra el formulario después de guardar
+                this.Close(); 
             }
+        }
+
+        private void btnSalirAlta_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

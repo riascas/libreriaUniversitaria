@@ -31,8 +31,9 @@
             this.menutitulo = new System.Windows.Forms.MenuStrip();
             this.label1 = new System.Windows.Forms.Label();
             this.contenedor = new System.Windows.Forms.Panel();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.lblUsuario = new System.Windows.Forms.Label();
-            this.iconMenuItem3 = new FontAwesome.Sharp.IconMenuItem();
+            this.menu = new System.Windows.Forms.MenuStrip();
             this.menuUsuario = new FontAwesome.Sharp.IconMenuItem();
             this.menuListarEmpleados = new FontAwesome.Sharp.IconMenuItem();
             this.menuAltaEmpleado = new System.Windows.Forms.ToolStripMenuItem();
@@ -49,8 +50,10 @@
             this.geolocalizacionToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.vendedorToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.librToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.menu = new System.Windows.Forms.MenuStrip();
             this.btnExit = new FontAwesome.Sharp.IconButton();
+            this.iconMenuItem3 = new FontAwesome.Sharp.IconMenuItem();
+            this.contenedor.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.menu.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -62,7 +65,7 @@
             this.menutitulo.Location = new System.Drawing.Point(0, 0);
             this.menutitulo.Name = "menutitulo";
             this.menutitulo.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.menutitulo.Size = new System.Drawing.Size(1067, 59);
+            this.menutitulo.Size = new System.Drawing.Size(1171, 59);
             this.menutitulo.TabIndex = 1;
             this.menutitulo.Text = "menuStrip2";
             // 
@@ -83,14 +86,24 @@
             // contenedor
             // 
             this.contenedor.BackColor = System.Drawing.Color.White;
+            this.contenedor.Controls.Add(this.pictureBox1);
             this.contenedor.Dock = System.Windows.Forms.DockStyle.Fill;
             this.contenedor.ForeColor = System.Drawing.Color.Black;
             this.contenedor.Location = new System.Drawing.Point(0, 132);
             this.contenedor.Margin = new System.Windows.Forms.Padding(4);
             this.contenedor.Name = "contenedor";
-            this.contenedor.Size = new System.Drawing.Size(1067, 422);
+            this.contenedor.Size = new System.Drawing.Size(1171, 562);
             this.contenedor.TabIndex = 3;
             this.contenedor.Paint += new System.Windows.Forms.PaintEventHandler(this.contenedor_Paint);
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::Sistema_Libreria.Properties.Resources.Evolucion_librerias_11;
+            this.pictureBox1.Location = new System.Drawing.Point(2, 4);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(1169, 555);
+            this.pictureBox1.TabIndex = 0;
+            this.pictureBox1.TabStop = false;
             // 
             // lblUsuario
             // 
@@ -98,21 +111,29 @@
             this.lblUsuario.BackColor = System.Drawing.Color.SteelBlue;
             this.lblUsuario.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblUsuario.ForeColor = System.Drawing.Color.White;
-            this.lblUsuario.Location = new System.Drawing.Point(708, 9);
+            this.lblUsuario.Location = new System.Drawing.Point(791, 11);
             this.lblUsuario.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblUsuario.Name = "lblUsuario";
             this.lblUsuario.Size = new System.Drawing.Size(138, 18);
             this.lblUsuario.TabIndex = 5;
             this.lblUsuario.Text = "Nombre del usuario";
             // 
-            // iconMenuItem3
+            // menu
             // 
-            this.iconMenuItem3.IconChar = FontAwesome.Sharp.IconChar.None;
-            this.iconMenuItem3.IconColor = System.Drawing.Color.Black;
-            this.iconMenuItem3.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconMenuItem3.Name = "iconMenuItem3";
-            this.iconMenuItem3.Size = new System.Drawing.Size(32, 19);
-            this.iconMenuItem3.Text = "iconMenuItem3";
+            this.menu.BackColor = System.Drawing.Color.White;
+            this.menu.ImageScalingSize = new System.Drawing.Size(20, 20);
+            this.menu.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.menuUsuario,
+            this.menuEditorial,
+            this.menuCompras,
+            this.menuClientes,
+            this.menuVentaReserva,
+            this.menuReportes});
+            this.menu.Location = new System.Drawing.Point(0, 59);
+            this.menu.Name = "menu";
+            this.menu.Size = new System.Drawing.Size(1171, 73);
+            this.menu.TabIndex = 0;
+            this.menu.Text = "menuStrip1";
             // 
             // menuUsuario
             // 
@@ -137,14 +158,14 @@
             this.menuListarEmpleados.IconColor = System.Drawing.Color.Black;
             this.menuListarEmpleados.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.menuListarEmpleados.Name = "menuListarEmpleados";
-            this.menuListarEmpleados.Size = new System.Drawing.Size(212, 26);
-            this.menuListarEmpleados.Text = "Lista usuarios";
+            this.menuListarEmpleados.Size = new System.Drawing.Size(221, 26);
+            this.menuListarEmpleados.Text = "Lista de Empleados";
             this.menuListarEmpleados.Click += new System.EventHandler(this.menuListarEmpleados_Click);
             // 
             // menuAltaEmpleado
             // 
             this.menuAltaEmpleado.Name = "menuAltaEmpleado";
-            this.menuAltaEmpleado.Size = new System.Drawing.Size(212, 26);
+            this.menuAltaEmpleado.Size = new System.Drawing.Size(221, 26);
             this.menuAltaEmpleado.Text = "Alta de Empleado";
             this.menuAltaEmpleado.Click += new System.EventHandler(this.menuAltaEmpleado_Click);
             // 
@@ -246,7 +267,7 @@
             this.menuVentaReserva.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this.menuVentaReserva.Name = "menuVentaReserva";
             this.menuVentaReserva.Size = new System.Drawing.Size(120, 69);
-            this.menuVentaReserva.Text = "Ventas/Reserva";
+            this.menuVentaReserva.Text = "Ventas";
             this.menuVentaReserva.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.menuVentaReserva.Click += new System.EventHandler(this.menuVentaReserva_Click);
             // 
@@ -286,41 +307,33 @@
             this.librToolStripMenuItem.Text = "Ventas por libro";
             this.librToolStripMenuItem.Click += new System.EventHandler(this.librToolStripMenuItem_Click);
             // 
-            // menu
-            // 
-            this.menu.BackColor = System.Drawing.Color.White;
-            this.menu.ImageScalingSize = new System.Drawing.Size(20, 20);
-            this.menu.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.menuUsuario,
-            this.menuEditorial,
-            this.menuCompras,
-            this.menuClientes,
-            this.menuVentaReserva,
-            this.menuReportes});
-            this.menu.Location = new System.Drawing.Point(0, 59);
-            this.menu.Name = "menu";
-            this.menu.Size = new System.Drawing.Size(1067, 73);
-            this.menu.TabIndex = 0;
-            this.menu.Text = "menuStrip1";
-            // 
             // btnExit
             // 
             this.btnExit.BackColor = System.Drawing.Color.SteelBlue;
             this.btnExit.IconChar = FontAwesome.Sharp.IconChar.SignOut;
             this.btnExit.IconColor = System.Drawing.Color.Red;
             this.btnExit.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.btnExit.Location = new System.Drawing.Point(1017, 0);
+            this.btnExit.Location = new System.Drawing.Point(1109, 0);
             this.btnExit.Name = "btnExit";
             this.btnExit.Size = new System.Drawing.Size(50, 56);
             this.btnExit.TabIndex = 6;
             this.btnExit.UseVisualStyleBackColor = false;
             this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
             // 
+            // iconMenuItem3
+            // 
+            this.iconMenuItem3.IconChar = FontAwesome.Sharp.IconChar.None;
+            this.iconMenuItem3.IconColor = System.Drawing.Color.Black;
+            this.iconMenuItem3.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.iconMenuItem3.Name = "iconMenuItem3";
+            this.iconMenuItem3.Size = new System.Drawing.Size(32, 19);
+            this.iconMenuItem3.Text = "iconMenuItem3";
+            // 
             // Inicio
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1067, 554);
+            this.ClientSize = new System.Drawing.Size(1171, 694);
             this.Controls.Add(this.btnExit);
             this.Controls.Add(this.lblUsuario);
             this.Controls.Add(this.contenedor);
@@ -333,6 +346,8 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Inicio";
             this.Load += new System.EventHandler(this.Inicio_Load);
+            this.contenedor.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.menu.ResumeLayout(false);
             this.menu.PerformLayout();
             this.ResumeLayout(false);
@@ -364,5 +379,6 @@
         private System.Windows.Forms.ToolStripMenuItem menuListarClientes;
         private System.Windows.Forms.ToolStripMenuItem menuAltaCliente;
         private System.Windows.Forms.ToolStripMenuItem menuListarLibro;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }
